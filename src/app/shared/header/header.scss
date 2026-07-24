@@ -6,10 +6,6 @@ header {
   align-items: center;
   padding: 0px 50px;
 
-  background-image: url('/assets/img/bg_image.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 nav {
@@ -18,7 +14,7 @@ nav {
   > a,
   button {
     font-family: 'Fira Code';
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: var(--font-light);
   }

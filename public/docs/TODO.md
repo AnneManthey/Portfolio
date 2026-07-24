@@ -1,24 +1,23 @@
 # Desk
 
- - Components erstellen
-
- - Components über app.routes.ts / router outlet
-    - Legal Notice
-    - Privacy
-
+ 
 - icons/img hinzufügen
-- Components über Buttons verbinden
-- Interne Links verknüpfen
+- Logo / Favicon erstellen (outline)
 
 
-- Header Component
+- Header
     - EN/DE Buttons designen
     - Logo einfügen
     - Hover Effekte
     - Links einfügen
     - Hintergrund vom Hero übernehmen
 
-- Hero Component
+- Footer
+    - HTML
+    - ext. Links hinterlegen
+    - int. Routerlinks
+
+- Hero 
     - Buttons stylen
     - Elemente drehen/anordnen
     - Hover Effekte
@@ -28,6 +27,9 @@
         - Punkte
         - Linien
     - Links einfügen
+
+
+
 
 - About Component
     - 
@@ -40,4 +42,3 @@
 - Privacy Component
 
 
-- Logo / Favicon erstellen
