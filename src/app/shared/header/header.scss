@@ -5,6 +5,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 50px;
+
+  background-image: url('/assets/img/bg_image.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav {

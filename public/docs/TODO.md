@@ -1,5 +1,14 @@
 # Desk
 
+ - Components erstellen
+
+ - Components über app.routes.ts / router outlet
+    - Legal Notice
+    - Privacy
+
+- icons/img hinzufügen
+- Components über Buttons verbinden
+- Interne Links verknüpfen
 
 
 - Header Component
@@ -21,6 +30,7 @@
     - Links einfügen
 
 - About Component
+    - 
 - Skill Component
 - Project Component
 - Feedback Component
