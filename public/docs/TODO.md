@@ -6,11 +6,9 @@
 
 
 - Header
-    - EN/DE Buttons designen
-    - Logo einfügen
-    - Hover Effekte
+    - EN/DE Buttons mit Logik verbinden
     - Links einfügen
-    - Hintergrund vom Hero übernehmen
+    
 
 - Footer
     - HTML
