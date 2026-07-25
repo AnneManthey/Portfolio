@@ -90,8 +90,8 @@ input.check-toggle-round-flat + label {
   height: 35px;
   border-radius: 60px;
   border: 1px solid var(--font-bg-green);
-
 }
+
 input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
   display: block;
   position: absolute;
@@ -115,7 +115,31 @@ input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
 }
 
+// Dot-Hover auf links
+.dot-hover {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
 
+.dot-hover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  background-image: url('/assets/icons/hover-dot.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8px;              
+  height: 8px;             
+  opacity: 0;
+  transition: opacity 0.2s ease; 
+}
+
+.dot-hover:hover::after {
+  opacity: 1;
+}
 
 
 
