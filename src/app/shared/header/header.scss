@@ -12,6 +12,7 @@ header {
 
 nav {
   display: flex;
+  align-items: center;
   gap: 24px;
   > a {
     font-family: 'Fira Code';
@@ -70,6 +71,7 @@ input.check-toggle-round-flat:checked ~ .on {
   margin-left: -9999px;
   visibility: hidden;
 }
+
 .check-toggle + label {
   display: block;
   position: relative;
@@ -86,14 +88,9 @@ input.check-toggle-round-flat + label {
   padding: 2px;
   width: 97px;
   height: 35px;
-  background-color: var(--transparent);
   border-radius: 60px;
   border: 1px solid var(--font-bg-green);
-  // -webkit-border-radius: 60px;
-  // -moz-border-radius: 60px;
-  // -ms-border-radius: 60px;
-  // -o-border-radius: 60px;
-  // border-radius: 60px;
+
 }
 input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
   display: block;
@@ -101,39 +98,17 @@ input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + la
   content: "";
 }
 
-// Hintergrund innen, sollte transparent sein
-input.check-toggle-round-flat + label:before {
-  top: 2px;
-  left: 2px;
-  bottom: 2px;
-  right: 2px;
-  // background-color: red;
-
-  // -webkit-
-  
-  -moz-border-radius: 60px;
-  -ms-border-radius: 60px;
-  -o-border-radius: 60px;
-  border-radius: 60px;
-}
 input.check-toggle-round-flat + label:after {
-  top: 4px;
-  left: 4px;
-  bottom: 4px;
-  width: 48px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 52px;
   background-color: var(--font-bg-green);
-  -webkit-border-radius: 52px;
-  -moz-border-radius: 52px;
-  -ms-border-radius: 52px;
-  -o-border-radius: 52px;
   border-radius: 52px;
   -webkit-transition: margin 0.2s;
   -moz-transition: margin 0.2s;
   -o-transition: margin 0.2s;
   transition: margin 0.2s;
-}
-
-input.check-toggle-round-flat:checked + label {
 }
 
 input.check-toggle-round-flat:checked + label:after {
