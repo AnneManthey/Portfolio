@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 95px;
+    padding: 80px 95px;
     background-color: black;
     color: var(--font-light);
     font-family: 'Fira Code';
@@ -14,9 +14,52 @@
         text-decoration: none;
         color: var(--font-light);
     }
+    a:hover{
+      color: var(--font-bg-green);
+    }
+    >p{
+      color: var(--font-bg-green);
+    }
 }
-.logo-wrapper {
+
+.dot-hover {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.dot-hover::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  bottom: 8px;
+  transform: translateX(-50%);
+
+  background-image: url('/assets/icons/hover-dot.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8px;              
+  height: 8px;             
+  opacity: 0;
+  transition: opacity 0.2s ease; 
+}
+
+.dot-hover:hover::after {
+  opacity: 1;
+}
+
+.footer-logo{
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.footer-logo-wrapper {
   @include mixins.flex-center;
+  width: 130px ;
+  height: 50px;
   
   >.initials {
     width: 50px;
@@ -50,4 +93,9 @@
       display: block;
     }
   }
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
 }

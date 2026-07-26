@@ -1,17 +1,8 @@
 # Desk
 
  
-- icons/img hinzufügen
-- Logo / Favicon erstellen (outline)
-
-
-- Header
-    - EN/DE Buttons mit Logik verbinden
-    - Links einfügen
-    
-
 - Footer
-    - HTML
+    - Stylen
     - ext. Links hinterlegen
     - int. Routerlinks
 
@@ -39,4 +30,14 @@
 - Legal Component
 - Privacy Component
 
+- Favicon erstellen
 
+
+- Header
+    - EN/DE Buttons mit Logik verbinden
+    - Links einfügen
+
+
+# Offene Fragen
+- Hintergrundbild Auflösung?
+- Hintergrund ansonsten schwarz? grau?
