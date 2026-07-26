@@ -1,4 +1,37 @@
+@use '../../../../styles/mixins' as mixins;
+
 .hero {
-    width: 100%;
-    min-height: calc(100dvh - 100px);
+  width: 100%;
+  min-height: calc(100dvh - 100px);
+}
+
+.hero-main {
+  @include mixins.flex-center;
+  flex-direction: column;
+  > p {
+    color: var(--font-light);
+    font-family: 'Fira Code';
+    font-size: 2.5rem;
+  }
+  h1 {
+    color: var(--font-light);
+    font-family: 'Karla';
+    font-size: 8rem;
+    font-weight: bold;
+  }
+}
+
+.hero-btn {
+    display: flex;
+  gap: 10px;
+
+  button {
+    color: var(--font-light);
+    font-family: 'Karla';
+    font-size: 1.1rem;
+    border-radius: 100px;
+    border: 1px solid var(--font-light);
+    background: transparent;
+    padding: 12px 24px;
+  }
 }
