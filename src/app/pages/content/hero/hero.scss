@@ -4,12 +4,12 @@
   position: relative;
   width: 100%;
   min-height: calc(100dvh - 100px);
-  padding-bottom: 7rem;
 }
 
 .hero-main {
   @include mixins.flex-center;
   flex-direction: column;
+  padding: 200px 0px;
   > p {
     color: var(--font-light);
     font-family: 'Fira Code';
@@ -20,12 +20,14 @@
     font-family: 'Karla';
     font-size: 8rem;
     font-weight: bold;
+    letter-spacing: -5%;
+    padding-bottom: 20px;
   }
 }
 
 .hero-btn {
   display: flex;
-  gap: 10px;
+  gap: 50px;
 }
 
 // Button animation
@@ -88,8 +90,11 @@
   left: -2%;
   bottom: 0;
   width: 104%;
+  z-index: 10;
   color: var(--font-bg-green);
   background-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   font-family: 'Karla';
   font-size: 2rem;
   padding: 12px 32px;
@@ -130,52 +135,76 @@
 }
 
 .hero-contact {
-  position: relative;
+  position: absolute;
+  inset: 0;
   display: flex;
-  padding: 0px 96px;
+  align-items: stretch;
   justify-content: space-between;
+  padding: 0px 96px;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-contact-deco {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  position: absolute;
-  transform: rotate(-90deg);
-  left: 10%;
-  bottom: 0;
-  img{
-    transform: rotate(90deg);
+  justify-content: flex-end;
+  gap: 12px;
+  height: 100%;
+  img {
     height: 48px;
   }
 }
 
 .line1{
-   border-left: 1px solid var(--font-bg-green);
-  height: 240px;
-  transform: rotate(90deg); 
+  border-left: 1px solid var(--font-bg-green);
+  height: calc(100% / 3);
 }
 
 .hero-contact-links {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row-reverse;
-  gap: 10px;
-  position: absolute;
-  transform: rotate(-90deg);
-  left: 80%;
-  bottom: 0;
-  img{
-    transform: rotate(90deg);
+  justify-content: flex-end;
+  gap: 12px;
+  height: 100%;
+  img {
+    display: block;
   }
-  a{
+  a {
+    pointer-events: auto;
     text-decoration: none;
     color: var(--font-light);
     font-family: 'Karla';
+    .icon-hover {
+      display: none;
+    }
+  }
+  a:hover {
+    color: var(--font-bg-green);
+    .icon-hover {
+      display: block;
+    }
+    .icon {
+      display: none;
+    }
   }
 }
 
+.hero-contact-links-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+
+
 .line2 {
   border-left: 1px solid var(--font-light);
-  height: 180px;
-  transform: rotate(90deg);
+  height: calc(100% / 4);
 }

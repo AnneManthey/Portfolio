@@ -4,9 +4,8 @@
 
 
 - Hero 
-    - Senkrechte Elemente/Linien positionieren
-    - Hover Effekte
-        - icons
+    - Email drehen
+    - Hover fixieren
     - Animation (Pfeil)
     - Seitenelemente verlinken
     - Links einfügen
