@@ -128,3 +128,54 @@
     transform: translateX(calc(-50% - var(--banner-gap) / 2));
   }
 }
+
+.hero-contact {
+  position: relative;
+  display: flex;
+  padding: 0px 96px;
+  justify-content: space-between;
+}
+
+.hero-contact-deco {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 10%;
+  bottom: 0;
+  img{
+    transform: rotate(90deg);
+    height: 48px;
+  }
+}
+
+.line1{
+   border-left: 1px solid var(--font-bg-green);
+  height: 240px;
+  transform: rotate(90deg); 
+}
+
+.hero-contact-links {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 80%;
+  bottom: 0;
+  img{
+    transform: rotate(90deg);
+  }
+  a{
+    text-decoration: none;
+    color: var(--font-light);
+    font-family: 'Karla';
+  }
+}
+
+.line2 {
+  border-left: 1px solid var(--font-light);
+  height: 180px;
+  transform: rotate(90deg);
+}

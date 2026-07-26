@@ -4,14 +4,11 @@
 
 
 - Hero 
-    
-    - Elemente drehen/anordnen
+    - Senkrechte Elemente/Linien positionieren
     - Hover Effekte
+        - icons
+    - Animation (Pfeil)
     - Seitenelemente verlinken
-    - Grafikelemente
-        - LinkedIn/Github Logo
-        - Punkte
-        - Linien
     - Links einfügen
 
 
@@ -27,6 +24,8 @@
 - Legal Component
 - Privacy Component
 
+- Language Switch Logik
+    - Text übersetzen
 - Favicon erstellen
 
 
