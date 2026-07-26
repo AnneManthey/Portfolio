@@ -1,13 +1,10 @@
 # Desk
 
  
-- Footer
-    - Stylen
-    - ext. Links hinterlegen
-    - int. Routerlinks
+
 
 - Hero 
-    - Buttons stylen
+    
     - Elemente drehen/anordnen
     - Hover Effekte
     - Seitenelemente verlinken
@@ -36,6 +33,10 @@
 - Header
     - EN/DE Buttons mit Logik verbinden
     - Links einfügen
+
+- Footer
+    - ext. Links hinterlegen
+    - int. Routerlinks
 
 
 # Offene Fragen
