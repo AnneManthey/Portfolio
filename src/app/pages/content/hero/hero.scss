@@ -1,8 +1,10 @@
 @use '../../../../styles/mixins' as mixins;
 
 .hero {
+  position: relative;
   width: 100%;
   min-height: calc(100dvh - 100px);
+  padding-bottom: 7rem;
 }
 
 .hero-main {
@@ -82,13 +84,18 @@
 // Hero Banner
 
 .hero-banner {
-  width: 100%;
+  position: absolute;
+  left: -2%;
+  bottom: 0;
+  width: 104%;
   color: var(--font-bg-green);
   background-color: rgba(255, 255, 255, 0.12);
   font-family: 'Karla';
   font-size: 2rem;
   padding: 12px 32px;
   overflow: hidden;
+  transform: rotate(-3deg);
+  transform-origin: left bottom;
 
   --banner-gap: 3rem;
 }
