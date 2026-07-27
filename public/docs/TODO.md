@@ -1,6 +1,6 @@
 # Desk
 
-- Skill Component
+- Project Component
 
 
 
@@ -10,8 +10,6 @@
 
 # Building Process
 
-
-- Project Component
 - Feedback Component
 - Contact Component
 - Footer Component
@@ -40,6 +38,11 @@
 
 - About Component
     - Text einfügen
+
+- Skill Component
+    - Hover-Info bei Growth Mindset einblenden
+    - Text einfügen
+
 
 
 # Offene Fragen

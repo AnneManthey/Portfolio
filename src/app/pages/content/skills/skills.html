@@ -6,17 +6,19 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptates nulla aperiam amet tenetur
             consequuntur maxime eligendi voluptate numquam aliquam, facere porro aut, est iste aspernatur necessitatibus
             nihil autem quas!</p>
-       <h3>You need another skill?</h3>
-       <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+       <h3><span style="color: var(--font-light);">You need</span> another skill?</h3>
+       <p style="font-size: 1rem;">Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+       <button class="animated-btn">
+                <span class="btn-text" data-text="Let's Talk">Let's Talk</span>
+            </button>
     </article>
     </section>
     <article class="skills-icons">
         @for(item of skillList; track item.name){
-            <article>
+            <article class="skills-icons-box">
                 <img [src]="item.src">
                 <p>{{item.name}}</p>
             </article>
         }
-        
     </article>
 </section>

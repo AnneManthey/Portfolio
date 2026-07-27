@@ -203,7 +203,7 @@
   a {
     pointer-events: auto;
     text-decoration: none;
-    color: var(--font-light);
+    color: white;
     font-family: 'Karla';
     .icon-hover {
       display: none;
@@ -224,7 +224,6 @@
   display: inline-block;
   transform: translateX(85px) translateY(-100%) rotate(-90deg);
   transform-origin: left center;
-  color: white;
 }
 
 .hero-contact-links-row {

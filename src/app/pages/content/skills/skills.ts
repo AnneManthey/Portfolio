@@ -37,6 +37,10 @@ export class Skills {
       src: "/assets/icons/pages/skills/Git.png",
       name:"Git"
     },
+    {
+      src: "/assets/icons/pages/skills/GrowthMindset.png",
+      name:"Growth Mindset"
+    },
 
 
   ]
