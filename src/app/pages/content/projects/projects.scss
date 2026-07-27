@@ -1,0 +1,64 @@
+
+.projects{
+    background-color: var(--bg-dark);
+    color: var(--font-light);
+    padding: 50px 95px;
+    h2{
+        color: var(--font-bg-green);
+        font-family: 'Fira Code';
+        font-size: 4rem;
+    }
+    h3{
+        color: var(--font-bg-green);
+        font-family: 'Karla';
+        font-size: 1.5rem;
+        padding-bottom: 24px;
+    }
+    >p{
+        font-family: 'Karla';
+        font-size: 1.1rem;
+        line-height: 120%;
+        padding: 40px 0px;
+    }
+}
+
+.project-list-btn{
+    cursor: pointer;
+    border-top: 1px solid var(--font-bg-green);
+    border-bottom: 1px solid var(--font-bg-green);
+    background: transparent;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 32px;
+    >p{
+        font-family: 'Karla';
+        color: var(--font-light);
+    }
+    img{
+        display: none;
+    }
+    &:hover{
+        background-color: var(--transparent);
+        img{
+            display: block;
+        }
+    }
+}
+
+.project-name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    img{
+        transform:rotate(-45deg);
+        height: 32px;
+    }
+    p{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        font-family: 'Karla';
+    }
+}
