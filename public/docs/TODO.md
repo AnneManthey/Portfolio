@@ -35,7 +35,6 @@
 
 - Hero 
     - icon/icon hover springen verhindern / Hover langsamer
-    - Email weiß
     - Seitenelemente verlinken
     - Links einfügen
 
