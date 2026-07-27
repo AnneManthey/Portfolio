@@ -11,6 +11,12 @@
     </article>
     </section>
     <article class="skills-icons">
+        @for(item of skillList; track item.name){
+            <article>
+                <img [src]="item.src">
+                <p>{{item.name}}</p>
+            </article>
+        }
         
     </article>
 </section>
