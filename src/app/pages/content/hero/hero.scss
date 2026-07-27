@@ -146,15 +146,43 @@
 }
 
 .hero-contact-deco {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   gap: 12px;
   height: 100%;
-  img {
-    height: 48px;
-  }
+}
+
+.hero-contact-deco-arrows {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+}
+
+.hero-contact-arrow-container,
+.hero-contact-arrow-moving {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+}
+
+.hero-contact-arrow-container {
+  height: 100%;
+}
+
+.hero-contact-arrow-moving {
+  height: 12px;
+}
+
+.hero-contact-arrow-moving {
+  animation: hero-arrow-bob 1.8s ease-in-out infinite;
+  transform-origin: center;
 }
 
 .line1{
@@ -192,6 +220,12 @@
   }
 }
 
+.hero-email {
+  display: inline-block;
+  transform: translateX(85px) translateY(-100%) rotate(-90deg);
+  transform-origin: left center;
+}
+
 .hero-contact-links-row {
   display: flex;
   flex-direction: column;
@@ -203,8 +237,17 @@
 }
 
 
-
 .line2 {
   border-left: 1px solid var(--font-light);
   height: calc(100% / 4);
+}
+
+@keyframes hero-arrow-bob {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-8px);
+  }
 }

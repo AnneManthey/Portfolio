@@ -1,20 +1,15 @@
 # Desk
 
  
-
-
-- Hero 
-    - Email drehen
-    - Hover fixieren
-    - Animation (Pfeil)
-    - Seitenelemente verlinken
-    - Links einfügen
-
-
-
-
 - About Component
     - 
+
+
+
+
+
+
+
 - Skill Component
 - Project Component
 - Feedback Component
@@ -35,6 +30,11 @@
 - Footer
     - ext. Links hinterlegen
     - int. Routerlinks
+
+- Hero 
+    - icon/icon hover springen verhindern
+    - Seitenelemente verlinken
+    - Links einfügen
 
 
 # Offene Fragen
