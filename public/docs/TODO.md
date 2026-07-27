@@ -1,16 +1,16 @@
 # Desk
 
- 
-- About Component
-    - 
-
-
-
-
-
-
-
 - Skill Component
+
+
+
+
+
+
+
+# Building Process
+
+
 - Project Component
 - Feedback Component
 - Contact Component
@@ -22,19 +22,25 @@
     - Text übersetzen
 - Favicon erstellen
 
+# Refining
 
 - Header
     - EN/DE Buttons mit Logik verbinden
     - Links einfügen
+    - Hover langsamer einblenden
 
 - Footer
     - ext. Links hinterlegen
     - int. Routerlinks
 
 - Hero 
-    - icon/icon hover springen verhindern
+    - icon/icon hover springen verhindern / Hover langsamer
+    - Email weiß
     - Seitenelemente verlinken
     - Links einfügen
+
+- About Component
+    - Text einfügen
 
 
 # Offene Fragen
