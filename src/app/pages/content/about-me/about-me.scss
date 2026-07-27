@@ -1,0 +1,100 @@
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-light);
+  font-family: 'Karla';
+  background-color: var(--bg-dark);
+  gap: 50px;
+  padding: 50px;
+}
+
+.portrait {
+  border-radius: 30px;
+  width: 400px;
+}
+
+.portrait-bg {
+  display: none;
+}
+
+.about-text {
+  width: 500px;
+  h3 {
+    color: var(--font-bg-green);
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.about-text-box {
+  background-color: var(--bg-green-light);
+  border: 1px solid var(--font-bg-green);
+  border-radius: 30px;
+  padding: 32px;
+  h2 {
+    color: var(--font-bg-green);
+    font-family: 'Fira Code';
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 120%;
+    padding-bottom: 1.5rem;
+  }
+  ul {
+    text-align: start;
+    li{
+        padding: 8px;
+        &:hover{
+            color: white;
+        }
+    }
+    
+  }
+}
+
+.list-1 {
+  position: relative;
+  list-style-type: none;
+}
+
+.list-1:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -50px;
+  width: 32px;
+  height: 32px;
+  background-image: url('/assets/icons/pages/Location.png');
+}
+
+.list-2 {
+  position: relative;
+  list-style-type: none;
+}
+
+.list-2:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -45px;
+  width: 25px;
+  height: 27px;
+  background-image: url('/assets/icons/pages/Cognition.png');
+}
+.list-3 {
+  position: relative;
+  list-style-type: none;
+}
+.list-3:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -50px;
+  width: 30px;
+  height: 32px;
+  background-image: url('/assets/icons/pages/Highlights.png');
+}
