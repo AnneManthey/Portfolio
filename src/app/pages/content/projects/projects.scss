@@ -26,12 +26,16 @@
     cursor: pointer;
     border-top: 1px solid var(--font-bg-green);
     border-bottom: 1px solid var(--font-bg-green);
+    border-left: none;
+    border-right: none;
     background: transparent;
     display: flex;
     width: 70%;
     justify-content: space-between;
     align-items: center;
     padding: 40px 32px;
+    transition: 0.5s ease;
+    
     >p{
         font-family: 'Karla';
         color: var(--font-light);
@@ -53,7 +57,7 @@
     gap: 8px;
     img{
         transform:rotate(-45deg);
-        height: 32px;
+        height: 28px;
     }
     p{
         font-size: 1.5rem;

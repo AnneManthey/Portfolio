@@ -1,16 +1,18 @@
 # Desk
 
+- Feedback Component
+
+
+
 - Project Component
-
-
-
-
-
+    - Dialog basteln
+        child-component
+    - Dialog rendern
+    - 3 Projektbilder machen/raussuchen
 
 
 # Building Process
 
-- Feedback Component
 - Contact Component
 - Footer Component
 - Legal Component
