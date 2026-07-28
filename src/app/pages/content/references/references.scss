@@ -1,0 +1,58 @@
+
+.references{
+    width: 100%;
+    background-color: var(--bg-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 95px;
+    h3{
+        font-family: 'Fira Code';
+        color: var(--font-bg-green);
+        font-size: 2rem;
+    }
+    >img{
+        width: 90px;
+        height: 64px;
+    }
+}
+
+.references-text-wrapper{
+    display: flex;
+    gap: 24px;
+}
+
+.references-text{
+    width: 40%;
+    border: 1px solid var(--font-bg-green);
+    border-radius: 30px;
+    background-color: var(--bg-green-light);
+    padding: 50px 30px;
+    p{
+        color: var(--font-light);
+        font-family: 'Karla';
+    }
+}
+.references-author{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+.line{
+    border-bottom: 1px solid var(--font-light);
+    width: 250px;
+}
+
+.references-button-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 24px 0px;
+    gap: 16px;
+}
+
+.button-left{
+    img{
+        transform: rotate(180deg);
+    }
+}
