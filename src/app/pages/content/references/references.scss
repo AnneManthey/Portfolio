@@ -19,6 +19,7 @@
 
 .references-text-wrapper{
     display: flex;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -55,4 +56,93 @@
     img{
         transform: rotate(180deg);
     }
+}
+
+// Slider-design
+
+.slider-viewport {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden; 
+  position: relative;
+
+  // Blendet nur den äußersten Rand (je 10%) sanft aus
+  -webkit-mask-image: linear-gradient(
+    to right, 
+    transparent 0%, 
+    black 10%, 
+    black 90%, 
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right, 
+    transparent 0%, 
+    black 10%, 
+    black 90%, 
+    transparent 100%
+  );
+}
+
+.slider-track {
+  display: flex;
+  width: 100%;
+  // Zentriert das erste Element in der Mitte des Viewports
+  padding-left: 15%; 
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.references-text {
+  // WICHTIG: Reduzierte Breite, damit die Nachbarn Platz haben!
+  flex: 0 0 70%; 
+  box-sizing: border-box;
+  padding: 0 15px;
+  
+  // Inaktive Elemente: Unscharf & etwas kleiner
+  opacity: 0.3;
+  filter: blur(5px);
+  transform: scale(0.85);
+  transition: filter 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+
+  // Aktives Element: Komplett scharf & im Fokus
+  &.active {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+  }
+}
+
+// FIX FÜR DIE PUNKTE:
+.references-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.dots-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffffff; // Standard: Weiß
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    // Aktiver Punkt wird grün
+    &.active {
+      background-color: #00ff88; // Dein gewünschter Grünton
+      transform: scale(1.25);
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }

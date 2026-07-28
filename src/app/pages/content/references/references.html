@@ -1,40 +1,44 @@
 <section class="references">
-    <h3>What my colleagues say about me</h3>
-    <img src="/assets/icons/pages/Quotes.png" alt="">
-    <section class="references-text-wrapper">
-        <article class="references-text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti recusandae libero saepe soluta
-                dignissimos. Quisquam cumque delectus, laborum at ex nisi eos, iure necessitatibus quasi accusantium
-                asperiores consequuntur odio praesentium?</p>
-            <div class="references-author">
-                <div class="line"></div>
-                <p>Jane Dow</p>
-            </div>
+  <h3>What my colleagues say about me</h3>
+  <img src="/assets/icons/pages/Quotes.png" alt="">
+
+  <div class="slider-viewport">
+    <div 
+      class="slider-track" 
+      [style.transform]="'translateX(-' + (currentIndex * 70) + '%)'">
+      
+      @for (item of refer; track item.name; let i = $index) {
+        <article 
+          class="references-text" 
+          [class.active]="i === currentIndex">
+          <p>{{ item.text }}</p>
+          <div class="references-author">
+            <div class="line"></div>
+            <p>{{ item.name }}</p>
+          </div>
         </article>
-        <article class="references-text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti recusandae libero saepe soluta
-                dignissimos. Quisquam cumque delectus, laborum at ex nisi eos, iure necessitatibus quasi accusantium
-                asperiores consequuntur odio praesentium?</p>
-            <div class="references-author">
-                <div class="line"></div>
-                <p>Jane Dow</p>
-            </div>
-        </article>
-        <article class="references-text">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti recusandae libero saepe soluta
-                dignissimos. Quisquam cumque delectus, laborum at ex nisi eos, iure necessitatibus quasi accusantium
-                asperiores consequuntur odio praesentium?</p>
-            <div class="references-author">
-                <div class="line"></div>
-                <p>Jane Dow</p>
-            </div>
-        </article>
-    </section>
-    <section class="references-button-wrapper">
-        <button class="button-left button-img"><img src="/assets/icons/pages/Arrow 1.png" alt=""></button>
-        <img src="/assets/icons/pages/Dot.png" alt="">
-        <img src="/assets/icons/pages/Dot Green.png" alt="">
-        <img src="/assets/icons/pages/Dot.png" alt="">
-        <button class="button-right button-img"><img src="/assets/icons/pages/Arrow 1.png" alt=""></button>
-    </section>
+      }
+
+    </div>
+  </div>
+
+  <section class="references-button-wrapper">
+    <button class="button-left button-img" (click)="prev()">
+      <img src="/assets/icons/pages/Arrow 1.png" alt="Vorheriges">
+    </button>
+
+    <div class="dots-container">
+      @for (item of refer; track $index; let i = $index) {
+        <span 
+          class="dot" 
+          [class.active]="i === currentIndex"
+          (click)="goTo(i)">
+        </span>
+      }
+    </div>
+
+    <button class="button-right button-img" (click)="next()">
+      <img src="/assets/icons/pages/Arrow 1.png" alt="Nächstes">
+    </button>
+  </section>
 </section>
