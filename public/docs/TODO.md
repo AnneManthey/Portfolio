@@ -1,6 +1,9 @@
 # Desk
 
 - Feedback Component
+    - Pfeile Hover
+    - Quotes platzieren
+    - 'Sprung' effekt fixen?
 
 
 

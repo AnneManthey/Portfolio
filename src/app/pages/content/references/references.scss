@@ -1,61 +1,89 @@
-
-.references{
-    width: 100%;
-    background-color: var(--bg-dark);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 95px;
-    h3{
-        font-family: 'Fira Code';
-        color: var(--font-bg-green);
-        font-size: 2rem;
-    }
-    >img{
-        width: 90px;
-        height: 64px;
-    }
+.references {
+  width: 100%;
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 95px;
+  h3 {
+    font-family: 'Fira Code';
+    color: var(--font-bg-green);
+    font-size: 2rem;
+  }
+  > img {
+    width: 90px;
+    height: 64px;
+  }
 }
 
-.references-text-wrapper{
-    display: flex;
-    justify-content: center;
-    gap: 24px;
+.quotes-icon{
+    
 }
 
-.references-text{
-    width: 40%;
-    border: 1px solid var(--font-bg-green);
-    border-radius: 30px;
-    background-color: var(--bg-green-light);
-    padding: 50px 30px;
-    p{
-        color: var(--font-light);
-        font-family: 'Karla';
-    }
-}
-.references-author{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 16px;
-}
-.line{
-    border-bottom: 1px solid var(--font-light);
-    width: 250px;
+.references-text-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
-.references-button-wrapper{
-    display: flex;
-    align-items: center;
-    padding: 24px 0px;
-    gap: 16px;
+.references-text {
+  width: 40%;
+  border: 1px solid var(--font-bg-green);
+  border-radius: 30px;
+  background-color: var(--bg-green-light);
+  padding: 50px 30px;
+  p {
+    color: var(--font-light);
+    font-family: 'Karla';
+  }
+}
+.references-author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.line {
+  border-bottom: 1px solid var(--font-light);
+  width: 250px;
 }
 
-.button-left{
+.references-button-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 24px 0px;
+  gap: 16px;
+}
+
+.button-left {
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.button-left,
+.button-right {
     img{
-        transform: rotate(180deg);
+        width: 40px;
+        height: 40px;
     }
+  .arrow-hover {
+    display: none;
+  }
+  &:hover {
+    .arrow {
+      display: none;
+    }
+    .arrow-hover {
+      display: block;
+    }
+  }
+}
+
+.button-right {
+  .arrow-hover {
+    display: none;
+  }
 }
 
 // Slider-design
@@ -70,26 +98,19 @@
 
   // Sanfter Verlauf NUR an den äußersten Rändern (10% links und rechts)
   -webkit-mask-image: linear-gradient(
-    to right, 
-    transparent 0%, 
-    black 12%, 
-    black 88%, 
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
     transparent 100%
   );
-  mask-image: linear-gradient(
-    to right, 
-    transparent 0%, 
-    black 12%, 
-    black 88%, 
-    transparent 100%
-  );
+  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
 }
 
 .slider-container {
   position: relative;
   width: 100%;
-  // Feste Höhe für den Container, damit absolute Kinder nicht kollabieren
-  min-height: 280px; 
+  min-height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,34 +118,30 @@
 
 .references-text {
   // WICHTIG gegen Verzerren: Feste/Maximale Breite und Höhe definieren
-  width: 550px; 
+  width: 550px;
   max-width: 80%;
-  min-height: 220px; 
-  box-sizing: border-box; // Stellt sicher, dass Padding IN der Breite liegt
+  min-height: 220px;
   
-  /* --- HIER DEINE URSPRÜNGLICHEN DESIGN-STYLES (Beispiel) --- */
- 
-    border: 1px solid var(--font-bg-green);
-    border-radius: 30px;
-    background-color: var(--bg-green-light);
-    padding: 50px 30px;
-    p{
-        color: var(--font-light);
-        font-family: 'Karla';
-    }
-  /* -------------------------------------------------------- */
+  border: 1px solid var(--font-bg-green);
+  border-radius: 30px;
+  background-color: var(--bg-green-light);
+  padding: 50px 30px;
+  p {
+    color: var(--font-light);
+    font-family: 'Karla';
+  }
 
   position: absolute;
   top: 50%;
   left: 50%;
-  
+
   // Exakte Zentrierung + Versatz durch --offset
   // Offset 0 = genau Mitte | Offset -1 = nach links | Offset 1 = nach rechts
   transform: translate(calc(-50% + (var(--offset) * 105%)), -50%) scale(0.88);
-  
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
-              opacity 0.5s ease, 
-              filter 0.5s ease;
+  transition:
+    transform 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.5s ease,
+    filter 0.5s ease;
 
   // Inaktive Karten im Hintergrund:
   opacity: 0.9;
@@ -134,23 +151,22 @@
   // Aktive Karte im Fokus (Offset 0):
   &.active {
     opacity: 1;
-    filter: blur(0px); // Vollkommen scharf im Zentrum
+    filter: blur(0px); // scharf im Zentrum
     transform: translate(-50%, -50%) scale(1); // Exakte Originalgröße
     pointer-events: auto;
     z-index: 5;
   }
 
   // Elemente, die weiter als 1 Position entfernt sind, unsichtbar im Hintergrund schieben
-  &[style*="--offset: 2"],
-  &[style*="--offset: -2"],
-  &[style*="--offset: 3"],
-  &[style*="--offset: -3"] {
+  &[style*='--offset: 2'],
+  &[style*='--offset: -2'],
+  &[style*='--offset: 3'],
+  &[style*='--offset: -3'] {
     opacity: 0;
     filter: blur(12px);
   }
 }
 
-// Styling für den inneren Aufbau der Karte
 .references-author {
   display: flex;
   align-items: center;
@@ -159,7 +175,7 @@
 
   .line {
     width: 300px;
-    background-color: var(--font-light)
+    background-color: var(--font-light);
   }
 }
 
@@ -182,13 +198,15 @@
   min-height: 20px; // Verhindert Höhenkollaps
 
   .dot {
-    display: block; // Oder inline-block
+    display: block;
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #ffffff; // Standard: Weiß
+    background-color: var(--font-light); 
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition:
+      background-color 0.3s ease,
+      transform 0.2s ease;
 
     &.active {
       background-color: var(--font-bg-green); // Grüner aktiver Punkt
