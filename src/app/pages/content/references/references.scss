@@ -1,4 +1,5 @@
 .references {
+    position: relative;
   width: 100%;
   background-color: var(--bg-dark);
   display: flex;
@@ -9,6 +10,7 @@
     font-family: 'Fira Code';
     color: var(--font-bg-green);
     font-size: 2rem;
+    padding-bottom: 20px;
   }
   > img {
     width: 90px;
@@ -17,7 +19,9 @@
 }
 
 .quotes-icon{
-    
+    position: absolute;
+    top: 130px;
+    left: 450px;
 }
 
 .references-text-wrapper {

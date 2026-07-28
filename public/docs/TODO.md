@@ -1,9 +1,6 @@
 # Desk
 
-- Feedback Component
-    - Pfeile Hover
-    - Quotes platzieren
-    - 'Sprung' effekt fixen?
+
 
 
 
@@ -47,6 +44,10 @@
 - Skill Component
     - Hover-Info bei Growth Mindset einblenden
     - Text einfügen
+
+- Feedback Component
+    - Quotes-icon vor text platzieren
+    - 'Sprung' effekt fixen?
 
 
 
