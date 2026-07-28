@@ -62,83 +62,137 @@
 
 .slider-viewport {
   width: 100%;
-  max-width: 900px;
+  max-width: 1400px; // Platz für aktive Karte + Ansätze der Nachbarn
   margin: 0 auto;
-  overflow: hidden; 
+  overflow: hidden;
   position: relative;
+  padding: 20px 0; // Puffer für eventuelle Schatten/Scalings
 
-  // Blendet nur den äußersten Rand (je 10%) sanft aus
+  // Sanfter Verlauf NUR an den äußersten Rändern (10% links und rechts)
   -webkit-mask-image: linear-gradient(
     to right, 
     transparent 0%, 
-    black 10%, 
-    black 90%, 
+    black 12%, 
+    black 88%, 
     transparent 100%
   );
   mask-image: linear-gradient(
     to right, 
     transparent 0%, 
-    black 10%, 
-    black 90%, 
+    black 12%, 
+    black 88%, 
     transparent 100%
   );
 }
 
-.slider-track {
-  display: flex;
+.slider-container {
+  position: relative;
   width: 100%;
-  // Zentriert das erste Element in der Mitte des Viewports
-  padding-left: 15%; 
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  // Feste Höhe für den Container, damit absolute Kinder nicht kollabieren
+  min-height: 280px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .references-text {
-  // WICHTIG: Reduzierte Breite, damit die Nachbarn Platz haben!
-  flex: 0 0 70%; 
-  box-sizing: border-box;
-  padding: 0 15px;
+  // WICHTIG gegen Verzerren: Feste/Maximale Breite und Höhe definieren
+  width: 550px; 
+  max-width: 80%;
+  min-height: 220px; 
+  box-sizing: border-box; // Stellt sicher, dass Padding IN der Breite liegt
   
-  // Inaktive Elemente: Unscharf & etwas kleiner
-  opacity: 0.3;
-  filter: blur(5px);
-  transform: scale(0.85);
-  transition: filter 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  /* --- HIER DEINE URSPRÜNGLICHEN DESIGN-STYLES (Beispiel) --- */
+ 
+    border: 1px solid var(--font-bg-green);
+    border-radius: 30px;
+    background-color: var(--bg-green-light);
+    padding: 50px 30px;
+    p{
+        color: var(--font-light);
+        font-family: 'Karla';
+    }
+  /* -------------------------------------------------------- */
 
-  // Aktives Element: Komplett scharf & im Fokus
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  // Exakte Zentrierung + Versatz durch --offset
+  // Offset 0 = genau Mitte | Offset -1 = nach links | Offset 1 = nach rechts
+  transform: translate(calc(-50% + (var(--offset) * 105%)), -50%) scale(0.88);
+  
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
+              opacity 0.5s ease, 
+              filter 0.5s ease;
+
+  // Inaktive Karten im Hintergrund:
+  opacity: 0.9;
+  filter: blur(1px); // Weichzeichner für seitliche Elemente
+  pointer-events: none; // Inaktive Karten nicht klickbar
+
+  // Aktive Karte im Fokus (Offset 0):
   &.active {
     opacity: 1;
-    filter: blur(0px);
-    transform: scale(1);
+    filter: blur(0px); // Vollkommen scharf im Zentrum
+    transform: translate(-50%, -50%) scale(1); // Exakte Originalgröße
+    pointer-events: auto;
+    z-index: 5;
+  }
+
+  // Elemente, die weiter als 1 Position entfernt sind, unsichtbar im Hintergrund schieben
+  &[style*="--offset: 2"],
+  &[style*="--offset: -2"],
+  &[style*="--offset: 3"],
+  &[style*="--offset: -3"] {
+    opacity: 0;
+    filter: blur(12px);
   }
 }
 
-// FIX FÜR DIE PUNKTE:
+// Styling für den inneren Aufbau der Karte
+.references-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+
+  .line {
+    width: 300px;
+    background-color: var(--font-light)
+  }
+}
+
 .references-button-wrapper {
+  position: relative;
+  z-index: 10; // Stellt sicher, dass die Punkte über allem liegen
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-top: 24px;
+  margin-top: 32px; // Abstand zum Slider
+  width: 100%;
 }
 
 .dots-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  min-height: 20px; // Verhindert Höhenkollaps
 
   .dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
+    display: block; // Oder inline-block
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: #ffffff; // Standard: Weiß
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 
-    // Aktiver Punkt wird grün
     &.active {
-      background-color: #00ff88; // Dein gewünschter Grünton
-      transform: scale(1.25);
+      background-color: var(--font-bg-green); // Grüner aktiver Punkt
+      transform: scale(1.1);
     }
 
     &:hover {

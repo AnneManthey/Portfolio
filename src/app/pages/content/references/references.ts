@@ -35,4 +35,18 @@ next() {
   goTo(index: number) {
     this.currentIndex = index;
   }
+
+  getOffset(index: number): number {
+    const total = this.refer.length;
+    let offset = index - this.currentIndex;
+
+    // Kürzesten Weg im Kreis berechnen (Endlos-Schleife)
+    if (offset > total / 2) {
+      offset -= total;
+    } else if (offset < -total / 2) {
+      offset += total;
+    }
+
+    return offset;
+  }
 }
