@@ -12,38 +12,38 @@
     <section class="contact-form">
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
 
-            <!-- Name -->
+            <section>
             <div class="form-group">
                 <label for="name">What's your name?</label>
                 <input id="name" type="text" formControlName="name" placeholder="Your name goes here" />
             </div>
-
-            <!-- Email -->
             <div class="form-group">
                 <label for="email">What's your email?</label>
                 <input id="email" type="email" formControlName="email" placeholder="youremail@email.com" />
             </div>
-
-            <!-- Message -->
             <div class="form-group">
                 <label for="message">How can I help you?</label>
                 <textarea id="message" formControlName="message" rows="3"
                     placeholder="Hello Anne, I am interested in..."></textarea>
             </div>
 
-            <!-- Privacy Checkbox -->
             <div class="form-group checkbox-group">
-                <input id="privacy" type="checkbox" formControlName="privacy" />
-                <label for="privacy">
+                <div class="form-checkbox">
+                    <input id="privacy" type="checkbox" formControlName="privacy" />
+                    <span class="checkmark"></span>
+                </div>
+                <label for="privacy" class="form-privacy-text">
                     I've read the <a href="/privacy-policy" target="_blank">privacy policy</a> and agree to the
                     processing of my data as outlined.
                 </label>
             </div>
+            </section>
 
-            <!-- Submit Button -->
+            <section class="contact-form-btn-wrapper">
             <div class="form-actions">
                 <button type="submit" [disabled]="contactForm.invalid">Say Hello</button>
             </div>
+            </section>
 
         </form>
     </section>

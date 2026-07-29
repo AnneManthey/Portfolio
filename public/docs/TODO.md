@@ -2,6 +2,9 @@
 
 
 - Contact Component
+    - Bedingungen / error-texts
+    - testen
+    - privacy verlinken
 
 
 - Project Component
