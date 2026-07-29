@@ -1,7 +1,7 @@
 # Desk
 
 
-
+- Contact Component
 
 
 - Project Component
@@ -13,8 +13,7 @@
 
 # Building Process
 
-- Contact Component
-- Footer Component
+
 - Legal Component
 - Privacy Component
 
@@ -46,8 +45,21 @@
     - Text einfügen
 
 - Feedback Component
-    - Quotes-icon vor text platzieren
+    - Quotes-icon Platzierung
     - 'Sprung' effekt fixen?
+
+
+# Globales Refining
+
+- Custom Scrollbar
+- Mouse: Glow on Cursor
+
+- Responsive Design
+    - max Begrenzung bei 1440px
+        - Banner soll über die gesamte breite laufen
+    - Mobile Design bei 390px
+    - Breakpoints dazwischen setzen
+
 
 
 
