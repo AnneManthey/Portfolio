@@ -4,6 +4,7 @@
     justify-content: center;
     background-color: var(--bg-dark);
     padding: 50px 95px;
+    gap: 40px;
     h2{
          font-family: 'Fira Code';
          color: var(--font-bg-green);
@@ -29,5 +30,18 @@
     span{
         font-weight: bold;
     }
+}
 
+.contact-text{
+    width: 50%;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    label{
+        font-family: 'Fira Code';
+        color: var(--font-bg-green);
+        font-size: 1.5rem;
+    }
 }
