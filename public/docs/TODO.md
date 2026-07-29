@@ -1,11 +1,15 @@
 # Desk
 
+- Legal Component, Privacy Component
+    - Links/buttons mit Routerlink steuern
+    - erecht24 generieren
+    - stylen
 
-- Contact Component
-    - Bedingungen / error-texts
-    - testen
-    - privacy verlinken
 
+
+
+
+# Building Process
 
 - Project Component
     - Dialog basteln
@@ -14,11 +18,11 @@
     - 3 Projektbilder machen/raussuchen
 
 
-# Building Process
+- Contact Component
+    - Bedingungen / error-texts
+    - testen
+    - privacy verlinken
 
-
-- Legal Component
-- Privacy Component
 
 - Language Switch Logik
     - Text übersetzen
@@ -50,6 +54,8 @@
 - Feedback Component
     - Quotes-icon Platzierung
     - 'Sprung' effekt fixen?
+
+
 
 
 # Globales Refining
