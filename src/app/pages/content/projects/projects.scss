@@ -37,19 +37,55 @@
   img {
     display: none;
   }
+}
+
+.hover-img{
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  z-index: 1;
+  display: none;
+  pointer-events: none;
+}
+
+.bg-hover-img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-35%);
+  z-index: 0;
+  display: none;
+  pointer-events: none;
+}
+
+.project-btn-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: visible;
 
   &:hover {
-    background-color: var(--transparent);
+    .project-list-btn {
+      background-color: var(--transparent);
 
-    img {
+      img {
+        display: block;
+      }
+    }
+
+    .hover-img,
+    .bg-hover-img {
       display: block;
     }
   }
 }
 
 .project-list-skills {
-    display: flex;
-    gap: 4px;
+  display: flex;
+  gap: 4px;
   p {
     font-family: 'Karla';
     color: var(--font-light);
@@ -68,6 +104,6 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
-    font-family: 'Karla';
+    font-family: 'Fira Code';
   }
 }

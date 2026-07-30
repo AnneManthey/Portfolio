@@ -4,17 +4,21 @@
     <p>Explore a selection of my work here - Interact with <br> projects to see my skills in action.</p>
     <section class="project-list">
         @for (project of projects; track $index){
-        <button class="project-list-btn">
-            <div class="project-name">
-                <p>{{project.name}}</p>
-                <img src="/assets/icons/pages/Arrow 1.png" alt="">
-            </div>
-            <div class="project-list-skills">
-                @for (skill of project.skills; track $index; let last = $last){
-                <p>{{skill.name}}@if (!last) { <span class="color-green"> |</span> }</p>
-                }
-            </div>
-        </button>
+        <div class="project-btn-wrapper">
+            <button class="project-list-btn">
+                <div class="project-name">
+                    <p>{{project.name}}</p>
+                    <img src="/assets/icons/pages/Arrow 1.png" alt="">
+                </div>
+                <div class="project-list-skills">
+                    @for (skill of project.skills; track $index; let last = $last){
+                    <p>{{skill.name}}@if (!last) { <span class="color-green"> |</span> }</p>
+                    }
+                </div>
+            </button>
+            <img class="hover-img" [src]="project.src" [alt]="project.name">
+            <img class="bg-hover-img" src="/assets/img/bg-project.svg">
+        </div>
         }
 
     </section>
