@@ -3,30 +3,20 @@
     <h2>Featured Projects</h2>
     <p>Explore a selection of my work here - Interact with <br> projects to see my skills in action.</p>
     <section class="project-list">
+        @for (project of projects; track $index){
         <button class="project-list-btn">
             <div class="project-name">
-                <p>Join</p>
+                <p>{{project.name}}</p>
                 <img src="/assets/icons/pages/Arrow 1.png" alt="">
             </div>
-            <p>Angular <span class="color-green">|</span> Typescript <span class="color-green">|</span> HTML <span
-                    class="color-green">|</span> CSS <span class="color-green">|</span> Firebase</p>
-        </button>
-        <button class="project-list-btn">
-            <div class="project-name">
-                <p>El Pollo Loco</p>
-                <img src="/assets/icons/pages/Arrow 1.png" alt="">
+            <div class="project-list-skills">
+                @for (skill of project.skills; track $index; let last = $last){
+                <p>{{skill.name}}@if (!last) { <span class="color-green"> |</span> }</p>
+                }
             </div>
-            <p>HTML <span class="color-green">|</span> CSS <span class="color-green">|</span> HTML <span
-                    class="color-green">|</span> JavaScript</p>
         </button>
-        <button class="project-list-btn">
-            <div class="project-name">
-                <p>Pokedex</p>
-                <img src="/assets/icons/pages/Arrow 1.png" alt="">
-            </div>
-            <p>HTML <span class="color-green">|</span> CSS <span class="color-green">|</span> Javascript <span
-                    class="color-green">|</span> API</p>
-        </button>
+        }
+
     </section>
 
 </section>

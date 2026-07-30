@@ -1,27 +1,25 @@
 # Desk
 
-- Legal Component, Privacy Component
-    - Links/buttons mit Routerlink steuern
-    - erecht24 generieren
-    - stylen
-
-
-
-
+- Project Component
+    - Project Array erstellen
+    - liste rendern
+    - on Hover img einfügen
+    - Dialog
+        - child-component erstellen
+        - von parent rendern
+    
+    
 
 # Building Process
 
-- Project Component
-    - Dialog basteln
-        child-component
-    - Dialog rendern
-    - 3 Projektbilder machen/raussuchen
 
 
 - Contact Component
-    - Bedingungen / error-texts
+    - Copnmtact Form in eigene Component auslagern?
+    - Bedingungen / Validators & Error-Messages
+    - ts mit signal?
     - testen
-    - privacy verlinken
+    
 
 
 - Language Switch Logik
@@ -55,7 +53,9 @@
     - Quotes-icon Platzierung
     - 'Sprung' effekt fixen?
 
-
+- Allgemeines Layout
+    - Padding/Randbegrenzung gleich?
+    - Hintergrund harmonisch?
 
 
 # Globales Refining

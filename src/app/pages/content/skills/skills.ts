@@ -38,6 +38,10 @@ export class Skills {
       name:"Git"
     },
     {
+      src: "/assets/icons/pages/skills/Rest-Api.png",
+      name:"API"
+    },
+    {
       src: "/assets/icons/pages/skills/GrowthMindset.png",
       name:"Growth Mindset"
     },
