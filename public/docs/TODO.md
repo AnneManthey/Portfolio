@@ -1,12 +1,9 @@
 # Desk
 
 - Project Component
-    - Project Array erstellen
-    - liste rendern
-    - on Hover img einfügen
     - Dialog
-        - child-component erstellen
-        - von parent rendern
+        - stylen
+        - array übergeben und von parent rendern
     
     
 

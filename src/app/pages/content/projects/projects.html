@@ -5,7 +5,7 @@
     <section class="project-list">
         @for (project of projects; track $index){
         <div class="project-btn-wrapper">
-            <button type="button" (click)="openNewProjectDialog()" class="project-list-btn">
+            <button type="button" (click)="openNewProjectDialog(project)" class="project-list-btn">
                 <div class="project-name">
                     <p>{{project.name}}</p>
                     <img src="/assets/icons/pages/Arrow 1.png" alt="">
@@ -20,7 +20,7 @@
             <img class="bg-hover-img" src="/assets/img/bg-project.svg">
         </div>
         }
-<app-project-dialog (closed)="onDialogClosed($event)"></app-project-dialog>
+        <app-project-dialog [projectList]="selectedProject" (closed)="onDialogClosed($event)"></app-project-dialog>
     </section>
 
 </section>

@@ -1,4 +1,5 @@
-import { Component, ElementRef, viewChild, output } from '@angular/core';
+import { Component, ElementRef, Input, output, viewChild } from '@angular/core';
+import { ProjectInterface } from '../../../shared/interfaces/project-interface';
 
 @Component({
   selector: 'app-project-dialog',
@@ -7,6 +8,10 @@ import { Component, ElementRef, viewChild, output } from '@angular/core';
   styleUrl: './project-dialog.scss',
 })
 export class ProjectDialog {
+
+  @Input() projectList: ProjectInterface | null = null;
+
+
   // Referenz auf das native HTML <dialog> Element
   private readonly dialogRef = viewChild.required<ElementRef<HTMLDialogElement>>('dialog');
 

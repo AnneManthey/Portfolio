@@ -13,6 +13,7 @@ export class Projects {
   projects: ProjectInterface[] = [
     {
       name: "Pokedex",
+      number: 1,
       skills: [
         {
           src: "/assets/icons/pages/skills/HTML.png",
@@ -36,6 +37,7 @@ export class Projects {
     },
     {
       name: "El Pollo Loco",
+      number: 2,
       skills: [
         {
           src: "/assets/icons/pages/skills/HTML.png",
@@ -55,15 +57,20 @@ export class Projects {
     }
   ]
 
+  selectedProject: ProjectInterface | null = null;
+
   // Zugriff auf den Dialog in der Template-Datei
   private readonly projectDialog = viewChild.required(ProjectDialog);
 
-  openNewProjectDialog(): void {
+  openNewProjectDialog(project: ProjectInterface): void {
+    this.selectedProject = project;
     // Ruft die open()-Methode des Dialogs auf
     this.projectDialog().open();
   }
 
   onDialogClosed(confirmed: boolean): void {
+    this.selectedProject = null;
+
     if (confirmed) {
       console.log('User hat auf Speichern geklickt!');
     } else {
