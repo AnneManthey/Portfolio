@@ -1,6 +1,5 @@
 <dialog #dialog (cancel)="onCancel()">
   <div class="dialog-header">
-    
     <button type="button" class="close-icon" (click)="close(false)">&times;</button>
   </div>
 
@@ -11,24 +10,22 @@
       <h1>{{ currentProject.name }}</h1>
       <h3>What is this Project about?</h3>
       <p>{{ currentProject.about }}</p>
-      <div>
+      <div class="project-info-skills">
         @for (skill of currentProject.skills; track $index) {
-        <div>
           <img [src]="skill.src" [alt]="skill.name">
-          <p>{{ skill.name }}</p>
-        </div>
+          <span>{{ skill.name }}</span>
         }
       </div>
     </section>
-    <section>
+    <section class="project-img">
       <img [src]="currentProject.src" [alt]="currentProject.name">
       <button>Next Project <img src="" alt=""></button>
     </section>
     }
   </div>
 
-  <div class="dialog-actions">
-    <button type="button" class="btn btn-secondary" (click)="close(false)">Github</button>
-    <button type="button" class="btn btn-primary" (click)="close(true)">LiveTest</button>
+  <div class="dialog-btn-wrapper">
+    <a href="">Github</a>
+    <a href="">LiveTest</a>
   </div>
 </dialog>
