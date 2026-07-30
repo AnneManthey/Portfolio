@@ -16,15 +16,15 @@ export class Projects {
       number: 1,
       skills: [
         {
-          src: "/assets/icons/pages/skills/HTML.png",
+          src: "/assets/icons/pages/skills/HTML-g.png",
           name: "HTML"
         },
         {
-          src: "/assets/icons/pages/skills/CSS.png",
+          src: "/assets/icons/pages/skills/CSS-g.png",
           name: "CSS"
         },
         {
-          src: "/assets/icons/pages/skills/JavaScript.png",
+          src: "/assets/icons/pages/skills/JavaScript-g.png",
           name: "JavaScript"
         },
         {
@@ -40,15 +40,15 @@ export class Projects {
       number: 2,
       skills: [
         {
-          src: "/assets/icons/pages/skills/HTML.png",
+          src: "/assets/icons/pages/skills/HTML-g.png",
           name: "HTML"
         },
         {
-          src: "/assets/icons/pages/skills/CSS.png",
+          src: "/assets/icons/pages/skills/CSS-g.png",
           name: "CSS"
         },
         {
-          src: "/assets/icons/pages/skills/JavaScript.png",
+          src: "/assets/icons/pages/skills/JavaScript-g.png",
           name: "JavaScript"
         }
       ],
@@ -76,6 +76,19 @@ export class Projects {
     } else {
       console.log('Dialog wurde abgebrochen.');
     }
+  }
+
+  showNextProject(): void {
+    if (!this.selectedProject || this.projects.length === 0) {
+      return;
+    }
+
+    const currentIndex = this.projects.indexOf(this.selectedProject);
+    const nextIndex = currentIndex === -1
+      ? 0
+      : (currentIndex + 1) % this.projects.length;
+
+    this.selectedProject = this.projects[nextIndex];
   }
 
 }

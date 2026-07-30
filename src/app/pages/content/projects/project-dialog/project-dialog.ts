@@ -17,6 +17,7 @@ export class ProjectDialog {
 
   // Event für die Elternkomponente beim Schließen
   readonly closed = output<boolean>();
+  readonly nextProjectRequested = output<void>();
 
   // Methode zum Öffnen (wird vom Parent aufgerufen)
   open(): void {
@@ -32,6 +33,10 @@ export class ProjectDialog {
   // Wird gefeuert, wenn der User die ESC-Taste drückt
   onCancel(): void {
     this.closed.emit(false);
+  }
+
+  showNextProject(): void {
+    this.nextProjectRequested.emit();
   }
 
 }

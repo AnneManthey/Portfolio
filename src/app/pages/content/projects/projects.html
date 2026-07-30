@@ -20,7 +20,7 @@
             <img class="bg-hover-img" src="/assets/img/bg-project.svg">
         </div>
         }
-        <app-project-dialog [projectList]="selectedProject" (closed)="onDialogClosed($event)"></app-project-dialog>
+        <app-project-dialog [projectList]="selectedProject" (closed)="onDialogClosed($event)" (nextProjectRequested)="showNextProject()"></app-project-dialog>
     </section>
 
 </section>

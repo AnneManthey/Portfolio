@@ -1,23 +1,14 @@
 # Desk
 
-- Project Component
-    - Dialog
-        - stylen
-        - array übergeben und von parent rendern
-    
-    
-
-# Building Process
-
-
-
 - Contact Component
     - Copnmtact Form in eigene Component auslagern?
     - Bedingungen / Validators & Error-Messages
     - ts mit signal?
     - testen
     
+    
 
+# Building Process
 
 - Language Switch Logik
     - Text übersetzen
@@ -49,6 +40,9 @@
 - Feedback Component
     - Quotes-icon Platzierung
     - 'Sprung' effekt fixen?
+
+- Project Component
+    - 
 
 - Allgemeines Layout
     - Padding/Randbegrenzung gleich?

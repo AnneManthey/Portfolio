@@ -6,26 +6,29 @@
   <div class="dialog-body">
     @if (projectList; as currentProject) {
     <section class="project-info">
-      <h2>{{currentProject.number}}</h2>
+      <h2>0{{currentProject.number}}</h2>
       <h1>{{ currentProject.name }}</h1>
       <h3>What is this Project about?</h3>
       <p>{{ currentProject.about }}</p>
       <div class="project-info-skills">
         @for (skill of currentProject.skills; track $index) {
-          <img [src]="skill.src" [alt]="skill.name">
-          <span>{{ skill.name }}</span>
+        <img [src]="skill.src" [alt]="skill.name">
+        <span>{{ skill.name }}</span>
         }
       </div>
     </section>
     <section class="project-img">
       <img [src]="currentProject.src" [alt]="currentProject.name">
-      <button>Next Project <img src="" alt=""></button>
+
     </section>
     }
   </div>
 
   <div class="dialog-btn-wrapper">
-    <a href="">Github</a>
-    <a href="">LiveTest</a>
+      <div class="link-wrapper">
+        <a href=""><div class="btn-arrow">Github <img src="/assets/icons/pages/Arrow Green.png"></div></a>
+      <a href=""><div class="btn-arrow">LiveTest <img src="/assets/icons/pages/Arrow Green.png"></div></a>
+      </div>
+    <button type="button" (click)="showNextProject()"><div class="btn-arrow">Next Project <img src="/assets/icons/pages/Arrow Green.png"></div></button>
   </div>
 </dialog>
