@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, viewChild } from '@angular/core';
 import { ProjectInterface } from '../../shared/interfaces/project-interface';
+import { ProjectDialog } from './project-dialog/project-dialog';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [ProjectDialog],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })
@@ -53,5 +54,21 @@ export class Projects {
       about: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
     }
   ]
+
+  // Zugriff auf den Dialog in der Template-Datei
+  private readonly projectDialog = viewChild.required(ProjectDialog);
+
+  openNewProjectDialog(): void {
+    // Ruft die open()-Methode des Dialogs auf
+    this.projectDialog().open();
+  }
+
+  onDialogClosed(confirmed: boolean): void {
+    if (confirmed) {
+      console.log('User hat auf Speichern geklickt!');
+    } else {
+      console.log('Dialog wurde abgebrochen.');
+    }
+  }
 
 }

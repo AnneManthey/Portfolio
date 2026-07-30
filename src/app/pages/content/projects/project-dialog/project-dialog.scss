@@ -1,0 +1,122 @@
+// Das Dialog-Fenster selbst
+dialog {
+  // Wichtig: margin: auto stellt die gewohnte Zentrierung trotz globalem Reset wieder her!
+  margin: auto;
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 500px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  // Der abgedunkelte Hintergrund
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+  }
+
+  // Sanfte Animation beim Öffnen
+  &[open] {
+    animation: scaleIn 0.2s ease-out;
+  }
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; // Gezielter Abstand nach unten, da global margin: 0 gilt
+
+  h2 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+
+  .close-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.dialog-body {
+  margin-bottom: 1.5rem; // Abstand zu den Action-Buttons
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    label {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #444;
+    }
+
+    input {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+
+      &:focus {
+        outline: 2px solid #0066cc;
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+
+  &-primary {
+    background-color: #0066cc;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #0052a3;
+    }
+  }
+
+  &-secondary {
+    background-color: #f0f0f0;
+    color: #333333;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

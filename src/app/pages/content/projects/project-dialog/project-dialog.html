@@ -1,0 +1,20 @@
+<dialog #dialog (cancel)="onCancel()">
+  <div class="dialog-header">
+    <h2>Neues Projekt erstellen</h2>
+    <button type="button" class="close-icon" (click)="close(false)">&times;</button>
+  </div>
+
+  <div class="dialog-body">
+    <p>Hier kommt dein eigenes HTML hinein (z. B. Formulare, Inputs, Texte):</p>
+    
+    <div class="form-group">
+      <label for="name">Projektname</label>
+      <input type="text" id="name" placeholder="z. B. Website Relaunch" />
+    </div>
+  </div>
+
+  <div class="dialog-actions">
+    <button type="button" class="btn btn-secondary" (click)="close(false)">Abbrechen</button>
+    <button type="button" class="btn btn-primary" (click)="close(true)">Speichern</button>
+  </div>
+</dialog>
