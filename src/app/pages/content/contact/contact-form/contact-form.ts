@@ -18,9 +18,35 @@ export class ContactForm {
     privacy: [false, Validators.requiredTrue]
   });
 
+  // Helper zum Prüfen, ob ein Feld ungültig & vom User berührt wurde
+  isInvalid(controlName: string): boolean {
+    const control = this.contactForm.get(controlName);
+    return !!(control && control.invalid && (control.touched || control.dirty));
+  }
+
   onSubmit(): void {
     if (this.contactForm.valid) {
       console.log(this.contactForm.value);
+      this.contactForm.reset();
+    }else {
+      this.contactForm.markAllAsTouched(); // Falls Submit geklickt wird
     }
   }
+
+  resetField(controlName: string): void {
+  const control = this.contactForm.get(controlName);
+  if (control) {
+    control.markAsUntouched();
+  }
 }
+
+clearIfInvalid(controlName: string): void {
+  const control = this.contactForm.get(controlName);
+  if (control && control.invalid) {
+    control.setValue('');
+  }
+}
+
+}
+
+

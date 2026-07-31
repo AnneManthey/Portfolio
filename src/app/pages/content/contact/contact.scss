@@ -27,6 +27,7 @@
     font-family: 'Karla';
     color: var(--font-light);
     font-size: 1rem;
+    line-height: 120%;
   }
   span {
     font-weight: bold;
@@ -34,9 +35,8 @@
 }
 
 .contact-text {
-width: 560px;
+  width: 560px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-
