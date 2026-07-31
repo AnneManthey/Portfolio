@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, HostListener, signal } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { Header } from './shared/header/header';
 import { Hero } from './pages/content/hero/hero';
@@ -17,8 +17,17 @@ import { Footer } from './shared/footer/footer';
 })
 export class App {
   protected readonly title = signal('Portfolio');
+  protected readonly cursorGlow = signal({ x: 0, y: 0 });
 
   constructor(public readonly router: Router) {}
+
+  @HostListener('document:mousemove', ['$event'])
+  protected onMouseMove(event: MouseEvent): void {
+    this.cursorGlow.set({
+      x: event.clientX - 15,
+      y: event.clientY - 15
+    });
+  }
 
   protected get isHomeRoute(): boolean {
     return this.router.url.split('#')[0] === '/';
