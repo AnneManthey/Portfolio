@@ -88,13 +88,15 @@ input.check-toggle-round-flat:checked ~ .on {
   user-select: none;
 }
 
-// Hintergrund & Rahmen
 input.check-toggle-round-flat + label {
   padding: 2px;
   width: 97px;
   height: 35px;
   border-radius: 60px;
   border: 1px solid var(--font-bg-green);
+  &:hover{
+    border: 1px solid var(--font-light);
+  }
 }
 
 input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
@@ -120,7 +122,6 @@ input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
 }
 
-// Dot-Hover auf links
 .dot-hover {
   text-decoration: none;
   position: relative;
@@ -147,10 +148,8 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 
-
 .logo-wrapper {
   @include mixins.flex-center;
-
   > a {
     @include mixins.flex-center;
     text-decoration: none;

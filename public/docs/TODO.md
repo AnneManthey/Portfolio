@@ -18,7 +18,7 @@ Relative/Absolute in % umschreiben
     - 
 
 - Hero 
-    - icon/icon hover springen verhindern / Hover langsamer
+    - 
 
 - About Component
     - Text einfügen
@@ -28,11 +28,9 @@ Relative/Absolute in % umschreiben
     - Text einfügen
 
 - Feedback Component
-    - Quotes-icon Platzierung
     - 'Sprung' effekt fixen?
 
 - Project Component
-    - Hover/vorschaubilder refinen
     - Join dazu nehmen?
 
 - Contact Component
@@ -49,6 +47,9 @@ Relative/Absolute in % umschreiben
 - Mouse: Glow on Cursor
 
 - Responsive Design
+
+    - Burger Menue in Header
+
     - max Begrenzung bei 1440px
         - Banner soll über die gesamte breite laufen
     - Mobile Design bei 390px
