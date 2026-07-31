@@ -126,6 +126,9 @@ button {
   &:active {
     transform: translateY(2px);
   }
+  &:disabled{
+    transform: translateY(0px);
+  }
 }
 
 .contact-form-btn-wrapper {

@@ -41,7 +41,7 @@
 
     <section class="contact-form-btn-wrapper">
         <div class="form-actions">
-            <button type="submit">Say Hello</button>
+            <button type="submit" [disabled]="contactForm.invalid">Say Hello!</button>
         </div>
         @if (isSubmitted) {
         <div class="success-msg">
@@ -50,5 +50,3 @@
         }
     </section>
 </form>
-
-<!-- [disabled]="contactForm.invalid" -->
