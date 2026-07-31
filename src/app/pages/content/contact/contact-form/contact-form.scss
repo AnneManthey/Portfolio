@@ -36,15 +36,15 @@
     flex-direction: column;
     gap: 5px;
   }
-  .error-message{
+  .error-message {
     font-family: 'Karla';
-    color: var(--font-error); 
+    color: var(--font-error);
   }
 }
 
-.form-checkbox-wrapper{
-    display: flex;
-    align-items: center;
+.form-checkbox-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .form-checkbox {
@@ -110,32 +110,38 @@
   top: 2px;
 }
 
-button{
-    border-radius: 100px;
-    border: 1px solid var(--font-light);
-    padding: 12px 24px;
-    background-color: transparent;
-    font-family: 'Karla';
-    font-size: 1.1rem;
-    color: var(--font-light);
-    cursor: pointer;
+button {
+  border-radius: 100px;
+  border: 1px solid var(--font-light);
+  padding: 12px 24px;
+  background-color: transparent;
+  font-family: 'Karla';
+  font-size: 1.1rem;
+  color: var(--font-light);
+  cursor: pointer;
+  &:hover{
+    color: var(--font-bg-green);
+    border: 1px solid var(--font-bg-green);
+  }
+  &:active {
+    transform: translateY(2px);
+  }
 }
 
-.contact-form-btn-wrapper{
-    display: flex;
-    justify-content: center;
+.contact-form-btn-wrapper {
+  display: flex;
+  justify-content: center;
 }
-
-
 
 /* Roter Placeholder-Text & Rahmen bei Fehleingabe */
 .is-invalid {
-  input, textarea {
-    border-color: var(--font-error); 
-    
+  input,
+  textarea {
+    border-color: var(--font-error);
+
     &::placeholder {
-      color: var(--font-error); 
-      opacity: 1;     
+      color: var(--font-error);
+      opacity: 1;
     }
   }
 }

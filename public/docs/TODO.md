@@ -1,10 +1,9 @@
 # Desk
 
 - Contact Component
-    - Contact Form in eigene Component auslagern?
-    - Bedingungen / Validators & Error-Messages
-    - ts mit signal?
-    - testen
+    - PHP / Email versenden
+    - Button on click stylen?
+    - Message: Wurde versendet, vielen Dank!
     
     
 
