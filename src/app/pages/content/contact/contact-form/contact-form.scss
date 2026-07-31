@@ -1,0 +1,117 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-family: 'Fira Code';
+    color: var(--font-bg-green);
+    font-size: 1.5rem;
+  }
+  input,
+  textarea {
+    font-family: 'Karla';
+    color: var(--font-light);
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--font-bg-green);
+    border-bottom: 1px solid var(--font-bg-green);
+    padding: 32px;
+    gap: 16px;
+    .form-privacy-text {
+      font-family: 'Karla';
+      color: var(--font-light);
+      font-size: 0.9rem;
+      a {
+        text-decoration: none;
+        color: var(--font-bg-green);
+      }
+    }
+  }
+  .checkbox-group {
+    border-bottom: none;
+    flex-direction: row;
+  }
+}
+
+.form-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  margin: 0;
+  z-index: 2;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: 1px solid var(--font-bg-green);
+  border-radius: 3px;
+}
+
+.form-checkbox:hover input ~ .checkmark {
+  background-color: rgba(61, 207, 182, 0.2);
+}
+
+.form-checkbox input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+.checkmark:after {
+  content: '✓';
+  position: absolute;
+  display: none;
+  color: var(--font-bg-green);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.form-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.form-checkbox .checkmark:after {
+  left: 3px;
+  top: 2px;
+}
+
+button{
+    border-radius: 100px;
+    border: 1px solid var(--font-light);
+    padding: 12px 24px;
+    background-color: transparent;
+    font-family: 'Karla';
+    font-size: 1.1rem;
+    color: var(--font-light);
+    cursor: pointer;
+}
+
+.contact-form-btn-wrapper{
+    display: flex;
+    justify-content: center;
+}

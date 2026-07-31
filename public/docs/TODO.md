@@ -1,7 +1,7 @@
 # Desk
 
 - Contact Component
-    - Copnmtact Form in eigene Component auslagern?
+    - Contact Form in eigene Component auslagern?
     - Bedingungen / Validators & Error-Messages
     - ts mit signal?
     - testen
@@ -15,6 +15,8 @@
 - Favicon erstellen
 
 # Refining
+
+Relative/Absolute in % umschreiben
 
 - Header
     - EN/DE Buttons mit Logik verbinden
@@ -42,7 +44,8 @@
     - 'Sprung' effekt fixen?
 
 - Project Component
-    - 
+    - Hover/vorschaubilder refinen
+    - Join dazu nehmen?
 
 - Allgemeines Layout
     - Padding/Randbegrenzung gleich?
