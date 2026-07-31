@@ -119,7 +119,7 @@ button {
   font-size: 1.1rem;
   color: var(--font-light);
   cursor: pointer;
-  &:hover{
+  &:hover {
     color: var(--font-bg-green);
     border: 1px solid var(--font-bg-green);
   }
@@ -130,7 +130,8 @@ button {
 
 .contact-form-btn-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Roter Placeholder-Text & Rahmen bei Fehleingabe */
@@ -144,4 +145,16 @@ button {
       opacity: 1;
     }
   }
+}
+
+.success-msg {
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  color: var(--font-light);
+  font-family: 'Karla';
+  border: 1px solid var(--font-bg-green);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: var(--transparent);
 }

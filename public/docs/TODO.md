@@ -2,7 +2,6 @@
 
 - Contact Component
     - PHP / Email versenden
-    - Button on click stylen?
     - Message: Wurde versendet, vielen Dank!
     
     

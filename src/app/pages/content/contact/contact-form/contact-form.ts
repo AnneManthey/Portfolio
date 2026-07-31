@@ -11,6 +11,8 @@ import { RouterLink } from "@angular/router";
 export class ContactForm {
   private fb = inject(FormBuilder);
 
+  isSubmitted = false;
+
   contactForm = this.fb.group({
     name: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
@@ -26,10 +28,20 @@ export class ContactForm {
 
   onSubmit(): void {
     if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
+      console.log('Form Data:', this.contactForm.value);
+
+      // 1. Erfolgsmeldung anzeigen
+      this.isSubmitted = true;
+
+      // 2. Formular zurücksetzen
       this.contactForm.reset();
-    }else {
-      this.contactForm.markAllAsTouched(); // Falls Submit geklickt wird
+
+      // 3. Optional: Meldung nach 5 Sekunden wieder ausblenden
+      setTimeout(() => {
+        this.isSubmitted = false;
+      }, 5000);
+    } else {
+      this.contactForm.markAllAsTouched();
     }
   }
 
@@ -46,6 +58,8 @@ clearIfInvalid(controlName: string): void {
     control.setValue('');
   }
 }
+
+
 
 }
 

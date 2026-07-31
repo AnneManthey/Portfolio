@@ -63,6 +63,11 @@
         <div class="form-actions">
             <button type="submit">Say Hello</button>
         </div>
+        @if (isSubmitted) {
+      <div class="success-msg">
+        Message received!<br> I will reach out to you soon.
+      </div>
+    }
     </section>
 </form>
 
