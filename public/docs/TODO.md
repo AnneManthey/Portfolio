@@ -1,16 +1,11 @@
 # Desk
 
-- Contact Component
-    - PHP / Email versenden
-    - Message: Wurde versendet, vielen Dank!
-    
-    
+
 
 # Building Process
 
 - Language Switch Logik
     - Text übersetzen
-- Favicon erstellen
 
 # Refining
 
@@ -18,7 +13,6 @@ Relative/Absolute in % umschreiben
 
 - Header
     - EN/DE Buttons mit Logik verbinden
-    - Links einfügen
     - Hover langsamer einblenden
 
 - Footer
@@ -44,6 +38,9 @@ Relative/Absolute in % umschreiben
 - Project Component
     - Hover/vorschaubilder refinen
     - Join dazu nehmen?
+
+- Contact Component
+    - PHP / Email versenden
 
 - Allgemeines Layout
     - Padding/Randbegrenzung gleich?

@@ -1,46 +1,27 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
     <section>
 
-        <!-- Name -->
         <div class="form-group" [class.is-invalid]="isInvalid('name')">
             <label for="name">What's your name?</label>
             <input id="name" type="text" formControlName="name" (focus)="resetField('name')"
                 (blur)="clearIfInvalid('name')"
                 [placeholder]="isInvalid('name') ? 'Oops! It seems your name is missing' : 'Your name goes here'" />
-            <!-- @if (isInvalid('name')) {
-        <span class="error-message">Oops! It seems your name is missing</span>
-      } -->
         </div>
 
-        <!-- Email -->
         <div class="form-group" [class.is-invalid]="isInvalid('email')">
             <label for="email">What's your email?</label>
             <input id="email" type="email" formControlName="email" (focus)="resetField('email')"
                 (blur)="clearIfInvalid('email')"
                 [placeholder]="isInvalid('email') ? 'Hoppla! Your email is required' : 'youremail@email.com'" />
-            <!-- @if (isInvalid('email')) {
-        <span class="error-message">
-          @if (contactForm.get('email')?.hasError('required')) {
-            Hoppla! Your email is required
-          } @else if (contactForm.get('email')?.hasError('email')) {
-            Hoppla! Your email is required
-          }
-        </span>
-      } -->
         </div>
 
-        <!-- Message -->
         <div class="form-group" [class.is-invalid]="isInvalid('message')">
             <label for="message">How can I help you?</label>
             <textarea id="message" formControlName="message" rows="3" (focus)="resetField('message')"
                 (blur)="clearIfInvalid('message')"
                 [placeholder]="isInvalid('message') ? 'What do you need to develop?' : 'Hello Anne, I am interested in...'"></textarea>
-            <!-- @if (isInvalid('message')) {
-        <span class="error-message">What do you need to develop?</span>
-      } -->
         </div>
 
-        <!-- Privacy Checkbox -->
         <div class="form-group checkbox-group" [class.is-invalid]="isInvalid('privacy')">
             <div class="form-checkbox-wrapper">
                 <div class="form-checkbox">
@@ -56,7 +37,6 @@
             <span class="error-message">Please accept the privacy policy.</span>
             }
         </div>
-
     </section>
 
     <section class="contact-form-btn-wrapper">
@@ -64,10 +44,10 @@
             <button type="submit">Say Hello</button>
         </div>
         @if (isSubmitted) {
-      <div class="success-msg">
-        Message received!<br> I will reach out to you soon.
-      </div>
-    }
+        <div class="success-msg">
+            Message received!<br> I will reach out to you soon.
+        </div>
+        }
     </section>
 </form>
 

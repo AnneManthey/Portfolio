@@ -21,6 +21,6 @@ export class App {
   constructor(public readonly router: Router) {}
 
   protected get isHomeRoute(): boolean {
-    return this.router.url === '/';
+    return this.router.url.split('#')[0] === '/';
   }
 }

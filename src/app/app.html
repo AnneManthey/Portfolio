@@ -1,14 +1,24 @@
 <app-header></app-header>
 
 @if (isHomeRoute) {
-<section class="hero-frame">
+<section id="top" class="hero-frame page-section">
   <app-hero></app-hero>
 </section>
-<app-about-me></app-about-me>
-<app-skills></app-skills>
-<app-projects></app-projects>
-<app-references></app-references>
-<app-contact></app-contact>
+<section id="about-me" class="page-section">
+  <app-about-me></app-about-me>
+</section>
+<section id="skills" class="page-section">
+  <app-skills></app-skills>
+</section>
+<section id="projects" class="page-section">
+  <app-projects></app-projects>
+</section>
+<section id="references" class="page-section">
+  <app-references></app-references>
+</section>
+<section id="contact" class="page-section">
+  <app-contact></app-contact>
+</section>
 }
 
 <router-outlet />
