@@ -3,10 +3,10 @@
         <p>Fullstack Developer</p>
         <h1>Anne Manthey</h1>
         <div class="hero-btn">
-            <button class="animated-btn">
+            <button class="animated-btn" [routerLink]="['/']" fragment="projects">
                 <span class="btn-text" data-text="Check my work">Check my work</span>
             </button>
-            <button class="animated-btn">
+            <button class="animated-btn" [routerLink]="['/']" fragment="contact">
                 <span class="btn-text" data-text="Contact me">Contact me</span>
             </button>
         </div>
@@ -22,7 +22,7 @@
         </div>
         <div class="hero-contact-links">
             <div class="hero-contact-links-row">
-                <a class="hero-email" href="">anne.manthey@pm.me</a>
+                <a class="hero-email" href="mailto:anne.manthey@pm.me">anne.manthey@pm.me</a>
                 <a href="">
                     <img class="icon" src="/assets/icons/pages/GitHub.png" alt="">
                     <img class="icon-hover" src="/assets/icons/pages/GitHub Hover.png" alt="">

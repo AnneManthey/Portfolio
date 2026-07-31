@@ -13,16 +13,12 @@ Relative/Absolute in % umschreiben
 
 - Header
     - EN/DE Buttons mit Logik verbinden
-    - Hover langsamer einblenden
 
 - Footer
-    - ext. Links hinterlegen
-    - int. Routerlinks
+    - 
 
 - Hero 
     - icon/icon hover springen verhindern / Hover langsamer
-    - Seitenelemente verlinken
-    - Links einfügen
 
 - About Component
     - Text einfügen
