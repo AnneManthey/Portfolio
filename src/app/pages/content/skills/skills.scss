@@ -18,7 +18,7 @@
 
 .skills-text {
   width: 520px;
-  
+
   h3 {
     color: var(--font-bg-green);
     font-size: 1.5rem;
@@ -27,7 +27,7 @@
 }
 
 .skills-text-box {
-    height: 500px;
+  height: 500px;
   background-color: var(--bg-green-light);
   border: 1px solid var(--font-bg-green);
   border-radius: 30px;
@@ -97,14 +97,14 @@
 }
 
 .skills-icons {
-// border: 1px solid red;
+  // border: 1px solid red;
   width: 500px;
   height: 500px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   padding: 40px;
-  
+
   article {
     width: 100px;
     height: 120px;
@@ -122,8 +122,55 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .skills {
+  .skills {
     padding: 100px max(200px, calc(50% - 720px));
   }
-  
+}
+
+@media screen and (max-width: 1180px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 95px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .skills {
+    padding: 0px 50px;
+  }
+  .skills-text {
+    width: 400px;
+
+    h3 {
+      font-size: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+  .skills-text-box {
+    height: auto;
+    h2 {
+      font-size: 3rem;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skills-text {
+    width: 300px;
+  }
+  .skills-text-box {
+    height: auto;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  .skills-icons {
+    width: 300px;
+    height: auto;
+
+    gap: 16px;
+    padding: 20px;
+  }
 }

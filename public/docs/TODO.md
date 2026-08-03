@@ -9,9 +9,13 @@
 
     - Mobile Design
         - Design auf 390px optimiert
+        - Projects incomplete
+        - References
+        - Contact
+        - Footer
     - Breakpoints:
         - 1440
-        - 1000
+        - 1180
         - 780
         - 450
         
@@ -41,12 +45,14 @@ Relative/Absolute in % umschreiben
 
 - Skill Component
     - Hover-Info bei Growth Mindset einblenden
+    - Mobile-Animation der icons
     
 
 - Feedback Component
     - 'Sprung' effekt fixen?
 
 - Project Component
+    - Hintergrund nicht scrollbar
     - Join dazu nehmen?
     - Project-Links & Github Repo verknüpfen
 

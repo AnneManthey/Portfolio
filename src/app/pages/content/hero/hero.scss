@@ -263,9 +263,29 @@
   }
 }
 
+
+
 @media screen and (min-width: 1440px) {
     .hero {
     padding: 100px max(200px, calc(50% - 720px));
   }
   
+}
+
+@media (max-width: 780px) {
+
+  .hero {
+  --hero-title-size: clamp(2.5rem, 10vw, 8rem);
+  --hero-side-gap: clamp(24px, 4vw, 64px);
+  --hero-title-approx-width: clamp(320px, 60vw, 980px);
+}
+
+  .hero-main {
+  padding: 200px 0px;
+  > p {
+    font-size: 1.5rem;
+  }
+  
+}
+
 }

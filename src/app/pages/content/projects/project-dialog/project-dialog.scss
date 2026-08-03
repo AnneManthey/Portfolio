@@ -114,7 +114,6 @@ dialog {
   justify-content: space-between;
   padding-top: 1.5rem;
   padding-left: 50px;
-  
 }
 
 button {
@@ -130,31 +129,130 @@ button {
 }
 
 a {
-    border-radius: 100px;
-    border: 1px solid var(--font-light);
-    padding: 12px 24px;
-    background-color: transparent;
-    font-family: 'Karla';
-    font-size: 1.1rem;
-    color: var(--font-light);
-    cursor: pointer;
-    text-decoration: none;
-    img{
-      transform: rotate(-45deg);
-      width: 25px;
-    }
-    &:hover {
-      color: var(--font-bg-green);
-      border: 1px solid var(--font-bg-green);
-      
-    }}
+  border-radius: 100px;
+  border: 1px solid var(--font-light);
+  padding: 12px 24px;
+  background-color: transparent;
+  font-family: 'Karla';
+  font-size: 1.1rem;
+  color: var(--font-light);
+  cursor: pointer;
+  text-decoration: none;
+  img {
+    transform: rotate(-45deg);
+    width: 25px;
+  }
+  &:hover {
+    color: var(--font-bg-green);
+    border: 1px solid var(--font-bg-green);
+  }
+}
 
 .btn-arrow {
   display: flex;
   align-items: center;
 }
 
-.link-wrapper{
+.link-wrapper {
   display: flex;
   gap: 1.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+  dialog {
+    padding: 100px max(200px, calc(50% - 720px));
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  dialog {
+    width: 90%;
+    max-width: 760px;
+  }
+  .dialog-body {
+    flex-direction: column-reverse;
+  }
+  .project-info {
+    max-width: 700px;
+    padding: 24px;
+    gap: 8px;
+    h2 {
+      font-size: 3rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  dialog {
+    width: 90%;
+    max-width: 400px;
+  }
+  .project-info {
+    max-width: 700px;
+    padding: 24px;
+    gap: 8px;
+    h2 {
+      font-size: 2.5rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 120%;
+    }
+  }
+  .project-img {
+  > img {
+    width: 350px;
+    padding-top: 1rem;
+  }
+}
+
+.project-info-skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+.dialog-btn-wrapper {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-left: 0px;
+  gap: 1rem;
+}
+
+}
+
+@media screen and (max-width: 450px){
+dialog {
+    max-width: 300px;
+  }
+
+  .project-info {
+    max-width: 300px;
+  }
+  .project-img {
+  > img {
+    width: 350px;
+    padding-top: 1rem;
+  }
+}
+
+  .project-img {
+  > img {
+    width: 250px;
+  }
+}
 }
