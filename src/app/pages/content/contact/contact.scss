@@ -4,7 +4,7 @@
   justify-content: center;
   background-color: var(--bg-dark);
   padding: 50px 95px;
-  gap: 40px;
+  gap: 100px;
   h2 {
     font-family: 'Fira Code';
     color: var(--font-bg-green);
@@ -35,8 +35,14 @@
 }
 
 .contact-text {
-  width: 560px;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+  .contact {
+    padding: 0px max(200px, calc(50% - 720px));
+  }
 }

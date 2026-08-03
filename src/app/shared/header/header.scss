@@ -196,3 +196,13 @@ input.check-toggle-round-flat:checked + label:after {
     }
   }
 }
+
+@media screen and (min-width: 1440px) {
+    nav {
+    padding: 0px max(200px, calc(50% - 720px));
+  }
+  .logo-wrapper {
+    padding: 0px max(200px, calc(50% - 720px));
+  }
+}
+

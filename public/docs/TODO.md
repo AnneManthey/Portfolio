@@ -29,29 +29,29 @@ Relative/Absolute in % umschreiben
     - 
 
 - About Component
-    - Text einfügen
+    
 
 - Skill Component
     - Hover-Info bei Growth Mindset einblenden
-    - Text einfügen
+    
 
 - Feedback Component
     - 'Sprung' effekt fixen?
 
 - Project Component
     - Join dazu nehmen?
+    - Project-Links & Github Repo verknüpfen
 
 - Contact Component
     - PHP / Email versenden
 
 - Allgemeines Layout
     - Padding/Randbegrenzung gleich?
-    - Hintergrund harmonisch?
 
 
 # Globales Refining
 
-
+- Textinhalte erstellen
 
 
 

@@ -107,3 +107,11 @@
     font-family: 'Fira Code';
   }
 }
+
+
+@media screen and (min-width: 1440px) {
+    .projects {
+    padding: 100px max(200px, calc(50% - 720px));
+  }
+  
+}
