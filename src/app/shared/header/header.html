@@ -3,8 +3,9 @@
     <nav class="nav-desktop">
         <section class="btn-nav">
             <div class="switch">
-                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                <label for="language-toggle"></label>
+                <input id="language-toggle-desktop" class="check-toggle check-toggle-round-flat" type="checkbox"
+                    [checked]="isLanguageEnglish()" (change)="setLanguage($event)">
+                <label for="language-toggle-desktop"></label>
                 <span class="on">EN</span>
                 <span class="off">DE</span>
             </div>
@@ -49,8 +50,9 @@
             <!-- Language Switch im Mobile Menü -->
             <div class="mobile-switch">
                 <div class="switch">
-                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                    <label for="language-toggle"></label>
+                    <input id="language-toggle-mobile" class="check-toggle check-toggle-round-flat" type="checkbox"
+                        [checked]="isLanguageEnglish()" (change)="setLanguage($event)">
+                    <label for="language-toggle-mobile"></label>
                     <span class="on">EN</span>
                     <span class="off">DE</span>
                 </div>

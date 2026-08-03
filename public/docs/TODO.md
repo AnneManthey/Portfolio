@@ -2,7 +2,6 @@
 
 - Responsive Design
 
-    - Burger Menu in Header
 
     - Mobile Design bei 390px
     - Breakpoints dazwischen setzen
