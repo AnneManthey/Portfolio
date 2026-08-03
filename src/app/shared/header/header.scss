@@ -256,14 +256,14 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 /* Mobile ausblenden auf Desktop */
-@media (min-width: 769px) {
+@media (min-width: 780px) {
   .nav-mobile {
     display: none;
   }
 }
 
 /* Desktop ausblenden auf Mobile */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .nav-desktop {
     display: none;
   }

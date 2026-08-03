@@ -21,7 +21,7 @@
 .quotes-icon{
     position: absolute;
     z-index: 11;
-    top: 20%;
+    top: 25%;
     left: 30%;
 }
 
@@ -101,7 +101,7 @@
   position: relative;
   padding: 20px 0; // Puffer für eventuelle Schatten/Scalings
 
-  // Sanfter Verlauf NUR an den äußersten Rändern (10% links und rechts)
+  // Verlauf an den äußersten Rändern (10% links und rechts)
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -122,7 +122,7 @@
 }
 
 .references-text {
-  // WICHTIG gegen Verzerren: Feste/Maximale Breite und Höhe definieren
+  // Kein Verzerren: Maximale Breite und Höhe definieren
   width: 550px;
   max-width: 80%;
   min-height: 220px;

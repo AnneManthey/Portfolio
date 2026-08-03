@@ -1,10 +1,21 @@
 # Desk
+- header weicher übergang
+- growth mindset hardcoden für hover?
+
+
 
 - Responsive Design
 
 
-    - Mobile Design bei 390px
-    - Breakpoints dazwischen setzen
+    - Mobile Design
+        - Design auf 390px optimiert
+    - Breakpoints:
+        - 1440
+        - 1000
+        - 780
+        - 450
+        
+
 
 
 # Building Process
