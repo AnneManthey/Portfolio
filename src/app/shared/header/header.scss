@@ -15,7 +15,7 @@ header {
 
 }
 
-nav {
+.nav-desktop {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -26,6 +26,7 @@ nav {
     color: var(--font-light);
   }
 }
+
 
 .btn-nav {
   display: flex;
@@ -197,6 +198,54 @@ input.check-toggle-round-flat:checked + label:after {
   }
 }
 
+.nav-mobile-wrapper {
+  display: none;
+  position: relative;
+}
+
+.nav-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-mobile{
+  width: 50px;
+  height: 50px;
+}
+
+.menu-nav{
+  width: 230px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  background-image: url('/assets/img/bg_image.svg');
+	background-color: var(--bg-dark);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  border: 1px solid var(--font-bg-green);
+  border-radius: 30px;
+  a{
+    text-decoration: none;
+    font-family: 'Fira Code';
+    color: var(--font-light);
+    letter-spacing: -3%;
+    line-height: 100%;
+    font-size: 1.1rem;
+
+  }
+ 
+}
+
 @media screen and (min-width: 1440px) {
     nav {
     padding: 0px max(200px, calc(50% - 720px));
@@ -205,4 +254,34 @@ input.check-toggle-round-flat:checked + label:after {
     padding: 0px max(200px, calc(50% - 720px));
   }
 }
+
+/* Mobile ausblenden auf Desktop */
+@media (min-width: 769px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+/* Desktop ausblenden auf Mobile */
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+  .logo-wrapper {
+    display: none;
+  }
+  .nav-mobile-wrapper {
+    display: block;
+    width: 100%;
+    flex: 1 1 auto;
+  }
+  .nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+}
+
+
 

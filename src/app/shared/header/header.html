@@ -1,5 +1,6 @@
 <header>
-    <nav>
+
+    <nav class="nav-desktop">
         <section class="btn-nav">
             <div class="switch">
                 <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
@@ -11,8 +12,6 @@
         <a class="dot-hover" [routerLink]="['/']" fragment="about-me">About me</a>
         <a class="dot-hover" [routerLink]="['/']" fragment="skills">Skills</a>
         <a class="dot-hover" [routerLink]="['/']" fragment="projects">Projects</a>
-        <!-- <a class="dot-hover" [routerLink]="['/']" fragment="references">References</a>
-        <a class="dot-hover" [routerLink]="['/']" fragment="contact">Contact</a> -->
     </nav>
     <section class="logo-wrapper">
         <a [routerLink]="['/']" fragment="top" aria-label="Go to top of page">
@@ -21,5 +20,42 @@
             <img class="name" src="/assets/icons/shared/name.png" alt="Name">
             <img class="name-hover" src="/assets/icons/shared/name-outline.png" alt="Name Outline">
         </a>
+    </section>
+
+
+    <section class="nav-mobile-wrapper">
+        <!-- Logo -->
+        <section class="nav-mobile">
+            <section class="logo-mobile">
+                <img src="/assets/icons/shared/logo.svg" alt="">
+            </section>
+
+            <!-- Burger Button -->
+            <button class="burger-button button-img" [class.active]="isMenuOpen()" (click)="toggleMenu()"
+                [attr.aria-expanded]="isMenuOpen()" aria-label="Menü öffnen/schließen">
+                <img src="/assets/icons/shared/menu.png" alt="Burger Menu">
+            </button>
+
+        </section>
+        <!-- Overlay / Dropdown Menü -->
+        @if (isMenuOpen() && isMenuOpenedByButton()) {
+        <nav class="menu-nav">
+
+            <a [routerLink]="['/']" fragment="about-me" (click)="closeMenu()">About me</a>
+            <a [routerLink]="['/']" fragment="skills" (click)="closeMenu()">Skills</a>
+            <a [routerLink]="['/']" fragment="projects" (click)="closeMenu()">Projects</a>
+
+
+            <!-- Language Switch im Mobile Menü -->
+            <div class="mobile-switch">
+                <div class="switch">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <label for="language-toggle"></label>
+                    <span class="on">EN</span>
+                    <span class="off">DE</span>
+                </div>
+            </div>
+        </nav>
+        }
     </section>
 </header>

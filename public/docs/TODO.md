@@ -2,10 +2,8 @@
 
 - Responsive Design
 
-    - Burger Menue in Header
+    - Burger Menu in Header
 
-    - max Begrenzung bei 1440px
-        - Banner soll über die gesamte breite laufen
     - Mobile Design bei 390px
     - Breakpoints dazwischen setzen
 
