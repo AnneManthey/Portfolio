@@ -1,5 +1,5 @@
 .references {
-    position: relative;
+  position: relative;
   width: 100%;
   background-color: var(--bg-dark);
   display: flex;
@@ -18,11 +18,11 @@
   }
 }
 
-.quotes-icon{
-    position: absolute;
-    z-index: 11;
-    top: 25%;
-    left: 30%;
+.quotes-icon {
+  position: absolute;
+  z-index: 11;
+  top: 20%;
+  left: 30%;
 }
 
 .references-text-wrapper {
@@ -31,17 +31,17 @@
   gap: 24px;
 }
 
-.references-text {
-  width: 40%;
-  border: 1px solid var(--font-bg-green);
-  border-radius: 30px;
-  background-color: var(--bg-green-light);
-  padding: 50px 30px;
-  p {
-    color: var(--font-light);
-    font-family: 'Karla';
-  }
-}
+// .references-text {
+//   width: 40%;
+//   border: 1px solid var(--font-bg-green);
+//   border-radius: 30px;
+//   background-color: var(--bg-green-light);
+//   padding: 50px 30px;
+//   p {
+//     color: var(--font-light);
+//     font-family: 'Karla';
+//   }
+// }
 .references-author {
   display: flex;
   align-items: center;
@@ -68,10 +68,10 @@
 
 .button-left,
 .button-right {
-    img{
-        width: 40px;
-        height: 40px;
-    }
+  img {
+    width: 40px;
+    height: 40px;
+  }
   .arrow-hover {
     display: none;
   }
@@ -97,7 +97,8 @@
   width: 100%;
   max-width: 1400px; // Platz für aktive Karte + Ansätze der Nachbarn
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   position: relative;
   padding: 20px 0; // Puffer für eventuelle Schatten/Scalings
 
@@ -126,7 +127,7 @@
   width: 550px;
   max-width: 80%;
   min-height: 220px;
-  
+
   border: 1px solid var(--font-bg-green);
   border-radius: 30px;
   background-color: var(--bg-green-light);
@@ -207,7 +208,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: var(--font-light); 
+    background-color: var(--font-light);
     cursor: pointer;
     transition:
       background-color 0.3s ease,
@@ -225,7 +226,63 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .references {
+  .references {
     padding: 100px max(200px, calc(50% - 720px));
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .quotes-icon {
+    top: 20%;
+    left: 25%;
+  }
+
+  .slider-container {
+    min-height: 340px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .references {
+    padding: 50px 30px;
+    h3 {
+      text-align: center;
+      font-size: 2rem;
+      padding-bottom: 40px;
+    }
+    > img {
+      width: 70px;
+      height: auto;
+    }
+  }
+  .quotes-icon {
+    top: 28%;
+    left: 25%;
+  }
+  .slider-viewport {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .slider-container {
+    min-height: 420px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .references {
+    padding: 50px 30px;
+    h3 {
+      text-align: center;
+      font-size: 2rem;
+      padding-bottom: 20px;
+    }
+  }
+  .quotes-icon {
+    top: 25%;
+    left: 25%;
+  }
+  .slider-container {
+    min-height: 500px;
   }
 }

@@ -116,7 +116,7 @@
   width: max-content;
   white-space: nowrap;
   will-change: transform;
-  animation: hero-banner-loop 18s linear infinite;
+  animation: hero-banner-loop 25s linear infinite;
 }
 
 .hero-banner-item {
@@ -187,7 +187,7 @@
   transform-origin: center;
 }
 
-.line1{
+.line1 {
   border-left: 1px solid var(--font-bg-green);
   height: calc(var(--hero-title-size) * 1.3);
 }
@@ -205,11 +205,14 @@
   img {
     display: block;
   }
-  .hero-link{
+  .hero-link {
     display: block;
     width: 20px;
     height: 20px;
     transform: translateX(-5px);
+  }
+  .mail-mobile {
+    display: none;
   }
   a {
     pointer-events: auto;
@@ -247,7 +250,6 @@
   width: 100%;
 }
 
-
 .line2 {
   border-left: 1px solid var(--font-light);
   height: calc(var(--hero-title-size) * 1.7);
@@ -263,29 +265,72 @@
   }
 }
 
-
-
 @media screen and (min-width: 1440px) {
-    .hero {
+  .hero {
     padding: 100px max(200px, calc(50% - 720px));
   }
-  
 }
 
-@media (max-width: 780px) {
-
+@media screen and (max-width: 780px) {
   .hero {
-  --hero-title-size: clamp(2.5rem, 10vw, 8rem);
-  --hero-side-gap: clamp(24px, 4vw, 64px);
-  --hero-title-approx-width: clamp(320px, 60vw, 980px);
-}
+    --hero-title-size: clamp(2.5rem, 10vw, 8rem);
+    --hero-side-gap: clamp(24px, 4vw, 64px);
+    --hero-title-approx-width: clamp(320px, 60vw, 980px);
+  }
 
   .hero-main {
-  padding: 200px 0px;
-  > p {
-    font-size: 1.5rem;
+    padding: 200px 30px;
+    > p {
+      font-size: 1.5rem;
+    }
   }
-  
+
+  .hero-contact-links {
+    .mail-mobile {
+      display: block;
+    }
+  }
+  .hero-email {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 580px) {
+  .line1 {
+    height: calc(var(--hero-title-size) * 2.4);
+  }
+  .line2 {
+    height: calc(var(--hero-title-size) * 2.8);
+  }
+
+  .hero-contact-deco {
+    left: 30px;
+    right: auto;
+  }
+
+  .hero-contact-links {
+    right: 30px;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-main {
+    text-align: center;
+  }
+  h1 {
+    padding-top: 1rem;
+  }
+  .hero-btn {
+    display: flex;
+    gap: 1rem;
+  }
+  .animated-btn {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  .animated-btn .btn-text {
+    animation: smooth-loop 6s linear infinite;
+  }
 }

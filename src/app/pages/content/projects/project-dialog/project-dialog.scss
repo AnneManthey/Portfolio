@@ -237,11 +237,11 @@ a {
 
 @media screen and (max-width: 450px){
 dialog {
-    max-width: 300px;
+    max-width: calc(100% - 30px)
   }
 
   .project-info {
-    max-width: 300px;
+    max-width: calc(100% - 30px)
   }
   .project-img {
   > img {

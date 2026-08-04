@@ -264,6 +264,9 @@ input.check-toggle-round-flat:checked + label:after {
 
 /* Desktop ausblenden auf Mobile */
 @media (max-width: 780px) {
+  header{
+    padding: 0px 30px;
+  }
   .nav-desktop {
     display: none;
   }

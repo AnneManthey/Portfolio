@@ -114,7 +114,14 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 860px) {
+  .projects {
+    padding: 50px 95px;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
   .project-list-btn {
     display: flex;
     flex-direction: column;
@@ -126,17 +133,20 @@
   .project-btn-wrapper {
     &:hover {
       .project-list-btn {
-        background-color: var(--transparent);
-
         img {
           display: none;
         }
       }
-
       .hover-img,
       .bg-hover-img {
         display: none;
       }
     }
+  }
+}
+
+@media screen and (max-width: 450px){
+.projects {
+    padding: 50px 30px;
   }
 }

@@ -5,8 +5,6 @@
 
 
 - Responsive Design
-
-
     - Mobile Design
         - Design auf 390px optimiert
         - Projects incomplete
@@ -33,6 +31,7 @@ Relative/Absolute in % umschreiben
 
 - Header
     - EN/DE Buttons mit Logik verbinden
+    - Mobile: burger menu hover
 
 - Footer
     - 
@@ -45,6 +44,7 @@ Relative/Absolute in % umschreiben
 
 - Skill Component
     - Hover-Info bei Growth Mindset einblenden
+        - hard coden?
     - Mobile-Animation der icons
     
 

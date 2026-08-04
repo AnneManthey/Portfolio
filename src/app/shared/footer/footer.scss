@@ -22,6 +22,17 @@ footer{
     }
 }
 
+.copyright-mobile{
+  display: none;
+  text-align: center;
+  background-color: var(--bg-dark);
+  font-family: 'Fira Code';
+  color: var(--font-bg-green);
+  font-size: 1.1rem;
+  line-height: 120%;
+  padding: 20px 0px;
+}
+
 .dot-hover {
   text-decoration: none;
   position: relative;
@@ -108,4 +119,22 @@ footer{
   .footer-links {
     padding: 0px max(200px, calc(50% - 720px));
   }
+}
+
+@media screen and (max-width: 780px){
+  footer{
+    padding: 80px 30px;
+}
+
+}
+@media screen and (max-width: 600px){
+ .copyright-mobile{
+  display: block;
+ }
+ .copyright-desktop{
+  display: none;
+ }
+ .footer-links{
+  gap: 0.5rem;
+}
 }
