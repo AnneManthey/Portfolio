@@ -5,17 +5,7 @@
 
 
 - Responsive Design
-    - Mobile Design
-        - Design auf 390px optimiert
-        - Projects incomplete
-        - References
-        - Contact
-        - Footer
-    - Breakpoints:
-        - 1440
-        - 1180
-        - 780
-        - 450
+    
         
 
 
@@ -43,9 +33,7 @@ Relative/Absolute in % umschreiben
     
 
 - Skill Component
-    - Hover-Info bei Growth Mindset einblenden
-        - hard coden?
-    - Mobile-Animation der icons
+ 
     
 
 - Feedback Component

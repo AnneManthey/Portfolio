@@ -42,9 +42,27 @@ export class Skills {
       name:"API"
     },
     {
-      src: "/assets/icons/pages/skills/GrowthMindset.png",
-      name:"Growth Mindset"
+      src: "/assets/icons/pages/skills/Python.png",
+      name:"Python"
     },
+    {
+      src: "/assets/icons/pages/skills/Django.png",
+      name:"Django"
+    },
+    {
+      src: "/assets/icons/pages/skills/Docker.png",
+      name:"Docker"
+    },
+    {
+      src: "/assets/icons/pages/skills/SQL.png",
+      name:"SQL"
+    },
+    {
+      src: "/assets/icons/pages/skills/Cloud.png",
+      name:"Cloud"
+    },
+    
+    
 
 
   ]

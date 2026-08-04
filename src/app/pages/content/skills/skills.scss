@@ -96,10 +96,19 @@
   }
 }
 
+@keyframes icon-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+}
+
 .skills-icons {
-  // border: 1px solid red;
-  width: 500px;
-  height: 500px;
+  width: 60%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -121,6 +130,21 @@
   }
 }
 
+.mindset-box{
+  position: relative;
+  .mindset-hover{
+    display: none;
+    position: absolute;
+    top: -110%;
+    left: -5%;
+  }
+  &:hover{
+    .mindset-hover{
+      display: block;
+    }
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .skills {
     padding: 100px max(200px, calc(50% - 720px));
@@ -133,11 +157,14 @@
     align-items: center;
     padding: 100px 95px;
   }
+  .skills-icons{
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 780px) {
   .skills {
-    padding: 0px 50px;
+    padding: 0px 30px;
   }
   .skills-text {
     width: 400px;
@@ -172,5 +199,14 @@
 
     gap: 16px;
     padding: 20px;
+  }
+
+  .skills-icons-box > img:first-child {
+    animation: icon-pulse 4s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  .skills-icons-box:nth-child(2n) > img:first-child {
+    animation-delay: 0.2s;
   }
 }
