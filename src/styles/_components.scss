@@ -1,0 +1,168 @@
+
+// Style for buttons with img
+.button-img {
+  padding: 0;
+  border: none;
+  background: none;
+  line-height: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+// Animated button (text flow)
+
+.animated-btn {
+  color: var(--font-light);
+  font-family: 'Karla';
+  font-size: 1.1rem;
+  border-radius: 100px;
+  border: 1px solid var(--font-light);
+  background: transparent;
+  padding: 12px 24px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    color 0.5s ease,
+    border-color 0.5s ease;
+}
+
+.btn-text {
+  --text-gap: 8rem;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.btn-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: calc(100% + var(--text-gap));
+}
+
+.animated-btn:hover {
+  border: 1px solid var(--font-bg-green);
+  color: var(--font-bg-green);
+}
+
+.animated-btn:hover .btn-text {
+  animation: smooth-loop 3s linear infinite;
+}
+
+@keyframes smooth-loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - var(--text-gap)));
+  }
+}
+
+// Language switch button
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.switch > span {
+  position: absolute;
+  top: 8px;
+  pointer-events: none;
+  font-family: 'Fira Code';
+  font-size: 1rem;
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: var(--font-light);
+  font-weight: bold;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: var(--font-bg-green);
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  color: var(--font-light);
+  font-weight: bold;
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: var(--font-bg-green);
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 97px;
+  height: 35px;
+  border-radius: 60px;
+  border: 1px solid var(--font-bg-green);
+  &:hover {
+    border: 1px solid var(--font-light);
+  }
+}
+
+input.check-toggle-round-flat + label:before,
+input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: '';
+}
+
+input.check-toggle-round-flat + label:after {
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 52px;
+  background-color: var(--font-bg-green);
+  border-radius: 52px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+  // border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--bg-green-light);
+  border-radius: 5px;
+  border: 1px solid var(--font-bg-green);
+}

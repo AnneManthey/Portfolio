@@ -43,57 +43,6 @@
     padding-bottom: 1.5rem;
   }
 }
-// Button aus Hero
-.animated-btn {
-  color: var(--font-light);
-  font-family: 'Karla';
-  font-size: 1.1rem;
-  border-radius: 100px;
-  border: 1px solid var(--font-light);
-  background: transparent;
-  padding: 12px 24px;
-
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition:
-    color 0.5s ease,
-    border-color 0.5s ease;
-}
-
-.btn-text {
-  --text-gap: 8rem;
-
-  position: relative;
-  display: inline-block;
-  white-space: nowrap;
-  will-change: transform;
-}
-
-.btn-text::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: calc(100% + var(--text-gap));
-}
-
-.animated-btn:hover .btn-text {
-  animation: smooth-loop 3s linear infinite;
-}
-
-.animated-btn:hover {
-  border: 1px solid var(--font-bg-green);
-  color: var(--font-bg-green);
-}
-
-@keyframes smooth-loop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-100% - var(--text-gap)));
-  }
-}
 
 @keyframes icon-pulse {
   0%,

@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, ElementRef, Input, OnDestroy, inject, output, viewChild } from '@angular/core';
-import { ProjectInterface } from '../../../shared/interfaces/project-interface';
+import { ProjectInterface } from '../../../../shared/interfaces/project-interface';
 
 @Component({
   selector: 'app-project-dialog',

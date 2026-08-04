@@ -1,5 +1,5 @@
 import { Component, viewChild } from '@angular/core';
-import { ProjectInterface } from '../../shared/interfaces/project-interface';
+import { ProjectInterface } from '../../../shared/interfaces/project-interface';
 import { ProjectDialog } from './project-dialog/project-dialog';
 
 @Component({

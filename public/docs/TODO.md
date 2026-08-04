@@ -1,6 +1,20 @@
 # Desk
 
+- Language Switch Logik
+  - Mit Language-Switch Buttons verknüpfen
+  - Text übersetzen
+
 - Responsive
+
+- Refactoring
+    - header
+    - footer
+    - hero
+    - about
+    - skills
+    - projects
+    - references
+    - contact
 
 # Server Upload
 
@@ -9,11 +23,6 @@
 - Contact mit PHP Emailfähig machen
   - Projektlinks verknüpfen
 
-# Building Process
-
-- Language Switch Logik
-  - Mit Language-Switch Buttons verknüpfen
-  - Text übersetzen
 
 # Waiting
 

@@ -1,6 +1,7 @@
-@use './styles/fonts';
-@use './styles/variables';
-@use './styles/mixins.scss';
+@use './styles/_fonts';
+@use './styles/_variables';
+@use './styles/_mixins.scss';
+@use './styles/_components.scss';
 
 * {
     margin: 0px;
@@ -20,26 +21,6 @@ body {
     display: none;
 }
 
-.button-img{
-    padding: 0;
-    border: none;
-    background: none;
-    line-height: 0;
-    cursor: pointer;
-    overflow: hidden;
-}
 
-body::-webkit-scrollbar {
-    width: 10px;
-}
 
-body::-webkit-scrollbar-track {
-    background: var(--bg-dark);
-    // border-radius: 2px;
-}
 
-body::-webkit-scrollbar-thumb {
-    background: var(--bg-green-light);
-    border-radius: 5px;
-    border: 1px solid var(--font-bg-green);
-}
