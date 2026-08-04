@@ -148,6 +148,20 @@ a {
   }
 }
 
+dialog::-webkit-scrollbar {
+    width: 10px;
+}
+
+dialog::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+dialog::-webkit-scrollbar-thumb {
+    background: var(--bg-green-light);
+    border-radius: 5px;
+    border: 1px solid var(--font-bg-green);
+}
+
 .btn-arrow {
   display: flex;
   align-items: center;
