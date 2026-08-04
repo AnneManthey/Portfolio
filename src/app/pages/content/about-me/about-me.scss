@@ -141,6 +141,9 @@
 }
 
 @media screen and (max-width: 780px) {
+  .about {
+    padding: 100px 30px;
+  }
   .about-text {
     padding-top: 110px;
     padding-left: 0px;
@@ -160,6 +163,10 @@
 }
 
 @media screen and (max-width: 450px){
+
+  .about {
+    padding: 100px 16px;
+  }
 
   .portrait {
   width: 300px;

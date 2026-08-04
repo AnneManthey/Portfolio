@@ -1,28 +1,28 @@
 @use '../../../styles/mixins' as mixins;
 
-footer{
-    width: 100%;
-    height: 125px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 95px;
-    background-color: var(--bg-dark);
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 95px;
+  background-color: var(--bg-dark);
+  color: var(--font-light);
+  font-family: 'Fira Code';
+  a {
+    text-decoration: none;
     color: var(--font-light);
-    font-family: 'Fira Code';
-    a{
-        text-decoration: none;
-        color: var(--font-light);
-    }
-    a:hover{
-      color: var(--font-bg-green);
-    }
-    >p{
-      color: var(--font-bg-green);
-    }
+  }
+  a:hover {
+    color: var(--font-bg-green);
+  }
+  > p {
+    color: var(--font-bg-green);
+  }
 }
 
-.copyright-mobile{
+.copyright-mobile {
   display: none;
   text-align: center;
   background-color: var(--bg-dark);
@@ -40,80 +40,78 @@ footer{
 }
 
 .dot-hover::after {
-  content: "";
+  content: '';
   position: absolute;
   left: -10%;
   bottom: 8px;
   transform: translateX(-50%);
 
-  background-image: url('/assets/icons/shared/hover-dot.png'); 
+  background-image: url('/assets/icons/shared/hover-dot.png');
   background-size: contain;
   background-repeat: no-repeat;
-  width: 8px;              
-  height: 8px;             
+  width: 8px;
+  height: 8px;
   opacity: 0;
-  transition: opacity 0.2s ease; 
+  transition: opacity 0.2s ease;
 }
 
 .dot-hover:hover::after {
   opacity: 1;
 }
 
-.footer-logo{
+.footer-logo {
   height: 125px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-
 .footer-logo-wrapper {
   @include mixins.flex-center;
-  width: 130px ;
+  width: 130px;
   height: 50px;
-  
-  >.initials {
+
+  > .initials {
     width: 50px;
     height: 50px;
   }
-  >.initials-hover{
+  > .initials-hover {
     width: 50px;
     height: 45px;
     display: none;
   }
-  >.name{
+  > .name {
     width: 90px;
     height: 45px;
   }
-  >.name-hover{
+  > .name-hover {
     width: 90px;
     height: 60px;
     display: none;
   }
-  &:hover{
-    .initials{
+  &:hover {
+    .initials {
       display: none;
     }
-    .initials-hover{
+    .initials-hover {
       display: block;
     }
-    .name{
+    .name {
       display: none;
     }
-    .name-hover{
+    .name-hover {
       display: block;
     }
   }
 }
 
-.footer-links{
+.footer-links {
   display: flex;
   flex-direction: column;
 }
 
-
 @media screen and (min-width: 1440px) {
-    .footer-logo {
+  .footer-logo {
     padding: 0px max(200px, calc(50% - 720px));
   }
   .footer-links {
@@ -121,20 +119,25 @@ footer{
   }
 }
 
-@media screen and (max-width: 780px){
-  footer{
-    padding: 80px 30px;
+@media screen and (max-width: 780px) {
+  footer {
+    padding: 16px 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .copyright-mobile {
+    display: block;
+  }
+  .copyright-desktop {
+    display: none;
+  }
+  .footer-links {
+    gap: 0.5rem;
+  }
 }
 
-}
-@media screen and (max-width: 600px){
- .copyright-mobile{
-  display: block;
- }
- .copyright-desktop{
-  display: none;
- }
- .footer-links{
-  gap: 0.5rem;
-}
+@media screen and (max-width: 450px) {
+  footer {
+    padding: 16px 16px;
+  }
 }

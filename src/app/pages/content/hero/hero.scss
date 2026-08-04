@@ -13,7 +13,7 @@
 .hero-main {
   @include mixins.flex-center;
   flex-direction: column;
-  padding: 200px 0px;
+  padding: 200px 95px;
   > p {
     color: var(--font-light);
     font-family: 'Fira Code';
@@ -316,6 +316,7 @@
 
 @media screen and (max-width: 450px) {
   .hero-main {
+    padding: 200px 16px;
     text-align: center;
   }
   h1 {
@@ -332,5 +333,7 @@
 
   .animated-btn .btn-text {
     animation: smooth-loop 6s linear infinite;
+    color: var(--font-bg-green);
+    
   }
 }
