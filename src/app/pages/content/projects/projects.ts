@@ -12,8 +12,36 @@ export class Projects {
 
   projects: ProjectInterface[] = [
     {
-      name: "Pokedex",
+      name: "Join",
       number: 1,
+      skills: [
+        {
+          src: "/assets/icons/pages/skills/HTML-g.png",
+          name: "HTML"
+        },
+        {
+          src: "/assets/icons/pages/skills/CSS-g.png",
+          name: "CSS"
+        },
+        {
+          src: "/assets/icons/pages/skills/Angular-g.png",
+          name: "Angular"
+        },
+        {
+          src: "/assets/icons/pages/skills/TypeScript-g.png",
+          name: "TypeScript"
+        },
+        {
+          src: "/assets/icons/pages/skills/Supabase.png",
+          name: "Supabase"
+        }
+      ],
+      src: "assets/img/join.png",
+      about: " Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. "
+    },
+    {
+      name: "Pokedex",
+      number: 2,
       skills: [
         {
           src: "/assets/icons/pages/skills/HTML-g.png",
@@ -37,7 +65,7 @@ export class Projects {
     },
     {
       name: "El Pollo Loco",
-      number: 2,
+      number: 3,
       skills: [
         {
           src: "/assets/icons/pages/skills/HTML-g.png",

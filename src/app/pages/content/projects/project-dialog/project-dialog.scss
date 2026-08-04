@@ -166,18 +166,18 @@ a {
 
 @media screen and (max-width: 1180px) {
   dialog {
-    width: 90%;
-    max-width: 760px;
+    width: 80%;
   }
   .dialog-body {
     flex-direction: column-reverse;
   }
   .project-info {
-    max-width: 700px;
+    width: calc(100% - 100px);
     padding: 24px;
     gap: 8px;
     h2 {
       font-size: 3rem;
+      padding-top: 1rem;
     }
     h1 {
       font-size: 2rem;
@@ -188,11 +188,10 @@ a {
 @media screen and (max-width: 780px) {
   dialog {
     width: 90%;
-    max-width: 400px;
   }
+
   .project-info {
-    max-width: 700px;
-    padding: 24px;
+    padding: 0px;
     gap: 8px;
     h2 {
       font-size: 2.5rem;
@@ -211,48 +210,46 @@ a {
     }
   }
   .project-img {
-  > img {
-    width: 350px;
-    padding-top: 1rem;
+    > img {
+      width: 350px;
+      padding-top: 1rem;
+    }
   }
-}
 
-.project-info-skills {
+  .project-info-skills {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    
   }
 
-.dialog-btn-wrapper {
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1.5rem;
-  padding-left: 0px;
-  gap: 1rem;
+  .dialog-btn-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-left: 0px;
+    gap: 1rem;
+  }
 }
 
-}
-
-@media screen and (max-width: 450px){
-dialog {
-    max-width: calc(100% - 30px)
+@media screen and (max-width: 450px) {
+  dialog {
+    width: 95%;
   }
 
   .project-info {
-    max-width: calc(100% - 30px)
+    max-width: calc(100% - 10px);
   }
   .project-img {
-  > img {
-    width: 350px;
-    padding-top: 1rem;
+    > img {
+      width: 350px;
+      padding-top: 1rem;
+    }
   }
-}
 
   .project-img {
-  > img {
-    width: 250px;
+    > img {
+      width: 250px;
+    }
   }
-}
 }

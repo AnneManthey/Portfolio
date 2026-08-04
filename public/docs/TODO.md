@@ -1,6 +1,6 @@
 # Desk
 - header weicher übergang
-- growth mindset hardcoden für hover?
+
 
 
 
@@ -40,8 +40,6 @@ Relative/Absolute in % umschreiben
     - 'Sprung' effekt fixen?
 
 - Project Component
-    - Hintergrund nicht scrollbar
-    - Join dazu nehmen?
     - Project-Links & Github Repo verknüpfen
 
 - Contact Component

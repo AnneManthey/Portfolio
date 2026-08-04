@@ -159,12 +159,17 @@
   }
   .skills-icons{
     justify-content: center;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 780px) {
   .skills {
     padding: 0px 30px;
+  }
+  .skills-icons {
+    gap: 16px;
+    padding: 0px;
   }
   .skills-text {
     width: 400px;
@@ -193,14 +198,8 @@
       font-size: 2.5rem;
     }
   }
-  .skills-icons {
-    width: 300px;
-    height: auto;
 
-    gap: 16px;
-    padding: 20px;
-  }
-
+  
   .skills-icons-box > img:first-child {
     animation: icon-pulse 4s ease-in-out infinite;
     transform-origin: center;
