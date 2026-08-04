@@ -4,11 +4,12 @@
   [style.left.px]="cursorGlow().x"
   [style.top.px]="cursorGlow().y"
 ></div>
-<app-header></app-header>
-
 @if (isHomeRoute) {
-<section id="top" class="hero-frame page-section">
-  <app-hero></app-hero>
+<section class="hero-frame">
+  <app-header></app-header>
+  <section id="top" class="page-section">
+    <app-hero></app-hero>
+  </section>
 </section>
 <section id="about-me" class="page-section">
   <app-about-me></app-about-me>
@@ -25,9 +26,16 @@
 <section id="contact" class="page-section">
   <app-contact></app-contact>
 </section>
-}
-
 <router-outlet />
+} @else if (isLegalOrPrivacyRoute) {
+<section class="hero-frame">
+  <app-header></app-header>
+  <router-outlet />
+</section>
+} @else {
+<app-header></app-header>
+<router-outlet />
+}
 
 <app-footer></app-footer>
 </body>

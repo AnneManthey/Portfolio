@@ -3,8 +3,10 @@ export interface ProjectInterface {
     number: number;
     skills: {
         src: string,
-        name:string;
+        name: string;
     }[];
     src: string;
-    about: string
+    about: string;
+    github: string;
+    link: string;
 }

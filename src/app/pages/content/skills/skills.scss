@@ -4,7 +4,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   color: var(--font-light);
   font-family: 'Karla';
   background-color: var(--bg-dark);
@@ -27,7 +26,6 @@
 }
 
 .skills-text-box {
-  height: 500px;
   background-color: var(--bg-green-light);
   border: 1px solid var(--font-bg-green);
   border-radius: 30px;
@@ -107,7 +105,7 @@
 }
 
 .skills-icons {
-  width: 60%;
+  width: 70%;
   height: auto;
   display: flex;
   flex-wrap: wrap;

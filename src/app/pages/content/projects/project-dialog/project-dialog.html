@@ -26,7 +26,7 @@
 
   <div class="dialog-btn-wrapper">
       <div class="link-wrapper">
-        <a href=""><div class="btn-arrow">Github <img src="/assets/icons/pages/Arrow Green.png"></div></a>
+        <a [href]="projectList?.github || null" target="_blank" rel="noopener noreferrer"><div class="btn-arrow">Github <img src="/assets/icons/pages/Arrow Green.png"></div></a>
       <a href=""><div class="btn-arrow">LiveTest <img src="/assets/icons/pages/Arrow Green.png"></div></a>
       </div>
     <button type="button" (click)="showNextProject()"><div class="btn-arrow">Next Project <img src="/assets/icons/pages/Arrow Green.png"></div></button>

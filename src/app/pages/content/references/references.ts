@@ -33,6 +33,9 @@ next() {
   }
 
   goTo(index: number) {
+    if (index === this.currentIndex) {
+      return;
+    }
     this.currentIndex = index;
   }
 
@@ -40,7 +43,7 @@ next() {
     const total = this.refer.length;
     let offset = index - this.currentIndex;
 
-    // Kürzesten Weg im Kreis berechnen (Endlos-Schleife)
+    // Symmetrische Verteilung um die aktive Karte: links und rechts bleiben sichtbar.
     if (offset > total / 2) {
       offset -= total;
     } else if (offset < -total / 2) {

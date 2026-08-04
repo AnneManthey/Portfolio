@@ -1,57 +1,31 @@
 # Desk
-- header weicher übergang
+
+
+- Textinhalte
+- Allgemeines Layout
+    - Padding/Randbegrenzung gleich?
+        - 50px 95px
+        - ab 750: 50px 30px
+        - ab 450: 50px 16px (8?)
 
 
 
-
-- Responsive Design
+- Responsive 
     
         
 
-
+# Server Upload
+- Subdomains anlegen 
+    - Projekte hochladen
+- Contact mit PHP Emailfähig machen
+    - Projektlinks verknüpfen
 
 # Building Process
 
 - Language Switch Logik
+    - Mit Language-Switch Buttons verknüpfen
     - Text übersetzen
 
-# Refining
-
-Relative/Absolute in % umschreiben
-
-- Header
-    - EN/DE Buttons mit Logik verbinden
-    - Mobile: burger menu hover
-
-- Footer
-    - 
-
-- Hero 
-    - 
-
-- About Component
-    
-
-- Skill Component
- 
-    
-
-- Feedback Component
-    - 'Sprung' effekt fixen?
-
-- Project Component
-    - Project-Links & Github Repo verknüpfen
-
-- Contact Component
-    - PHP / Email versenden
-
-- Allgemeines Layout
-    - Padding/Randbegrenzung gleich?
-
-
-# Globales Refining
-
-- Textinhalte erstellen
 
 
 

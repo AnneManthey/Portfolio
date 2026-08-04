@@ -32,4 +32,9 @@ export class App {
   protected get isHomeRoute(): boolean {
     return this.router.url.split('#')[0] === '/';
   }
+
+  protected get isLegalOrPrivacyRoute(): boolean {
+    const routePath = this.router.url.split('#')[0];
+    return routePath === '/legal-notice' || routePath === '/privacy-policy';
+  }
 }
