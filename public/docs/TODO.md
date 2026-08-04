@@ -7,11 +7,7 @@
 - Responsive
 
 - Refactoring
-    - header
-    - footer
-    - hero
-    - about
-    - skills
+
     - projects
     - references
     - contact

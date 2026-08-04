@@ -1,3 +1,5 @@
+@use '../../../../styles/mixins' as mixins;
+
 .projects {
   background-color: var(--bg-dark);
   color: var(--font-light);
@@ -70,7 +72,6 @@
   &:hover {
     .project-list-btn {
       background-color: var(--transparent);
-
       img {
         display: block;
       }
@@ -114,23 +115,20 @@
   }
 }
 
-@media screen and (max-width: 1100px){
-
-.hover-img {
-  right: -12%;
-  top: 50%;
-  width: 250px;
-  height: 150px;
-  border-radius: 10px;
- 
-}
+@media screen and (max-width: 1100px) {
+  .hover-img {
+    right: -12%;
+    top: 50%;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+  }
   .bg-hover-img {
-  width: 250px;
-  height: 150px;
-  right: -20%;
-  top: 45%;
-  
-}
+    width: 250px;
+    height: 150px;
+    right: -20%;
+    top: 45%;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -164,8 +162,8 @@
   }
 }
 
-@media screen and (max-width: 450px){
-.projects {
+@media screen and (max-width: 450px) {
+  .projects {
     padding: 50px 16px;
   }
 }

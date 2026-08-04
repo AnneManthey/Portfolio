@@ -1,8 +1,8 @@
+@use '../../../../styles/mixins' as mixins;
+
 .about {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mixins.flex-center;
   color: var(--font-light);
   font-family: 'Karla';
   background-color: var(--bg-dark);
@@ -164,7 +164,6 @@
 }
 
 @media screen and (max-width: 450px){
-
   .about {
     padding: 100px 16px;
   }
@@ -173,14 +172,11 @@
   width: 300px;
 }
 
-
 .portrait-bg {
-  
   top: 30px;
   left: -30px;
   z-index: 1;
   width: 300px;
-  
 }
 
   .about-text {
@@ -200,5 +196,4 @@
       padding-bottom: 20px;
     }
   }
-
 }

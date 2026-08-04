@@ -1,5 +1,4 @@
 dialog {
-  // Wichtig: margin: auto stellt die gewohnte Zentrierung trotz globalem Reset wieder her!
   margin: auto;
   border: none;
   border-radius: 12px;
@@ -12,14 +11,10 @@ dialog {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
-  // Der abgedunkelte Hintergrund
   &::backdrop {
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
   }
-
-  // Sanfte Animation beim Öffnen
   &[open] {
     animation: scaleIn 0.2s ease-out;
   }
@@ -28,7 +23,6 @@ dialog {
 .dialog-header {
   display: flex;
   justify-content: flex-end;
-
   .close-icon {
     background: none;
     border: none;
@@ -37,7 +31,6 @@ dialog {
     cursor: pointer;
     color: white;
     padding: 0;
-
     &:hover {
       color: var(--font-bg-green);
       transform: scale(1.2);
@@ -149,17 +142,17 @@ a {
 }
 
 dialog::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 dialog::-webkit-scrollbar-track {
-    background: var(--bg-dark);
+  background: var(--bg-dark);
 }
 
 dialog::-webkit-scrollbar-thumb {
-    background: var(--bg-green-light);
-    border-radius: 5px;
-    border: 1px solid var(--font-bg-green);
+  background: var(--bg-green-light);
+  border-radius: 5px;
+  border: 1px solid var(--font-bg-green);
 }
 
 .btn-arrow {
