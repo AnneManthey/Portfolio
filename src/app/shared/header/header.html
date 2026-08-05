@@ -5,13 +5,13 @@
                 <input id="language-toggle-desktop" class="check-toggle check-toggle-round-flat" type="checkbox"
                     [checked]="isLanguageEnglish()" (change)="setLanguage($event)">
                 <label for="language-toggle-desktop"></label>
-                <span class="on">EN</span>
-                <span class="off">DE</span>
+                <span class="on">DE</span>
+                <span class="off">EN</span>
             </div>
         </section>
-        <a class="dot-hover" [routerLink]="['/']" fragment="about-me">About me</a>
-        <a class="dot-hover" [routerLink]="['/']" fragment="skills">Skills</a>
-        <a class="dot-hover" [routerLink]="['/']" fragment="projects">Projects</a>
+        <a class="dot-hover" [routerLink]="['/']" fragment="about-me">{{"HEADER.NAV.ABOUT_ME" | translate }}</a>
+        <a class="dot-hover" [routerLink]="['/']" fragment="skills">{{"HEADER.NAV.SKILLS" | translate }}</a>
+        <a class="dot-hover" [routerLink]="['/']" fragment="projects">{{"HEADER.NAV.PROJECTS" | translate }}</a>
     </nav>
     <section class="logo-wrapper">
         <a [routerLink]="['/']" fragment="top" aria-label="Go to top of page">
@@ -36,9 +36,9 @@
         </section>
         @if (isMenuOpen() && isMenuOpenedByButton()) {
         <nav class="menu-nav">
-            <a [routerLink]="['/']" fragment="about-me" (click)="closeMenu()">About me</a>
-            <a [routerLink]="['/']" fragment="skills" (click)="closeMenu()">Skills</a>
-            <a [routerLink]="['/']" fragment="projects" (click)="closeMenu()">Projects</a>
+            <a [routerLink]="['/']" fragment="about-me" (click)="closeMenu()">{{"HEADER.NAV.ABOUT_ME" | translate }}</a>
+            <a [routerLink]="['/']" fragment="skills" (click)="closeMenu()">{{"HEADER.NAV.SKILLS" | translate }}</a>
+            <a [routerLink]="['/']" fragment="projects" (click)="closeMenu()">{{"HEADER.NAV.PROJECTS" | translate }}</a>
             <div class="mobile-switch">
                 <div class="switch">
                     <input id="language-toggle-mobile" class="check-toggle check-toggle-round-flat" type="checkbox"

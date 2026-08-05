@@ -1,9 +1,10 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslateService, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
@@ -11,7 +12,11 @@ export class Header {
 
   isMenuOpen = signal(false);
   isMenuOpenedByButton = signal(false);
-  isLanguageEnglish = signal(false);
+
+  private translate = inject(TranslateService);
+
+  // eigenes Signal, sofort und optimistisch gesetzt – wartet nicht auf den Ladevorgang
+  isLanguageEnglish = signal(this.translate.currentLang() === 'en');
 
   toggleMenu() {
     const nextState = !this.isMenuOpen();
@@ -21,11 +26,16 @@ export class Header {
 
   setLanguage(event: Event) {
     const target = event.target as HTMLInputElement;
-    this.isLanguageEnglish.set(target.checked);
+    this.isLanguageEnglish.set(target.checked); // sofort, unabhängig vom Ladevorgang
+    this.translate.use(target.checked ? 'en' : 'de');
   }
 
   closeMenu() {
     this.isMenuOpen.set(false);
     this.isMenuOpenedByButton.set(false);
+  }
+
+  constructor() {
+    this.translate.addLangs(['de', 'en']);
   }
 }

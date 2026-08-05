@@ -1,0 +1,9 @@
+{
+    "HEADER": {
+        "NAV":{
+            "ABOUT_ME": "About me",
+            "SKILLS": "Skills",
+            "PROJECTS": "Projects"
+        }
+    }
+}
