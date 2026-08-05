@@ -1,13 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {
+    TranslateService,
+    TranslatePipe,
+    TranslateDirective
+} from "@ngx-translate/core";
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-skills',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })
 export class Skills {
+  private translate = inject(TranslateService);
 
   skillList = [
     {

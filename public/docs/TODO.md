@@ -1,12 +1,11 @@
 # Desk
 
-- header padding responsive
-
-- Language Switch Logik
-  - Mit Language-Switch Buttons verknüpfen
-  - Text übersetzen
-
+- Language Switch
+  - In HTML anpassen
+    - Projects WIP
+    
   - Logik für button in app.ts (statt header)?
+  
   - Was ist mit Dialog Templates? Wie die übersetzen?
 
 - Responsive
