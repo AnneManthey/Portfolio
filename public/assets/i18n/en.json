@@ -74,6 +74,8 @@
         "PRIVACY3":"and agree to the processing of my data as outlined.",
         "PRIVACY_ERR":"Please accept the privacy policy.",
         "BTN":"Say Hello!",
+        "SENDING":"Sending...",
+        "SEND_ERROR":"Something went wrong. Please try again later.",
         "RECEIVED1":"Message received!",
         "RECEIVED2":"I will reach out to you soon."
     }

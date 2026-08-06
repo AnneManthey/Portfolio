@@ -29,7 +29,8 @@
                     <span class="checkmark"></span>
                 </div>
                 <label for="privacy" class="form-privacy-text">
-                    {{"CONTACT.FORM.PRIVACY1" | translate }} <a routerLink="/privacy-policy">{{"CONTACT.FORM.PRIVACY2" | translate }}</a> {{"CONTACT.FORM.PRIVACY3" | translate }}
+                    {{"CONTACT.FORM.PRIVACY1" | translate }} <a routerLink="/privacy-policy">{{"CONTACT.FORM.PRIVACY2" |
+                        translate }}</a> {{"CONTACT.FORM.PRIVACY3" | translate }}
                 </label>
             </div>
             @if (isInvalid('privacy')) {
@@ -40,7 +41,14 @@
 
     <section class="contact-form-btn-wrapper">
         <div class="form-actions">
-            <button type="submit" [disabled]="contactForm.invalid">{{"CONTACT.FORM.BTN" | translate }}</button>
+            <button type="submit" [disabled]="contactForm.invalid || isSending">
+                {{ isSending ? ('CONTACT.FORM.SENDING' | translate) : ('CONTACT.FORM.BTN' | translate) }}
+            </button>
+            @if (submitError) {
+            <div class="error-msg">
+                {{ "CONTACT.FORM.SEND_ERROR" | translate }}
+            </div>
+            }
         </div>
         @if (isSubmitted) {
         <div class="success-msg">

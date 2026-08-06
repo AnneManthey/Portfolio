@@ -13,9 +13,9 @@
 
 # Server Upload
 
+- Portfolio hochladen
 - Subdomains anlegen
   - Projekte hochladen
-- Contact mit PHP Emailfähig machen
   - Projektlinks verknüpfen
 
 

@@ -74,6 +74,8 @@
         "PRIVACY3":"gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Angaben zu.",
         "PRIVACY_ERR":"Bitte akzeptiere die Datenschutzerklärung",
         "BTN":"Senden",
+        "SENDING":"Senden...",
+        "SEND_ERROR":"Etwas lief schief, bitte versuche es später nochmal.",
         "RECEIVED1":"Nachricht gesendet!",
         "RECEIVED2":"Ich werde mich bald bei dir melden."
     }

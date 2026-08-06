@@ -5,6 +5,7 @@ import {
   TranslateService,
   TranslatePipe
 } from "@ngx-translate/core";
+import { ContactService } from '../../../../shared/services/contact-service';
 
 @Component({
   selector: 'app-contact-form',
@@ -18,9 +19,12 @@ import {
 export class ContactForm {
   private fb = inject(FormBuilder);
   private translate = inject(TranslateService);
+  private contactService = inject(ContactService);
 
   /** Indicates whether the form was successfully submitted. */
   isSubmitted = false;
+  isSending = false;
+  submitError = false;
 
   private successHideTimeout?: ReturnType<typeof setTimeout>;
 
@@ -42,25 +46,46 @@ export class ContactForm {
     return !!(control && control.invalid && (control.touched || control.dirty));
   }
 
+
   /**
    * Handles the form submission and resets the form after a successful send.
    */
   onSubmit(): void {
-    if (this.contactForm.valid) {
-      console.log('Form Data:', this.contactForm.value);
-
-      clearTimeout(this.successHideTimeout);
-
-      this.isSubmitted = true;
-      this.contactForm.reset();
-
-      this.successHideTimeout = window.setTimeout(() => {
-        this.isSubmitted = false;
-      }, 5500);
-    } else {
+    if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();
+      return;
     }
+
+    this.isSending = true;
+    this.submitError = false;
+
+    this.contactService.send({
+      name: this.contactForm.value.name!,
+      email: this.contactForm.value.email!,
+      message: this.contactForm.value.message!,
+    }).subscribe({
+      next: (response) => {
+        this.isSending = false;
+
+        if (response.success) {
+          clearTimeout(this.successHideTimeout);
+          this.isSubmitted = true;
+          this.contactForm.reset();
+
+          this.successHideTimeout = setTimeout(() => {
+            this.isSubmitted = false;
+          }, 5500);
+        } else {
+          this.submitError = true;
+        }
+      },
+      error: () => {
+        this.isSending = false;
+        this.submitError = true;
+      },
+    });
   }
+
 
   /**
    * Resets the touched state of a specific form field.
