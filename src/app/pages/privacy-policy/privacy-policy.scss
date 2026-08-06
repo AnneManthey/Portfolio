@@ -1,38 +1,38 @@
-.privacy-policy{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 150px;
-    h2{
-        font-family: 'Fira Code';
-        color: var(--font-bg-green);
-        font-size: 4rem;
-    }
-    h3{
-        font-family: 'Karla';
-        color: var(--font-light);
-        font-size: 1.2rem;
-        line-height: 120%;
-        font-weight: bold;
-    }
-    h4{
-        font-family: 'Karla';
-        color: var(--font-light);
-        font-size: 1.5rem;
-        line-height: 120%;
-        font-weight: bold;
-    }
-    p{
-        font-family: 'Karla';
-        color: var(--font-bg-green);
-        font-size: 1.2rem;
-        line-height: 120%;
-    }
-    a{
-        color: var(--font-light);
-        text-decoration: none;
-    }
-    button{
+.privacy-policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 150px;
+  h2 {
+    font-family: 'Fira Code';
+    color: var(--font-bg-green);
+    font-size: 4rem;
+  }
+  h3 {
+    font-family: 'Karla';
+    color: var(--font-light);
+    font-size: 1.2rem;
+    line-height: 120%;
+    font-weight: bold;
+  }
+  h4 {
+    font-family: 'Karla';
+    color: var(--font-light);
+    font-size: 1.5rem;
+    line-height: 120%;
+    font-weight: bold;
+  }
+  p {
+    font-family: 'Karla';
+    color: var(--font-bg-green);
+    font-size: 1.2rem;
+    line-height: 120%;
+  }
+  a {
+    color: var(--font-light);
+    text-decoration: none;
+  }
+  button {
     border-radius: 100px;
     border: 1px solid var(--font-light);
     padding: 12px 24px;
@@ -41,13 +41,25 @@
     font-size: 1.1rem;
     color: var(--font-light);
     cursor: pointer;
-}
+  }
 }
 
-.privacy-policy-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 50px 20px;
-    gap: 24px;
+.privacy-policy-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px 20px;
+  gap: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  .privacy-policy {
+    padding: 0px max(200px, calc(50% - 720px));
+  }
+}
+
+@media (max-width: 450px) {
+  .privacy-policy {
+    padding: 50px 24px;
+  }
 }

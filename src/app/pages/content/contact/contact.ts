@@ -4,7 +4,6 @@ import { ContactForm } from './contact-form/contact-form';
 import {
     TranslateService,
     TranslatePipe,
-    TranslateDirective
 } from "@ngx-translate/core";
 
 @Component({

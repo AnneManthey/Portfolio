@@ -3,8 +3,7 @@ import { ProjectInterface } from '../../../shared/interfaces/project-interface';
 import { ProjectDialog } from './project-dialog/project-dialog';
 import {
     TranslateService,
-    TranslatePipe,
-    TranslateDirective
+    TranslatePipe
 } from "@ngx-translate/core";
 
 @Component({
@@ -13,9 +12,14 @@ import {
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })
+
+/**
+ * Component for displaying the portfolio projects.
+ */
 export class Projects {
   private translate = inject(TranslateService);
 
+  /** List of available projects shown in the portfolio. */
   projects: ProjectInterface[] = [
     {
       name: "Join",
@@ -97,20 +101,27 @@ export class Projects {
     }
   ]
 
+  /** Currently selected project for the detail dialog. */
   selectedProject: ProjectInterface | null = null;
 
-  // Zugriff auf den Dialog in der Template-Datei
+  /** Reference to the project dialog component. */
   private readonly projectDialog = viewChild.required(ProjectDialog);
 
+  /**
+   * Opens the project dialog for the selected project.
+   * @param project The project to display.
+   */
   openNewProjectDialog(project: ProjectInterface): void {
     this.selectedProject = project;
-    // Ruft die open()-Methode des Dialogs auf
     this.projectDialog().open();
   }
 
+  /**
+   * Handles the dialog close event.
+   * @param confirmed Indicates whether the user confirmed the action.
+   */
   onDialogClosed(confirmed: boolean): void {
     this.selectedProject = null;
-
     if (confirmed) {
       console.log('User hat auf Speichern geklickt!');
     } else {
@@ -118,17 +129,17 @@ export class Projects {
     }
   }
 
+  /**
+   * Switches to the next project in the list.
+   */
   showNextProject(): void {
     if (!this.selectedProject || this.projects.length === 0) {
       return;
     }
-
     const currentIndex = this.projects.indexOf(this.selectedProject);
     const nextIndex = currentIndex === -1
       ? 0
       : (currentIndex + 1) % this.projects.length;
-
     this.selectedProject = this.projects[nextIndex];
   }
-
 }

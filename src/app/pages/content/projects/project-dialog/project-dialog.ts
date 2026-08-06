@@ -4,7 +4,6 @@ import { ProjectInterface } from '../../../../shared/interfaces/project-interfac
 import {
     TranslateService,
     TranslatePipe,
-    TranslateDirective
 } from "@ngx-translate/core";
 
 @Component({
@@ -13,64 +12,86 @@ import {
   templateUrl: './project-dialog.html',
   styleUrl: './project-dialog.scss',
 })
+
+/**
+ * Dialog component for displaying detailed project information.
+ */
 export class ProjectDialog {
   private translate = inject(TranslateService);
 
+  /** Project data passed into the dialog. */
   @Input() projectList: ProjectInterface | null = null;
 
-
-  // Referenz auf das native HTML <dialog> Element
+  /** Reference to the native dialog element. */
   private readonly dialogRef = viewChild.required<ElementRef<HTMLDialogElement>>('dialog');
 
-  // Event für die Elternkomponente beim Schließen
+  /** Emits when the dialog is closed with a confirmation state. */
   readonly closed = output<boolean>();
+
+  /** Emits when the user requests the next project. */
   readonly nextProjectRequested = output<void>();
   private readonly document = inject(DOCUMENT);
   private previousBodyOverflow = '';
   private previousHtmlOverflow = '';
 
-  // Methode zum Öffnen (wird vom Parent aufgerufen)
+  /**
+   * Opens the dialog and disables background scrolling.
+   */
   open(): void {
     this.lockBackgroundScroll();
-    this.dialogRef().nativeElement.showModal(); // showModal macht den Dialog echt modal mit Backdrop
+    this.dialogRef().nativeElement.showModal();
   }
 
-  // Methode zum Schließen
+  /**
+   * Closes the dialog and emits the confirmation result.
+   * @param confirmed Indicates whether the action was confirmed.
+   */
   close(confirmed: boolean): void {
     this.dialogRef().nativeElement.close();
     this.unlockBackgroundScroll();
     this.closed.emit(confirmed);
   }
 
-  // Wird gefeuert, wenn der User die ESC-Taste drückt
+  /**
+   * Cancels the dialog and emits a false confirmation state.
+   */
   onCancel(): void {
     this.unlockBackgroundScroll();
     this.closed.emit(false);
   }
 
+  /**
+   * Requests the next project to be displayed.
+   */
   showNextProject(): void {
     this.nextProjectRequested.emit();
   }
 
+  /**
+   * Restores the page scroll behavior when the component is destroyed.
+   */
   ngOnDestroy(): void {
     this.unlockBackgroundScroll();
   }
 
+  /**
+   * Disables page scrolling while the dialog is open.
+   */
   private lockBackgroundScroll(): void {
     const html = this.document.documentElement;
     const body = this.document.body;
-
     this.previousHtmlOverflow = html.style.overflow;
     this.previousBodyOverflow = body.style.overflow;
-
     html.style.overflow = 'hidden';
     body.style.overflow = 'hidden';
   }
 
+  /**
+   * Restores the previous page scrolling behavior.
+   */
   private unlockBackgroundScroll(): void {
     const html = this.document.documentElement;
     const body = this.document.body;
-
     html.style.overflow = this.previousHtmlOverflow;
     body.style.overflow = this.previousBodyOverflow;
   }

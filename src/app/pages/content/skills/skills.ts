@@ -1,8 +1,7 @@
 import { Component, inject } from '@angular/core';
 import {
     TranslateService,
-    TranslatePipe,
-    TranslateDirective
+    TranslatePipe
 } from "@ngx-translate/core";
 import { RouterLink } from '@angular/router';
 
@@ -67,11 +66,6 @@ export class Skills {
     {
       src: "/assets/icons/pages/skills/Cloud.png",
       name:"Cloud"
-    },
-    
-    
-
-
+    }
   ]
-
 }

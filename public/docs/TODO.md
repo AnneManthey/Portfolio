@@ -2,15 +2,11 @@
 
 - Responsive
 
-- Refactoring
-
-    - projects
-    - references
-    - contact
 
 # Bug fixes
 
-- 
+
+- Contact DE H2 zu breit...
 
 
 

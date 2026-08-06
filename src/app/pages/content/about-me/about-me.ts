@@ -1,8 +1,7 @@
 import { Component, inject } from '@angular/core';
 import {
     TranslateService,
-    TranslatePipe,
-    TranslateDirective
+    TranslatePipe
 } from "@ngx-translate/core";
 
 @Component({
