@@ -16,7 +16,7 @@
   "ABOUT": {
     "WHO": "Who I am",
     "ABOUT": "About me",
-    "TEXT": "Hey there, I'm Anne! After working in conservation and recruiting, I discovered my passion for software development and the unique combination of creativity and logic it offers. I am currently training as a Fullstack Developer while building my own projects to strengthen my skills in frontend, backend, and AI-powered applications.",
+    "TEXT": "Hey there, I’m Anne! I discovered my passion for software development through the unique blend of creativity, problem-solving, and logical thinking it offers. I am currently training as a Fullstack Developer while building personal projects to deepen my skills in frontend, backend, and AI-powered applications.",
     "P1": "Currently based in Göttingen, Lower Saxony, and open to remote and hybrid opportunities",
     "P2": "I am curious, open-minded, and committed to continuously expanding my skills and growing as a developer.",
     "P3": "Combining a solution-oriented mindset with reliability and independent work, I enjoy taking on challenges and finding effective solutions."
@@ -68,7 +68,7 @@
         "MAIL_ERR":"Your email is required",
         "MSG":"How can I help you?",
         "MSG_PLACE":"Hello Anne, I am interested in...",
-        "MSC_ERR":"What do you need to develop?",
+        "MSG_ERR":"What do you need to develop?",
         "PRIVACY1":"I've read the",
         "PRIVACY2":"privacy policy",
         "PRIVACY3":"and agree to the processing of my data as outlined.",

@@ -16,15 +16,15 @@
   "ABOUT": {
     "WHO": "Wer ich bin",
     "ABOUT": "Über mich",
-    "TEXT": "Hi, ich bin Anne! Meine Leidenschaft fürs Coden habe ich tatsächlich erst entdeckt, nachdem ich einige Jahre als Restauratorin und auch im Bereich Recruiting gearbeitet habe. Ich habe die besondere Verbindung aus logischem Denken und Kreativität sehr schnell lieben gelernt. Aktuell absolviere ich eine Weiterbildung zur Fullstack-Entwicklerin und arbeite parallel an eigenen Projekten, um meine Fähigkeiten im Frontend, Backend und im Bereich KI-gestützter Anwendungen weiter auszubauen.",
-    "P1": "Ich wohne in Göttingen, Niedersachsen und bin offen für Remote- und Hybridmodelle",
+    "TEXT": "Hi, ich bin Anne! Die besondere Verbindung aus logischem Denken und Kreativität habe ich beim Coden sehr schnell lieben gelernt. Aktuell absolviere ich eine Weiterbildung zur Fullstack-Entwicklerin und arbeite parallel an eigenen Projekten, um meine Fähigkeiten im Frontend, Backend und im Bereich KI-gestützter Anwendungen weiter auszubauen.",
+    "P1": "Ich wohne in Göttingen, Niedersachsen und bin offen für Remote- und Hybridmodelle.",
     "P2": "Immer neugierig, offen für neue Ideen und motiviert, meine Fähigkeiten kontinuierlich weiterzuentwickeln und als Entwicklerin zu wachsen.",
-    "P3": "Zuverlässigkeit betrachte ich als selbstverständlich, gehe Herausforderungen gern selbstständig an und suche effektive Lösungen."
+    "P3": "Zuverlässigkeit betrachte ich als selbstverständlich, gehe Herausforderungen selbstständig an und suche effektive Lösungen."
   },
   "SKILLS": {
     "TECH": "Technologien",
     "H1": "Mein Skillset",
-    "P1": "In der Webentwicklung kann ich Kreativität und logisches Denken ideal miteinander verbinden – von intuitiven Benutzeroberflächen bis hin zu strukturierten Backend-Lösungen. Besonders interessieren mich auch KI und Automatisierung, um moderne und zukunftsorientierte Anwendungen zu schaffen.",
+    "P1": "In der Webentwicklung kann ich Kreativität und logisches Denken ideal miteinander verbinden – von intuitiven Benutzeroberflächen bis hin zu strukturierten Backend-Lösungen. Besonders interessieren mich auch KI und Automatisierungen, um moderne und zukunftsorientierte Anwendungen zu schaffen.",
     "P2": "Ihr benötigt einen ",
     "P2.1": "weiteren Skill?",
     "P3": "Meldet euch gerne bei mir. Ich freue mich darauf, mein bisheriges Wissen zu erweitern und neue Fähigkeiten dazuzulernen.",
@@ -54,13 +54,13 @@
   "CONTACT":{
     "CONTACT":"Kontakt",
     "H1":"Lass uns ",
-    "H1.1":"zusammenarbeiten",
+    "H1.1":"connecten",
     "H2":"Wird eine Lösung benötigt?",
     "P1":"Ich freue mich immer über einen Austausch zu spannenden Herausforderungen, kreativen Lösungsansätzen und neuen Ideen. ",
     "P2":"Geht es um ein offenes Projekt, eine berufliche Möglichkeit oder einfach eine allgemeine Frage?",
-    "P3":"Ich freue mich über jede Nachricht!",
+    "P3":"Schreib mir!",
     "FORM":{
-        "NAME":"Wie lautet dein Name",
+        "NAME":"Wie lautet dein Name?",
         "NAME_PLACE":"Dein Name",
         "NAME_ERR":"Der Name fehlt",
         "MAIL":"Wie lautet deine Email-Adresse?",
@@ -68,7 +68,7 @@
         "MAIL_ERR":"Die Email-Adresse fehlt",
         "MSG":"Wie kann ich helfen?",
         "MSG_PLACE":"Hey Anne, ich wollte fragen...",
-        "MSC_ERR":"Was möchtest du von mir wissen?",
+        "MSG_ERR":"Was möchtest du von mir wissen?",
         "PRIVACY1":"Ich habe die",
         "PRIVACY2":"Datenschutzerklärung",
         "PRIVACY3":"gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Angaben zu.",

@@ -207,11 +207,15 @@
   .references {
     padding: 100px max(200px, calc(50% - 720px));
   }
+  .quotes-icon {
+    top: 25%;
+    left: 30%;
+  }
 }
 
 @media screen and (max-width: 1180px) {
   .quotes-icon {
-    top: 20%;
+    top: 23%;
     left: 25%;
   }
 
@@ -235,8 +239,8 @@
   }
 
   .quotes-icon {
-    top: 28%;
-    left: 25%;
+    top: 30%;
+    left: 20%;
   }
 
   .slider-viewport {
@@ -260,8 +264,8 @@
   }
 
   .quotes-icon {
-    top: 25%;
-    left: 25%;
+    top: 33%;
+    left: 20%;
   }
   
   .slider-container {

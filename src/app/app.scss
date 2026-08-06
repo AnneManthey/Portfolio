@@ -1,4 +1,7 @@
 .hero-frame {
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
     background-image: url('/assets/img/bg_image.svg');
     background-color: var(--bg-dark);
     background-position: center;

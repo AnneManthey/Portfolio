@@ -22,6 +22,8 @@ export class ContactForm {
   /** Indicates whether the form was successfully submitted. */
   isSubmitted = false;
 
+  private successHideTimeout?: ReturnType<typeof setTimeout>;
+
   /** Reactive form definition for the contact form inputs. */
   contactForm = this.fb.group({
     name: ['', Validators.required],
@@ -47,12 +49,14 @@ export class ContactForm {
     if (this.contactForm.valid) {
       console.log('Form Data:', this.contactForm.value);
 
+      clearTimeout(this.successHideTimeout);
+
       this.isSubmitted = true;
       this.contactForm.reset();
 
-      setTimeout(() => {
+      this.successHideTimeout = window.setTimeout(() => {
         this.isSubmitted = false;
-      }, 5000);
+      }, 5500);
     } else {
       this.contactForm.markAllAsTouched();
     }

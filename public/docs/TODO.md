@@ -1,12 +1,13 @@
 # Desk
 
-- Responsive
+
+
 
 
 # Bug fixes
 
-
-- Contact DE H2 zu breit...
+- Project dialog hintergund (langsam nach unten) scrollbar?
+- ab 2585px (ultrawide) wird das bg bild nicht mehr weiter gestreckt
 
 
 
