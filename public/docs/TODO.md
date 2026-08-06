@@ -1,13 +1,5 @@
 # Desk
 
-- Language Switch
-  - In HTML anpassen
-    - Projects WIP
-    
-  - Logik für button in app.ts (statt header)?
-  
-  - Was ist mit Dialog Templates? Wie die übersetzen?
-
 - Responsive
 
 - Refactoring
@@ -15,6 +7,12 @@
     - projects
     - references
     - contact
+
+# Bug fixes
+
+- 
+
+
 
 # Server Upload
 
@@ -28,6 +26,10 @@
 
 - Textinhalte
   - references
+
+# Refining
+
+- Texte de/en überprüfen und ggf. anpassen
 
 # Anforderungen
 
