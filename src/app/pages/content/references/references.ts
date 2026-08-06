@@ -1,26 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {
+    TranslateService,
+    TranslatePipe,
+    TranslateDirective
+} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-references',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './references.html',
   styleUrl: './references.scss',
 })
 export class References {
+  private translate = inject(TranslateService);
 
   currentIndex = 0;
 
   refer = [{
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti recusandae libero saepe soluta dignissimos. Quisquam cumque delectus, laborum at ex nisi eos, iure necessitatibus quasi accusantium asperiores consequuntur odio praesentium.",
-    name: "Jane Dow"
+    text: "REF.T1",
+    name: "REF.N1"
   },
 {
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti recusandae libero saepe soluta dignissimos. Quisquam cumque delectus, laborum at ex nisi eos, iure necessitatibus quasi accusantium asperiores consequuntur odio praesentium.",
-    name: "Max Musterman"
+    text: "REF.T2",
+    name: "REF.N2"
   },
   {
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti recusandae libero saepe soluta dignissimos. Quisquam cumque delectus, laborum at ex nisi eos, iure necessitatibus quasi accusantium asperiores consequuntur odio praesentium.",
-    name: "Shallan Kholin"
+    text: "REF.T3",
+    name: "REF.N3"
   },
 ];
 

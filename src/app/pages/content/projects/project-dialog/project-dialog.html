@@ -8,8 +8,8 @@
     <section class="project-info">
       <h2>0{{currentProject.number}}</h2>
       <h1>{{ currentProject.name }}</h1>
-      <h3>What is this Project about?</h3>
-      <p>{{ currentProject.about }}</p>
+      <h3>{{"PROJECTS.DIALOG.H" | translate }}</h3>
+      <p>{{ currentProject.about | translate }}</p>
       <div class="project-info-skills">
         @for (skill of currentProject.skills; track $index) {
         <img [src]="skill.src" [alt]="skill.name">
@@ -29,6 +29,6 @@
         <a [href]="projectList?.github || null" target="_blank" rel="noopener noreferrer"><div class="btn-arrow">Github <img src="/assets/icons/pages/Arrow Green.png"></div></a>
       <a href=""><div class="btn-arrow">LiveTest <img src="/assets/icons/pages/Arrow Green.png"></div></a>
       </div>
-    <button type="button" (click)="showNextProject()"><div class="btn-arrow">Next Project <img src="/assets/icons/pages/Arrow Green.png"></div></button>
+    <button type="button" (click)="showNextProject()"><div class="btn-arrow">{{"PROJECTS.DIALOG.BTN" | translate }} <img src="/assets/icons/pages/Arrow Green.png"></div></button>
   </div>
 </dialog>

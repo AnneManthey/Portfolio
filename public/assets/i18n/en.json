@@ -25,28 +25,36 @@
     "TECH": "Technologies",
     "H1": "Skill Set",
     "P1": "My technical journey focuses on fullstack web development, combining creative frontend solutions with structured backend development. I am especially interested in the possibilities of AI and automation to enhance development processes and create innovative solutions.",
-    "P2": "You need",
+    "P2": "You need ",
     "P2.1": "another skill?",
     "P3": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
     "BTN": "Let's talk"
   },
   "PROJECTS": {
     "FEAT": "Featured Projects",
-    "P": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "P1": "Explore a selection of my work here - Interact with ",
+    "P1.1":"projects to see my skills in action.",
     "DIALOG": {
       "H": "What is this Project about?",
-      "P": "",
+      "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "POKE": "A web application that serves as a digital Pokédex, allowing users to search for Pokémon and view detailed info, stats, and data.",
+      "POLLO": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
       "BTN": "Next Project"
     }
   },
   "REF": {
     "H": "What my colleagues say about me",
-    "P1": "",
-    "A1": ""
+    "T1": "Life before Death, Strength before weakness, Journey before destination.",
+    "N1": "Kaladin",
+    "T2": "Each time I must fall, I will rise again, a better man.",
+    "N2": "Dalinar Kholin",
+    "T3": "To the well organized mind, death is but the next great adventure.",
+    "N3": "Dumbledore"
   },
   "CONTACT":{
     "CONTACT":"Contact me",
-    "H1":"Let's work together",
+    "H1":"Let's work ",
+    "H1.1":"together",
     "H2":"Got a problem to solve?",
     "P1":"I enjoy connecting with people, exploring new ideas, and finding creative solutions to interesting challenges. If you have a project, an opportunity, or a question, feel free to reach out — I would be happy to start a conversation.",
     "P2":"Need a Frontend, Backend ot Fullstack developer?",
@@ -56,7 +64,7 @@
         "NAME_PLACE":"Your name goes here",
         "NAME_ERR":"It seems your Name is missing",
         "MAIL":"What's your email?",
-        "Mail_PLACE":"youremail@email.com",
+        "MAIL_PLACE":"youremail@email.com",
         "MAIL_ERR":"Your email is required",
         "MSG":"How can I help you?",
         "MSG_PLACE":"Hello Anne, I am interested in...",
@@ -64,7 +72,10 @@
         "PRIVACY1":"I've read the",
         "PRIVACY2":"privacy policy",
         "PRIVACY3":"and agree to the processing of my data as outlined.",
-        "BTN":"Say Hello!"
+        "PRIVACY_ERR":"Please accept the privacy policy.",
+        "BTN":"Say Hello!",
+        "RECEIVED1":"Message received!",
+        "RECEIVED2":"I will reach out to you soon."
     }
   },
   "FOOTER": "Legal Notice",

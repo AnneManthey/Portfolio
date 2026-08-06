@@ -25,28 +25,36 @@
     "TECH": "Technologien",
     "H1": "Mein Skillset",
     "P1": "In der Webentwicklung kann ich Kreativität und logisches Denken ideal miteinander verbinden – von intuitiven Benutzeroberflächen bis hin zu strukturierten Backend-Lösungen. Besonders interessieren mich auch KI und Automatisierung, um moderne und zukunftsorientierte Anwendungen zu schaffen.",
-    "P2": "Wird ein anderer ",
-    "P2.1": "Skill benötigt?",
-    "P3": "Melde dich gerne bei mir. Ich freue mich darauf, mein bisheriges Wissen zu erweitern und neue Fähigkeiten dazuzulernen.",
+    "P2": "Ihr benötigt einen ",
+    "P2.1": "weiteren Skill?",
+    "P3": "Meldet euch gerne bei mir. Ich freue mich darauf, mein bisheriges Wissen zu erweitern und neue Fähigkeiten dazuzulernen.",
     "BTN": "Kontakt"
   },
   "PROJECTS": {
     "FEAT": "Ausgewählte Projekte",
-    "P": "Hier findet sich eine Auswahl meiner bisherigen Projekte, die Einblick in meinen Entwicklungsprozess sowie meine Fähigkeiten in der praktischen Umsetzung geben.",
+    "P1": "Hier findet sich eine Auswahl meiner bisherigen Projekte, die Einblick ",
+     "P1.1":"in meinen Entwicklungsprozess sowie meine Fähigkeiten in der praktischen Umsetzung geben.",
     "DIALOG": {
       "H": "Worum geht es bei diesem Projekt?",
-      "P": "",
+       "JOIN": "Ein Task-Manager, inspiriert vom Kanban-System. Aufgaben erstellen, organisieren und per Drag-and-drop verwalten sowie Benutzer und Kategorien zuweisen.",
+      "POKE": "Eine Webanwendung, die als digitales Pokédex dient und die Suche nach Pokémon sowie die Anzeige detaillierter Informationen, Werte und Daten ermöglicht.",
+      "POLLO": "Ein Jump-and-Run-Spiel auf Basis eines objektorientierten Ansatzes. Hilf Pepe dabei, Münzen und Tabasco-Salsa zu sammeln, um gegen das verrückte Huhn zu kämpfen.",
       "BTN": "Nächstes Projekt"
     }
   },
   "REF": {
     "H": "Was meine Kollegen über mich sagen",
-    "P1": "",
-    "A1": ""
+    "T1": "Life before Death, Strength before weakness, Journey before destination.",
+    "N1": "Kaladin",
+    "T2": "Each time I must fall, I will rise again, a better man.",
+    "N2": "Dalinar Kholin",
+    "T3": "To the well organized mind, death is but the next great adventure.",
+    "N3": "Dumbledore"
   },
   "CONTACT":{
     "CONTACT":"Kontakt",
-    "H1":"Lass uns zusammenarbeiten",
+    "H1":"Lass uns ",
+    "H1.1":"zusammenarbeiten",
     "H2":"Wird eine Lösung benötigt?",
     "P1":"Ich freue mich immer über einen Austausch zu spannenden Herausforderungen, kreativen Lösungsansätzen und neuen Ideen. ",
     "P2":"Geht es um ein offenes Projekt, eine berufliche Möglichkeit oder einfach eine allgemeine Frage?",
@@ -56,7 +64,7 @@
         "NAME_PLACE":"Dein Name",
         "NAME_ERR":"Der Name fehlt",
         "MAIL":"Wie lautet deine Email-Adresse?",
-        "Mail_PLACE":"name@email.de",
+        "MAIL_PLACE":"name@email.de",
         "MAIL_ERR":"Die Email-Adresse fehlt",
         "MSG":"Wie kann ich helfen?",
         "MSG_PLACE":"Hey Anne, ich wollte fragen...",
@@ -64,7 +72,10 @@
         "PRIVACY1":"Ich habe die",
         "PRIVACY2":"Datenschutzerklärung",
         "PRIVACY3":"gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Angaben zu.",
-        "BTN":"Nachricht senden"
+        "PRIVACY_ERR":"Bitte akzeptiere die Datenschutzerklärung",
+        "BTN":"Nachricht senden",
+        "RECEIVED1":"Nachricht gesendet!",
+        "RECEIVED2":"Ich werde mich bald bei dir melden."
     }
   },
   "FOOTER": "Impresssum",

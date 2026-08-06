@@ -43,7 +43,7 @@ export class Projects {
         }
       ],
       src: "assets/img/join.png",
-      about: " Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+      about: "PROJECTS.DIALOG.JOIN",
       github: "",
       link: "",
     },
@@ -69,7 +69,7 @@ export class Projects {
         }
       ],
       src: "assets/img/poke.png",
-      about: " A web application that serves as a digital Pokédex, allowing users to search for Pokémon and view detailed info, stats, and data.",
+      about: "PROJECTS.DIALOG.POKE",
       github: "https://github.com/AnneManthey/Pokedex",
       link: "",
     },
@@ -91,7 +91,7 @@ export class Projects {
         }
       ],
       src: "assets/img/pollo-loco.png",
-      about: "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      about: "PROJECTS.DIALOG.POLLO",
       github: "https://github.com/AnneManthey/Pollo-Loco",
       link: "",
     }

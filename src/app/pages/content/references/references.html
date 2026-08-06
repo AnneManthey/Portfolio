@@ -1,5 +1,5 @@
 <section class="references">
-  <h3>What my colleagues say about me</h3>
+  <h3>{{"REF.H" | translate }}</h3>
   <img class="quotes-icon" src="/assets/icons/pages/Quotes.png" alt="Quotes icon">
 
   <div class="slider-viewport">
@@ -11,10 +11,10 @@
           class="references-text" 
           [class.active]="offset === 0"
           [style.--offset]="offset">
-          <p>{{ item.text }}</p>
+          <p>{{ item.text | translate }}</p>
           <div class="references-author">
             <div class="line"></div>
-            <p>{{ item.name }}</p>
+            <p>{{ item.name | translate }}</p>
           </div>
         </article>
       }

@@ -1,14 +1,20 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, ElementRef, Input, OnDestroy, inject, output, viewChild } from '@angular/core';
 import { ProjectInterface } from '../../../../shared/interfaces/project-interface';
+import {
+    TranslateService,
+    TranslatePipe,
+    TranslateDirective
+} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-project-dialog',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './project-dialog.html',
   styleUrl: './project-dialog.scss',
 })
 export class ProjectDialog {
+  private translate = inject(TranslateService);
 
   @Input() projectList: ProjectInterface | null = null;
 

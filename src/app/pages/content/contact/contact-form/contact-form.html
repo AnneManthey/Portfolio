@@ -2,24 +2,24 @@
     <section>
 
         <div class="form-group" [class.is-invalid]="isInvalid('name')">
-            <label for="name">What's your name?</label>
+            <label for="name">{{"CONTACT.FORM.NAME" | translate }}</label>
             <input id="name" type="text" formControlName="name" (focus)="resetField('name')"
                 (blur)="clearIfInvalid('name')"
-                [placeholder]="isInvalid('name') ? 'Oops! It seems your name is missing' : 'Your name goes here'" />
+                [placeholder]="isInvalid('name') ? ('CONTACT.FORM.NAME_ERR' | translate) : ('CONTACT.FORM.NAME_PLACE' | translate)" />
         </div>
 
         <div class="form-group" [class.is-invalid]="isInvalid('email')">
-            <label for="email">What's your email?</label>
+            <label for="email">{{"CONTACT.FORM.MAIL" | translate }}</label>
             <input id="email" type="email" formControlName="email" (focus)="resetField('email')"
                 (blur)="clearIfInvalid('email')"
-                [placeholder]="isInvalid('email') ? 'Hoppla! Your email is required' : 'youremail@email.com'" />
+                [placeholder]="isInvalid('email') ? ('CONTACT.FORM.MAIL_ERR' | translate) : ('CONTACT.FORM.MAIL_PLACE' | translate)" />
         </div>
 
         <div class="form-group" [class.is-invalid]="isInvalid('message')">
-            <label for="message">How can I help you?</label>
+            <label for="message">{{"CONTACT.FORM.MSG" | translate }}</label>
             <textarea id="message" formControlName="message" rows="3" (focus)="resetField('message')"
                 (blur)="clearIfInvalid('message')"
-                [placeholder]="isInvalid('message') ? 'What do you need to develop?' : 'Hello Anne, I am interested in...'"></textarea>
+                [placeholder]="isInvalid('message') ? ('CONTACT.FORM.MSG_ERR' | translate) : ('CONTACT.FORM.MSG_PLACE' | translate)"></textarea>
         </div>
 
         <div class="form-group checkbox-group" [class.is-invalid]="isInvalid('privacy')">
@@ -29,23 +29,22 @@
                     <span class="checkmark"></span>
                 </div>
                 <label for="privacy" class="form-privacy-text">
-                    I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to the processing of my
-                    data as outlined.
+                    {{"CONTACT.FORM.PRIVACY1" | translate }} <a routerLink="/privacy-policy">{{"CONTACT.FORM.PRIVACY2" | translate }}</a> {{"CONTACT.FORM.PRIVACY3" | translate }}
                 </label>
             </div>
             @if (isInvalid('privacy')) {
-            <span class="error-message">Please accept the privacy policy.</span>
+            <span class="error-message">{{"CONTACT.FORM.PRIVACY_ERR" | translate }}</span>
             }
         </div>
     </section>
 
     <section class="contact-form-btn-wrapper">
         <div class="form-actions">
-            <button type="submit" [disabled]="contactForm.invalid">Say Hello!</button>
+            <button type="submit" [disabled]="contactForm.invalid">{{"CONTACT.FORM.BTN" | translate }}</button>
         </div>
         @if (isSubmitted) {
         <div class="success-msg">
-            Message received!<br> I will reach out to you soon.
+            {{"CONTACT.FORM.RECEIVED1" | translate }}<br> {{"CONTACT.FORM.RECEIVED2" | translate }}
         </div>
         }
     </section>

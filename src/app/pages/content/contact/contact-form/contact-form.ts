@@ -1,15 +1,21 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from "@angular/router";
+import {
+    TranslateService,
+    TranslatePipe,
+    TranslateDirective
+} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-contact-form',
-  imports: [ReactiveFormsModule, RouterLink],
+  imports: [ReactiveFormsModule, RouterLink, TranslatePipe],
   templateUrl: './contact-form.html',
   styleUrl: './contact-form.scss',
 })
 export class ContactForm {
   private fb = inject(FormBuilder);
+  private translate = inject(TranslateService);
 
   isSubmitted = false;
 
