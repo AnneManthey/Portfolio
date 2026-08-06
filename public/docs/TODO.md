@@ -1,22 +1,24 @@
 # Desk
 
+- scss vom hero kürzen/optimieren
+
+- Portfolio neueste Version hochladen
+
+- Subdomains anlegen
+  - Projekte hochladen
+  - Projektlinks verknüpfen
 
 
 
-
-# Bug fixes
+# Bug fixes & Refining
 
 - Project dialog hintergund (langsam nach unten) scrollbar?
 - ab 2585px (ultrawide) wird das bg bild nicht mehr weiter gestreckt
 
+- Success msg mit position absolute positionieren?
 
 
-# Server Upload
 
-- Portfolio hochladen
-- Subdomains anlegen
-  - Projekte hochladen
-  - Projektlinks verknüpfen
 
 
 # Waiting
@@ -24,9 +26,6 @@
 - Textinhalte
   - references
 
-# Refining
-
-- Texte de/en überprüfen und ggf. anpassen
 
 # Anforderungen
 
