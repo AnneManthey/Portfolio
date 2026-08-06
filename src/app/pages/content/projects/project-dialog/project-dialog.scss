@@ -165,11 +165,6 @@ dialog::-webkit-scrollbar-thumb {
   gap: 1.5rem;
 }
 
-@media screen and (min-width: 1440px) {
-  dialog {
-    padding: 100px max(200px, calc(50% - 720px));
-  }
-}
 
 @media screen and (max-width: 1180px) {
   dialog {
@@ -196,7 +191,6 @@ dialog::-webkit-scrollbar-thumb {
   dialog {
     width: 90%;
   }
-
   .project-info {
     padding: 0px;
     gap: 8px;

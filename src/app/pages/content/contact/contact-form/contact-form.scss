@@ -126,7 +126,7 @@ button {
   &:active {
     transform: translateY(2px);
   }
-  &:disabled{
+  &:disabled {
     transform: translateY(0px);
   }
 }
@@ -137,7 +137,6 @@ button {
   align-items: center;
 }
 
-/* Roter Placeholder-Text & Rahmen bei Fehleingabe */
 .is-invalid {
   input,
   textarea {

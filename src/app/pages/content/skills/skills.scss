@@ -2,6 +2,7 @@
 
 .skills {
   width: 100%;
+  min-height: 700px;
   display: flex;
   justify-content: center;
   color: var(--font-light);
@@ -141,10 +142,11 @@
     padding: 0px 16px;
   }
   .skills-text {
-    width: 300px;
+    width: 310px;
   }
   .skills-text-box {
     height: auto;
+      padding: 16px;
     h2 {
       font-size: 2.5rem;
     }

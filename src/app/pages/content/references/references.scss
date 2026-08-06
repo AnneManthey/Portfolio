@@ -37,6 +37,7 @@
   justify-content: space-between;
   padding-top: 16px;
 }
+
 .line {
   border-bottom: 1px solid var(--font-light);
   width: 250px;
@@ -80,18 +81,15 @@
   }
 }
 
-// Slider-design
-
 .slider-viewport {
   width: 100%;
-  max-width: 1400px; // Platz für aktive Karte + Ansätze der Nachbarn
+  max-width: 1400px;
   margin: 0 auto;
   overflow-x: hidden;
   overflow-y: visible;
   position: relative;
-  padding: 20px 0; // Puffer für eventuelle Schatten/Scalings
+  padding: 20px 0;
 
-  // Verlauf an den äußersten Rändern (10% links und rechts)
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -112,11 +110,9 @@
 }
 
 .references-text {
-  // Kein Verzerren: Maximale Breite und Höhe definieren
   width: 550px;
   max-width: 80%;
   min-height: 220px;
-
   border: 1px solid var(--font-bg-green);
   border-radius: 30px;
   background-color: var(--bg-green-light);
@@ -130,29 +126,24 @@
   top: 50%;
   left: 50%;
 
-  // Exakte Zentrierung + Versatz durch --offset
-  // Offset 0 = genau Mitte | Offset -1 = nach links | Offset 1 = nach rechts
   transform: translate(calc(-50% + (var(--offset) * 105%)), -50%) scale(0.88);
   transition:
     transform 0.5s cubic-bezier(0.25, 1, 0.5, 1),
     opacity 0.5s ease,
     filter 0.5s ease;
 
-  // Inaktive Karten im Hintergrund:
   opacity: 0.9;
-  filter: blur(1px); // Weichzeichner für seitliche Elemente
-  pointer-events: none; // Inaktive Karten nicht klickbar
+  filter: blur(1px);
+  pointer-events: none;
 
-  // Aktive Karte im Fokus (Offset 0):
   &.active {
     opacity: 1;
-    filter: blur(0px); // scharf im Zentrum
-    transform: translate(-50%, -50%) scale(1); // Exakte Originalgröße
+    filter: blur(0px);
+    transform: translate(-50%, -50%) scale(1);
     pointer-events: auto;
     z-index: 5;
   }
 
-  // Elemente, die weiter als 1 Position entfernt sind, unsichtbar im Hintergrund schieben
   &[style*='--offset: 2'],
   &[style*='--offset: -2'],
   &[style*='--offset: 3'],
@@ -176,12 +167,12 @@
 
 .references-button-wrapper {
   position: relative;
-  z-index: 10; // Stellt sicher, dass die Punkte über allem liegen
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-top: 32px; // Abstand zum Slider
+  margin-top: 32px;
   width: 100%;
 }
 
@@ -190,7 +181,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-height: 20px; // Verhindert Höhenkollaps
+  min-height: 20px;
 
   .dot {
     display: block;
@@ -202,12 +193,10 @@
     transition:
       background-color 0.3s ease,
       transform 0.2s ease;
-
     &.active {
-      background-color: var(--font-bg-green); // Grüner aktiver Punkt
+      background-color: var(--font-bg-green);
       transform: scale(1.1);
     }
-
     &:hover {
       opacity: 0.8;
     }
@@ -244,10 +233,12 @@
       height: auto;
     }
   }
+
   .quotes-icon {
     top: 28%;
     left: 25%;
   }
+
   .slider-viewport {
     -webkit-mask-image: none;
     mask-image: none;
@@ -267,11 +258,16 @@
       padding-bottom: 20px;
     }
   }
+
   .quotes-icon {
     top: 25%;
     left: 25%;
   }
+  
   .slider-container {
     min-height: 500px;
   }
+
+  .references-text { 
+  padding: 30px 16px;}
 }
