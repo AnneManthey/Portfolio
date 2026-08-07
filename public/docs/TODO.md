@@ -36,4 +36,4 @@
   - Browser-vervollständigung beeinträchtigt nicht das design(webkit)
   - Feedback nach Versand wird angezeigt (erfolg/error)
 - Datenschutzerklärung & Impressum
-- Seiten sind responsive und auf allgen Geräten gut lesbar
+- Seiten sind responsive und auf allen Geräten gut lesbar
