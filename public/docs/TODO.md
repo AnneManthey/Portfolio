@@ -1,8 +1,10 @@
 # Desk
 
-- scss vom hero kürzen/optimieren
+- quote icon an container hängen?
 
-- Portfolio neueste Version hochladen
+- hero.scss verschlanken...
+
+- Portfolio hochladen
 
 - Subdomains anlegen
   - Projekte hochladen
@@ -13,7 +15,6 @@
 # Bug fixes & Refining
 
 - Project dialog hintergund (langsam nach unten) scrollbar?
-- ab 2585px (ultrawide) wird das bg bild nicht mehr weiter gestreckt
 
 - Success msg mit position absolute positionieren?
 

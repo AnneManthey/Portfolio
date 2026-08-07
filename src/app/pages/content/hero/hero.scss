@@ -24,7 +24,7 @@
     font-family: 'Karla';
     font-size: var(--hero-title-size);
     font-weight: bold;
-    letter-spacing: -5%;
+    letter-spacing: -0.05rem;
     padding-bottom: 50px;
   }
 }
@@ -124,9 +124,6 @@
 
 .hero-contact-arrow-moving {
   height: 12px;
-}
-
-.hero-contact-arrow-moving {
   animation: hero-arrow-bob 1.8s ease-in-out infinite;
   transform-origin: center;
 }
@@ -218,8 +215,6 @@
 @media screen and (max-width: 780px) {
   .hero {
     --hero-title-size: clamp(2.5rem, 10vw, 8rem);
-    --hero-side-gap: clamp(24px, 4vw, 64px);
-    --hero-title-approx-width: clamp(320px, 60vw, 980px);
   }
 
   .hero-main {
