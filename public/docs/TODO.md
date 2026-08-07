@@ -1,9 +1,7 @@
 # Desk
 
-
-
 - aktualisiertes Portfolio hochladen
-- Pollo loco Startseite optimieren
+
 
 
 
