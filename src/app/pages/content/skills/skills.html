@@ -16,7 +16,7 @@
     <article class="skills-icons">
         @for(item of skillList; track item.name){
         <article class="skills-icons-box">
-            <img [src]="item.src">
+            <img [src]="item.src" [alt]="item.name">
             <p>{{item.name}}</p>
         </article>
         }
