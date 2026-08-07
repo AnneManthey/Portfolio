@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 150px;
-  h2 {
+  h1 {
     font-family: 'Fira Code';
     color: var(--font-bg-green);
     font-size: 4rem;
@@ -15,7 +15,7 @@
     line-height: 120%;
     font-weight: bold;
   }
-  h4 {
+  h2 {
     font-family: 'Karla';
     color: var(--font-light);
     font-size: 1.5rem;
@@ -61,7 +61,7 @@
 @media (max-width: 450px) {
   .privacy-policy {
     padding: 50px 24px;
-    h2 {
+    h1 {
       font-size: 2.5rem;
     }
   }

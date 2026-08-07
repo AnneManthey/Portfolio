@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 150px;
-  h2 {
+  h1 {
     font-family: 'Fira Code';
     color: var(--font-bg-green);
     font-size: 4rem;
   }
-  h3 {
+  h2 {
     font-family: 'Karla';
     color: var(--font-light);
     font-size: 1.2rem;
@@ -54,7 +54,7 @@
 @media (max-width: 450px) {
   .legal-notice {
     padding: 50px 24px;
-    h2 {
+    h1 {
       font-size: 2.5rem;
     }
   }

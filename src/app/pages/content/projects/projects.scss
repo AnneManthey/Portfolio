@@ -4,12 +4,12 @@
   background-color: var(--bg-dark);
   color: var(--font-light);
   padding: 50px 95px;
-  h2 {
+  h3 {
     color: var(--font-bg-green);
     font-family: 'Fira Code';
     font-size: 4rem;
   }
-  h3 {
+  h2 {
     color: var(--font-bg-green);
     font-family: 'Karla';
     font-size: 1.5rem;
@@ -133,7 +133,7 @@
 @media screen and (max-width: 860px) {
   .projects {
     padding: 50px 50px;
-    h2 {
+    h3 {
       font-size: 3rem;
     }
   }
