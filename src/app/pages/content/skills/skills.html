@@ -4,10 +4,11 @@
         <article class="skills-text-box">
             <h2>{{"SKILLS.H1" | translate }}</h2>
             <p>{{"SKILLS.P1" | translate }}</p>
-            <h3><span style="color: var(--font-light);">{{"SKILLS.P2" | translate }}</span>{{"SKILLS.P2.1" | translate }}</h3>
+            <h3><span style="color: var(--font-light);">{{"SKILLS.P2" | translate }}</span>{{"SKILLS.P2.1" | translate
+                }}</h3>
             <p style="font-size: 1rem;">{{"SKILLS.P3" | translate }}
             </p>
-            <button class="animated-btn"[routerLink]="['/']" fragment="contact">
+            <button class="animated-btn" [routerLink]="['/']" fragment="contact">
                 <span class="btn-text" [attr.data-text]="'SKILLS.BTN' | translate">{{"SKILLS.BTN" | translate }}</span>
             </button>
         </article>
@@ -20,8 +21,8 @@
         </article>
         }
         <article class="skills-icons-box mindset-box">
-            <img src="/assets/icons/pages/skills/GrowthMindset.png" alt="Mindset icon">
-            <img class="mindset-hover" src="/assets/icons/pages/skills/Growth-hover.png" alt="">
+            <img src="/assets/icons/pages/skills/GrowthMindset.png" alt="Mindset">
+            <img class="mindset-hover" src="/assets/icons/pages/skills/Growth-hover.png" alt="Mindset">
             <p>Growth Mindset</p>
         </article>
     </article>

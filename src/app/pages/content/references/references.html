@@ -3,41 +3,35 @@
 
   <div class="slider-viewport">
     <div class="slider-container">
-      <img class="quotes-icon" src="/assets/icons/pages/Quotes.png" alt="Quotes icon">
+      <img class="quotes-icon" src="/assets/icons/pages/Quotes.png" alt="Quotes">
       @for (item of refer; track item.name; let i = $index) {
-        @let offset = getOffset(i);
-        
-        <article 
-          class="references-text" 
-          [class.active]="offset === 0"
-          [style.--offset]="offset">
-          <p>{{ item.text | translate }}</p>
-          <div class="references-author">
-            <div class="line"></div>
-            <p>{{ item.name | translate }}</p>
-          </div>
-        </article>
+      @let offset = getOffset(i);
+
+      <article class="references-text" [class.active]="offset === 0" [style.--offset]="offset">
+        <p>{{ item.text | translate }}</p>
+        <div class="references-author">
+          <div class="line"></div>
+          <p>{{ item.name | translate }}</p>
+        </div>
+      </article>
       }
     </div>
   </div>
 
   <section class="references-button-wrapper">
-    <button class="button-left button-img" (click)="prev()">
+    <button class="button-left button-img" (click)="prev()" aria-label="Previous reference">
       <img class="arrow" src="/assets/icons/pages/Arrow 1.png" alt="back">
       <img class="arrow-hover" src="/assets/icons/pages/Arrow Green.png" alt="back">
     </button>
 
     <div class="dots-container">
       @for (item of refer; track $index; let i = $index) {
-        <span 
-          class="dot" 
-          [class.active]="i === currentIndex"
-          (click)="goTo(i)">
-        </span>
+      <span class="dot" [class.active]="i === currentIndex" (click)="goTo(i)">
+      </span>
       }
     </div>
 
-    <button class="button-right button-img" (click)="next()">
+    <button class="button-right button-img" (click)="next()" aria-label="Next reference">
       <img class="arrow" src="/assets/icons/pages/Arrow 1.png" alt="forward">
       <img class="arrow-hover" src="/assets/icons/pages/Arrow Green.png" alt="forward">
     </button>

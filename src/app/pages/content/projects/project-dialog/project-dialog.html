@@ -1,6 +1,6 @@
 <dialog #dialog (cancel)="onCancel()">
   <div class="dialog-header">
-    <button type="button" class="close-icon" (click)="close(false)">&times;</button>
+    <button type="button" class="close-icon" (click)="close(false)" aria-label="Close project details">&times;</button>
   </div>
 
   <div class="dialog-body">
@@ -19,16 +19,24 @@
     </section>
     <section class="project-img">
       <img [src]="currentProject.src" [alt]="currentProject.name">
-
     </section>
     }
   </div>
 
   <div class="dialog-btn-wrapper">
-      <div class="link-wrapper">
-        <a [href]="projectList?.github || null" target="_blank" rel="noopener noreferrer"><div class="btn-arrow">Github <img src="/assets/icons/pages/Arrow Green.png"></div></a>
-      <a [href]="projectList?.link || null" target="_blank" rel="noopener noreferrer"><div class="btn-arrow">LiveTest <img src="/assets/icons/pages/Arrow Green.png"></div></a>
+    <div class="link-wrapper">
+      <a [href]="projectList?.github || null" target="_blank" rel="noopener noreferrer"
+        [attr.aria-label]="projectList?.name ? 'Open GitHub repository for ' + projectList.name : 'Open GitHub repository'">
+        <div class="btn-arrow">Github <img src="/assets/icons/pages/Arrow Green.png" alt="Green Arrow"></div>
+      </a>
+      <a [href]="projectList?.link || null" target="_blank" rel="noopener noreferrer"
+        [attr.aria-label]="projectList?.name ? 'Open live demo for ' + projectList.name : 'Open live demo'">
+        <div class="btn-arrow">LiveTest <img src="/assets/icons/pages/Arrow Green.png" alt="Green Arrow"></div>
+      </a>
+    </div>
+    <button type="button" (click)="showNextProject()" [attr.aria-label]="'Show next project' ">
+      <div class="btn-arrow">{{"PROJECTS.DIALOG.BTN" | translate }} <img src="/assets/icons/pages/Arrow Green.png" alt="Green Arrow">
       </div>
-    <button type="button" (click)="showNextProject()"><div class="btn-arrow">{{"PROJECTS.DIALOG.BTN" | translate }} <img src="/assets/icons/pages/Arrow Green.png"></div></button>
+    </button>
   </div>
 </dialog>

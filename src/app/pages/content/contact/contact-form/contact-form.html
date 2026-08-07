@@ -7,21 +7,18 @@
                 (blur)="clearIfInvalid('name')"
                 [placeholder]="isInvalid('name') ? ('CONTACT.FORM.NAME_ERR' | translate) : ('CONTACT.FORM.NAME_PLACE' | translate)" />
         </div>
-
         <div class="form-group" [class.is-invalid]="isInvalid('email')">
             <label for="email">{{"CONTACT.FORM.MAIL" | translate }}</label>
             <input id="email" type="email" formControlName="email" (focus)="resetField('email')"
                 (blur)="clearIfInvalid('email')"
                 [placeholder]="isInvalid('email') ? ('CONTACT.FORM.MAIL_ERR' | translate) : ('CONTACT.FORM.MAIL_PLACE' | translate)" />
         </div>
-
         <div class="form-group" [class.is-invalid]="isInvalid('message')">
             <label for="message">{{"CONTACT.FORM.MSG" | translate }}</label>
             <textarea id="message" formControlName="message" rows="3" (focus)="resetField('message')"
                 (blur)="clearIfInvalid('message')"
                 [placeholder]="isInvalid('message') ? ('CONTACT.FORM.MSG_ERR' | translate) : ('CONTACT.FORM.MSG_PLACE' | translate)"></textarea>
         </div>
-
         <div class="form-group checkbox-group" [class.is-invalid]="isInvalid('privacy')">
             <div class="form-checkbox-wrapper">
                 <div class="form-checkbox">

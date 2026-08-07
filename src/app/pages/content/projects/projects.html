@@ -5,10 +5,11 @@
     <section class="project-list">
         @for (project of projects; track $index){
         <div class="project-btn-wrapper">
-            <button type="button" (click)="openNewProjectDialog(project)" class="project-list-btn">
+            <button type="button" (click)="openNewProjectDialog(project)" class="project-list-btn"
+                [attr.aria-label]="'Open details for ' + project.name">
                 <div class="project-name">
                     <p>{{project.name}}</p>
-                    <img src="/assets/icons/pages/Arrow 1.png" alt="">
+                    <img src="/assets/icons/pages/Arrow 1.png" alt="Arrow">
                 </div>
                 <div class="project-list-skills">
                     @for (skill of project.skills; track $index; let last = $last){
@@ -20,7 +21,8 @@
             <img class="bg-hover-img" src="/assets/img/bg-project.svg">
         </div>
         }
-        <app-project-dialog [projectList]="selectedProject" (closed)="onDialogClosed($event)" (nextProjectRequested)="showNextProject()"></app-project-dialog>
+        <app-project-dialog [projectList]="selectedProject" (closed)="onDialogClosed($event)"
+            (nextProjectRequested)="showNextProject()"></app-project-dialog>
     </section>
 
 </section>
