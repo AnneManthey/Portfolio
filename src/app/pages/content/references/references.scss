@@ -21,8 +21,9 @@
 .quotes-icon {
   position: absolute;
   z-index: 11;
-  top: 20%;
-  left: 30%;
+  top: 1%;
+  left: 25%;
+  // transform: translateY(-50px);
 }
 
 .references-text-wrapper {
@@ -207,15 +208,15 @@
   .references {
     padding: 100px max(200px, calc(50% - 720px));
   }
-  .quotes-icon {
-    top: 25%;
-    left: 30%;
-  }
+  // .quotes-icon {
+  //   top: 1%;
+  //   left: 30%;
+  // }
 }
 
 @media screen and (max-width: 1180px) {
   .quotes-icon {
-    top: 23%;
+    top: 10%;
     left: 25%;
   }
 
@@ -239,7 +240,7 @@
   }
 
   .quotes-icon {
-    top: 30%;
+    top: 15%;
     left: 20%;
   }
 
@@ -264,7 +265,7 @@
   }
 
   .quotes-icon {
-    top: 33%;
+    top: 20%;
     left: 20%;
   }
   

@@ -216,14 +216,12 @@
   .hero {
     --hero-title-size: clamp(2.5rem, 10vw, 8rem);
   }
-
   .hero-main {
     padding: 200px 30px;
     > p {
       font-size: 1.5rem;
     }
   }
-
   .hero-contact-links {
     .mail-mobile {
       display: block;
@@ -241,12 +239,10 @@
   .line2 {
     height: calc(var(--hero-title-size) * 2.8);
   }
-
   .hero-contact-deco {
     left: 30px;
     right: auto;
   }
-
   .hero-contact-links {
     right: 30px;
     left: auto;
@@ -269,7 +265,6 @@
     font-size: 1rem;
     padding: 6px 10px;
   }
-
   .animated-btn .btn-text {
     animation: smooth-loop 6s linear infinite;
     color: var(--font-bg-green);

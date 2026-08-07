@@ -1,24 +1,13 @@
 # Desk
 
-- quote icon an container hängen?
 
-- hero.scss verschlanken...
 
-- Portfolio hochladen
-
-- Subdomains anlegen
-  - Projekte hochladen
-  - Projektlinks verknüpfen
+- aktualisiertes Portfolio hochladen
+- Pollo loco Startseite optimieren
 
 
 
 # Bug fixes & Refining
-
-- Project dialog hintergund (langsam nach unten) scrollbar?
-
-- Success msg mit position absolute positionieren?
-
-
 
 
 

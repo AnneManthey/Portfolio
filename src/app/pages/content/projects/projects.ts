@@ -75,7 +75,7 @@ export class Projects {
       src: "assets/img/poke.png",
       about: "PROJECTS.DIALOG.POKE",
       github: "https://github.com/AnneManthey/Pokedex",
-      link: "",
+      link: "https://pokedex.anne-manthey.de/"
     },
     {
       name: "El Pollo Loco",
@@ -97,7 +97,7 @@ export class Projects {
       src: "assets/img/pollo-loco.png",
       about: "PROJECTS.DIALOG.POLLO",
       github: "https://github.com/AnneManthey/Pollo-Loco",
-      link: "",
+      link: "https://pollo-loco.anne-manthey.de/"
     }
   ]
 
