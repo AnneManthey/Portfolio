@@ -13,6 +13,24 @@
     font-size: 1.1rem;
     background-color: transparent;
     border: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-text-fill-color: var(--font-light);
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: inset 0 0 0 1000px transparent;
+    box-shadow: inset 0 0 0 1000px transparent;
+    -webkit-text-fill-color: var(--font-light);
+    background-color: transparent;
+    background-image: none;
+    color: var(--font-light);
   }
   .form-group {
     display: flex;
@@ -36,9 +54,13 @@
     flex-direction: column;
     gap: 5px;
   }
-  .error-message {
+  .error-message,
+  .error-msg {
     font-family: 'Karla';
     color: var(--font-error);
+    font-size: 0.95rem;
+    margin-top: 0.35rem;
+    line-height: 1.3;
   }
 }
 
@@ -142,12 +164,25 @@ button {
 .is-invalid {
   input,
   textarea {
+    color: var(--font-error);
+    -webkit-text-fill-color: var(--font-error);
     border-color: var(--font-error);
 
     &::placeholder {
       color: var(--font-error);
+      -webkit-text-fill-color: var(--font-error);
       opacity: 1;
     }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    color: var(--font-error);
+    -webkit-text-fill-color: var(--font-error);
   }
 }
 

@@ -1,17 +1,11 @@
 # Desk
 
 
-- scrollbar 340px (320soll)
-
 
 - ultrawide rausscrollen?
   - impressum hintergrundbild?
 
-- Contakt: 
-  - autofill überschreibt design
-  - rahmen input felder rausnehmen
-  - 404 err bei msenden
-    htaccess fehlt? (reload macht 404?)
+
 
 
 

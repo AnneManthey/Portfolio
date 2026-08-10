@@ -192,6 +192,7 @@ dialog::-webkit-scrollbar-thumb {
     width: 90%;
   }
   .project-info {
+    width: calc(100% - 30px);
     padding: 0px;
     gap: 8px;
     h2 {
@@ -236,10 +237,11 @@ dialog::-webkit-scrollbar-thumb {
 @media screen and (max-width: 450px) {
   dialog {
     width: 95%;
+    padding: 8px;
   }
 
   .project-info {
-    max-width: calc(100% - 10px);
+    max-width: 100%;
   }
   .project-img {
     > img {
