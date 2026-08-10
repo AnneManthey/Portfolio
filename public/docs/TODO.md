@@ -4,11 +4,6 @@
 
 - ultrawide rausscrollen?
 
-
-
-
-
-
 - aktualisiertes Portfolio hochladen
 
 

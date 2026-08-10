@@ -103,11 +103,13 @@ export class ContactForm {
    * @param controlName Name of the form control.
    */
   clearIfInvalid(controlName: string): void {
+    setTimeout(() => {
     const control = this.contactForm.get(controlName);
-    if (control && control.invalid) {
+    if (control && control.invalid && !control.value) {
       control.setValue('');
     }
-  }
+  }, 0);
+}
 }
 
 
