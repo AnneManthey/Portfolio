@@ -6,10 +6,12 @@
 ></div>
 @if (isHomeRoute) {
 <section class="hero-frame">
-  <app-header></app-header>
-  <section id="top" class="page-section">
-    <app-hero></app-hero>
-  </section>
+  <div class="content-shell">
+    <app-header></app-header>
+    <section id="top" class="page-section">
+      <app-hero></app-hero>
+    </section>
+  </div>
 </section>
 <section id="about-me" class="page-section">
   <app-about-me></app-about-me>
@@ -29,8 +31,10 @@
 <router-outlet />
 } @else if (isLegalOrPrivacyRoute) {
 <section class="hero-frame">
-  <app-header></app-header>
-  <router-outlet />
+  <div class="content-shell">
+    <app-header></app-header>
+    <router-outlet />
+  </div>
 </section>
 } @else {
 <app-header></app-header>

@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex: 1 0 auto;
   padding: 50px 150px;
   h1 {
     font-family: 'Fira Code';

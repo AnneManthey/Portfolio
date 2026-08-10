@@ -3,7 +3,6 @@
 
 
 - ultrawide rausscrollen?
-  - impressum hintergrundbild?
 
 
 
