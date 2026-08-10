@@ -118,10 +118,7 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
-  .footer-logo {
-    padding: 0px max(200px, calc(50% - 720px));
-  }
-  .footer-links {
+  footer {
     padding: 0px max(200px, calc(50% - 720px));
   }
 }
