@@ -2,11 +2,12 @@
 
 .about {
   width: 100%;
-  @include mixins.flex-center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: var(--font-light);
   font-family: 'Karla';
   background-color: var(--bg-dark);
-  gap: 50px;
   padding: 50px 95px;
 }
 
@@ -137,6 +138,7 @@
   }
 
   .about-text {
+    width: 80%;
     padding-top: 100px;
     padding-left: 0px;
   }

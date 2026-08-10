@@ -6,7 +6,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 36px 95px;
+  padding: 50px 95px;
   background-color: var(--bg-dark);
   color: var(--font-light);
   font-family: 'Fira Code';
@@ -128,7 +128,7 @@ footer {
 
 @media screen and (max-width: 780px) {
   footer {
-    padding: 32px 30px;
+    padding: 50px 30px;
   }
 }
 @media screen and (max-width: 600px) {
