@@ -8,7 +8,7 @@
   color: var(--font-light);
   font-family: 'Karla';
   background-color: var(--bg-dark);
-  padding: 50px 95px;
+  padding: clamp(32px, 5vw, 50px) 95px;
 }
 
 .portrait {

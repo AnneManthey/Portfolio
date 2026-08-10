@@ -1,7 +1,7 @@
 # Desk
 
 
-
+- Scrollbar bei über 1440?
 - ultrawide rausscrollen?
 
 - aktualisiertes Portfolio hochladen

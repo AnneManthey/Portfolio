@@ -102,14 +102,14 @@ export class ContactForm {
    * Clears a field when it is still invalid.
    * @param controlName Name of the form control.
    */
-  clearIfInvalid(controlName: string): void {
-    setTimeout(() => {
-    const control = this.contactForm.get(controlName);
-    if (control && control.invalid && !control.value) {
-      control.setValue('');
-    }
-  }, 0);
-}
+  // clearIfInvalid(controlName: string): void {
+  //   setTimeout(() => {
+  //     const control = this.contactForm.get(controlName);
+  //     if (control && control.invalid && !control.value) {
+  //       control.setValue('');
+  //     }
+  //   }, 0);
+  // }
 }
 
 

@@ -11,6 +11,7 @@
   width: 100%;
   min-height: calc(100dvh - 100px);
   overflow-x: clip;
+  overflow-y: hidden;
   --hero-title-size: clamp(3.5rem, 10vw, 8rem);
   --hero-side-gap: clamp(24px, 4vw, 64px);
   --hero-title-approx-width: clamp(320px, 60vw, 980px);
@@ -22,7 +23,8 @@
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  padding: 200px 95px;
+  box-sizing: border-box;
+  padding: clamp(80px, 8vh, 140px) 95px clamp(110px, 12vh, 180px);
   > p {
     color: var(--font-light);
     font-family: 'Fira Code';
