@@ -10,7 +10,7 @@
   position: relative;
   width: 100%;
   min-height: calc(100dvh - 100px);
-  overflow-x: hidden;
+  overflow-x: clip;
   --hero-title-size: clamp(3.5rem, 10vw, 8rem);
   --hero-side-gap: clamp(24px, 4vw, 64px);
   --hero-title-approx-width: clamp(320px, 60vw, 980px);
@@ -19,6 +19,9 @@
 .hero-main {
   @include mixins.flex-center;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   padding: 200px 95px;
   > p {
     color: var(--font-light);
@@ -28,8 +31,11 @@
   h1 {
     color: var(--font-light);
     font-family: 'Karla';
+    text-align: center;
     font-size: var(--hero-title-size);
     font-weight: bold;
+    white-space: nowrap;
+    max-width: 100%;
     letter-spacing: -0.05rem;
     padding-bottom: 50px;
   }
@@ -43,8 +49,11 @@
 .hero-banner {
   position: absolute;
   left: 0;
+  right: 0;
   bottom: 0;
-  width: 105%;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
   z-index: 10;
   color: var(--font-bg-green);
   background-color: rgba(255, 255, 255, 0.12);
@@ -206,9 +215,28 @@
   }
 }
 
+
 @media screen and (min-width: 1440px) {
   .hero {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    max-width: 100vw;
+  }
+
+  .hero-contact {
     padding: 100px max(200px, calc(50% - 720px));
+  }
+
+  .hero-main {
+    padding: 100px max(200px, calc(50% - 720px));
+  }
+
+  .hero-banner {
+    width: 100vw;
+    left: 50%;
+    right: auto;
+    margin-left: -50vw;
+    max-width: none;
   }
 }
 
