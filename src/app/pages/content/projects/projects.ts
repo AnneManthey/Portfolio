@@ -49,7 +49,7 @@ export class Projects {
       src: "assets/img/join.png",
       about: "PROJECTS.DIALOG.JOIN",
       github: "",
-      link: "",
+      link: "https://join.anne-manthey.de/",
     },
     {
       name: "Pokedex",
