@@ -48,7 +48,7 @@ export class Projects {
       ],
       src: "assets/img/join.png",
       about: "PROJECTS.DIALOG.JOIN",
-      github: "",
+      github: "https://github.com/AnneManthey/Join",
       link: "https://join.anne-manthey.de/",
     },
     {
