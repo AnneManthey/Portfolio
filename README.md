@@ -1,59 +1,35 @@
 # Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.7.
+This project is a personal portfolio website for Anne Manthey, Fullstack Web Developer. It presents an introduction, technical skills, selected projects, references, and contact options. The Angular application also provides German and English translation resources. Privacy Policy and Legal Notice are available as separate routes.
 
-## Development server
+## Quickstart
 
-To start a local development server, run:
+### Prerequisites
 
-```bash
-ng serve
-```
+- Node.js with npm
+- npm `11.12.1` (the version specified by the project)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Setup
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+The development server opens the application at `http://localhost:4200/`.
+
+## Usage
+
+- `/` displays the portfolio sections: About, Skills, Projects, References, and Contact.
+- `/privacy-policy` displays the privacy policy.
+- `/legal-notice` displays the legal notice.
+- `npm run build` creates a production build.
+- `npm run watch` rebuilds the application when source files change.
+
+## Tests
+
+Run the unit tests with:
 
 ```bash
-ng generate --help
+npm test
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
