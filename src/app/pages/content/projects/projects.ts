@@ -2,8 +2,8 @@ import { Component, viewChild, inject } from '@angular/core';
 import { ProjectInterface } from '../../../shared/interfaces/project-interface';
 import { ProjectDialog } from './project-dialog/project-dialog';
 import {
-    TranslateService,
-    TranslatePipe
+  TranslateService,
+  TranslatePipe
 } from "@ngx-translate/core";
 
 @Component({
@@ -22,7 +22,7 @@ export class Projects {
   /** List of available projects shown in the portfolio. */
   projects: ProjectInterface[] = [
     {
-      name: "Join",
+      name: "Join Issue Collector",
       number: 1,
       skills: [
         {
@@ -44,6 +44,10 @@ export class Projects {
         {
           src: "/assets/icons/pages/skills/Supabase.png",
           name: "Supabase"
+        },
+        {
+          src: "/assets/icons/pages/skills/CD.png",
+          name: "n8n"
         }
       ],
       src: "assets/img/join.png",

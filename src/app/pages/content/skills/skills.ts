@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import {
-    TranslateService,
-    TranslatePipe
+  TranslateService,
+  TranslatePipe
 } from "@ngx-translate/core";
 import { RouterLink } from '@angular/router';
 
@@ -17,55 +17,59 @@ export class Skills {
   skillList = [
     {
       src: "/assets/icons/pages/skills/HTML.png",
-      name:"HTML"
+      name: "HTML"
     },
     {
       src: "/assets/icons/pages/skills/CSS.png",
-      name:"CSS"
+      name: "CSS"
     },
     {
       src: "/assets/icons/pages/skills/JavaScript.png",
-      name:"JavaScript"
+      name: "JavaScript"
     },
     {
       src: "/assets/icons/pages/skills/TypeScript.png",
-      name:"TypeScript"
+      name: "TypeScript"
     },
     {
       src: "/assets/icons/pages/skills/Angular.png",
-      name:"Angular"
+      name: "Angular"
     },
     {
       src: "/assets/icons/pages/skills/Supabase.png",
-      name:"Supabase"
+      name: "Supabase"
+    },
+    {
+      src: "/assets/icons/pages/skills/CD.png",
+      name: "n8n"
     },
     {
       src: "/assets/icons/pages/skills/Git.png",
-      name:"Git"
+      name: "Git"
     },
     {
       src: "/assets/icons/pages/skills/Rest-Api.png",
-      name:"API"
+      name: "API"
     },
     {
       src: "/assets/icons/pages/skills/Python.png",
-      name:"Python"
+      name: "Python"
     },
     {
       src: "/assets/icons/pages/skills/Django.png",
-      name:"Django"
+      name: "Django"
     },
     {
       src: "/assets/icons/pages/skills/Docker.png",
-      name:"Docker"
+      name: "Docker"
     },
     {
       src: "/assets/icons/pages/skills/SQL.png",
-      name:"SQL"
+      name: "SQL"
     },
     {
       src: "/assets/icons/pages/skills/Cloud.png",
-      name:"Cloud"
+      name: "Cloud"
     }
   ]
 }
