@@ -46,7 +46,7 @@ export class Projects {
           name: "Supabase"
         },
         {
-          src: "/assets/icons/pages/skills/CD.png",
+          src: "/assets/icons/pages/skills/n8n.png",
           name: "n8n"
         }
       ],
@@ -56,8 +56,39 @@ export class Projects {
       link: "https://join.anne-manthey.de/",
     },
     {
-      name: "Pokedex",
+      name: "DA Bubble",
       number: 2,
+      skills: [
+        {
+          src: "/assets/icons/pages/skills/HTML-g.png",
+          name: "HTML"
+        },
+        {
+          src: "/assets/icons/pages/skills/CSS-g.png",
+          name: "CSS"
+        },
+        {
+          src: "/assets/icons/pages/skills/Angular-g.png",
+          name: "Angular"
+        },
+        {
+          src: "/assets/icons/pages/skills/TypeScript-g.png",
+          name: "TypeScript"
+        },
+        {
+          src: "/assets/icons/pages/skills/Firebase.png",
+          name: "Firebase"
+        },
+        
+      ],
+      src: "assets/img/DABubble.png",
+      about: "PROJECTS.DIALOG.DABUBBLE",
+      github: "",
+      link: "",
+    },
+    {
+      name: "Pokedex",
+      number: 3,
       skills: [
         {
           src: "/assets/icons/pages/skills/HTML-g.png",
@@ -83,7 +114,7 @@ export class Projects {
     },
     {
       name: "El Pollo Loco",
-      number: 3,
+      number: 4,
       skills: [
         {
           src: "/assets/icons/pages/skills/HTML-g.png",

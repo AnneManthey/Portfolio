@@ -40,7 +40,7 @@ export class Skills {
       name: "Supabase"
     },
     {
-      src: "/assets/icons/pages/skills/CD.png",
+      src: "/assets/icons/pages/skills/n8n.png",
       name: "n8n"
     },
     {

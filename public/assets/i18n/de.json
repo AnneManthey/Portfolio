@@ -37,7 +37,8 @@
     "DIALOG": {
       "H": "Worum geht es bei diesem Projekt?",
        "JOIN": "Ein Task-Manager, inspiriert vom Kanban-System: Aufgaben erstellen, organisieren und per Drag-and-drop verwalten sowie Benutzer und Kategorien zuweisen. Stakeholder senden Feature-Requests per E-Mail oder Formular, n8n und KI legen daraus automatisch Tickets in der Spalte “Triage” an und informieren die Ersteller über Statusänderungen.",
-      "POKE": "Eine Webanwendung, die als digitales Pokédex dient und die Suche nach Pokémon sowie die Anzeige detaillierter Informationen, Werte und Daten ermöglicht.",
+      "DABUBBLE":"Ein moderner Business-Chat-Client mit Benutzerauthentifizierung, Kanalverwaltung, Direktnachrichten und Thread-Unterhaltungen für eine nahtlose Teamzusammenarbeit.",
+       "POKE": "Eine Webanwendung, die als digitales Pokédex dient und die Suche nach Pokémon sowie die Anzeige detaillierter Informationen, Werte und Daten ermöglicht.",
       "POLLO": "Ein Jump-and-Run-Spiel auf Basis eines objektorientierten Ansatzes. Hilf Pepe dabei, Münzen und Tabasco-Salsa zu sammeln, um gegen das verrückte Huhn zu kämpfen.",
       "BTN": "Nächstes Projekt"
     }

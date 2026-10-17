@@ -37,6 +37,7 @@
     "DIALOG": {
       "H": "What is this Project about?",
       "JOIN": "A task manager inspired by the Kanban system: create, organize and manage tasks with drag and drop, and assign users and categories. Stakeholders send feature requests by email or form, and n8n with AI automatically turns them into tickets in the “Triage” column and notifies the creators about status changes.",
+      "DABUBBLE":"A modern business chat client featuring user authentication, channel management, direct messaging, and threaded conversations for seamless team collaboration.",
       "POKE": "A web application that serves as a digital Pokédex, allowing users to search for Pokémon and view detailed info, stats, and data.",
       "POLLO": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
       "BTN": "Next Project"
