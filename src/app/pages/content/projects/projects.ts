@@ -83,8 +83,8 @@ export class Projects {
       ],
       src: "assets/img/DABubble.png",
       about: "PROJECTS.DIALOG.DABUBBLE",
-      github: "",
-      link: "",
+      github: "https://github.com/AnneManthey/DABubble",
+      link: "https://dabubble.anne-manthey.de/",
     },
     {
       name: "Pokedex",
