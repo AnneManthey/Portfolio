@@ -1,13 +1,13 @@
 # Portfolio
 
-This project is a personal portfolio website for Anne Manthey, Fullstack Web Developer. It presents an introduction, technical skills, selected projects, references, and contact options. The Angular application also provides German and English translation resources. Privacy Policy and Legal Notice are available as separate routes.
+This is the personal portfolio website of Anne Manthey, a full-stack web developer. It presents an introduction, technical skills, selected projects, references, and contact options. Visitors can switch between German and English using the header language toggle. The site also includes separate privacy policy and legal notice pages.
 
 ## Quickstart
 
 ### Prerequisites
 
-- Node.js with npm
-- npm `11.12.1` (the version specified by the project)
+- Node.js
+- npm `11.12.1` (specified by the project)
 
 ### Setup
 
@@ -16,15 +16,14 @@ npm install
 npm start
 ```
 
-The development server opens the application at `http://localhost:4200/`.
-
 ## Usage
 
 - `/` displays the portfolio sections: About, Skills, Projects, References, and Contact.
 - `/privacy-policy` displays the privacy policy.
 - `/legal-notice` displays the legal notice.
-- `npm run build` creates a production build.
-- `npm run watch` rebuilds the application when source files change.
+- Use the `DE` / `EN` toggle in the header to change the language.
+- `npm run build` creates a production build in `dist/Portfolio/browser/`.
+- `npm run watch` rebuilds the application in development mode when source files change.
 
 ## Tests
 
