@@ -26,12 +26,6 @@
   left: 25%;
 }
 
-.references-text-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-
 .line {
   border-bottom: 1px solid var(--font-light);
   width: 250px;
@@ -149,29 +143,32 @@
 }
 
 .references-github {
-  display: inline-flex;
-  align-items: center;
+  position: relative;
+  display: block;
   flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
   img {
-    width: 20px;
+    display: block;
     height: 20px;
   }
   .icon-hover {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  &:hover,
-  &:focus-visible {
-    .icon {
-      display: none;
-    }
-    .icon-hover {
-      display: block;
-    }
+  &:hover .icon,
+  &:focus-visible .icon {
+    visibility: hidden;
+  }
+  &:hover .icon-hover,
+  &:focus-visible .icon-hover {
+    display: block;
   }
   &:focus-visible {
     outline: 2px solid var(--font-bg-green);
     outline-offset: 3px;
-    border-radius: 50%;
   }
 }
 
