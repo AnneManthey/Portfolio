@@ -22,15 +22,18 @@ export class References {
   /** Collection of references shown in the carousel. */
   refer = [{
     text: "REF.T1",
-    name: "REF.N1"
+    name: "REF.N1",
+    githubUrl: "https://github.com/maikmuc80"
   },
 {
     text: "REF.T2",
-    name: "REF.N2"
+    name: "REF.N2",
+    githubUrl: "https://github.com/kristinastarovoit"
   },
   {
     text: "REF.T3",
-    name: "REF.N3"
+    name: "REF.N3",
+    githubUrl: "https://github.com/Xargall"
   },
 ];
 

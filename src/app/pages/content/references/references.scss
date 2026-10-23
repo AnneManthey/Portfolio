@@ -148,6 +148,33 @@
   }
 }
 
+.references-github {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  .icon-hover {
+    display: none;
+  }
+  &:hover,
+  &:focus-visible {
+    .icon {
+      display: none;
+    }
+    .icon-hover {
+      display: block;
+    }
+  }
+  &:focus-visible {
+    outline: 2px solid var(--font-bg-green);
+    outline-offset: 3px;
+    border-radius: 50%;
+  }
+}
+
 .references-button-wrapper {
   padding: 24px 0px;
   gap: 16px;

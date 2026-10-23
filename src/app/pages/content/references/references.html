@@ -12,6 +12,13 @@
         <div class="references-author">
           <div class="line"></div>
           <p>{{ item.name | translate }}</p>
+          @if (item.githubUrl) {
+          <a class="references-github" [href]="item.githubUrl" target="_blank" rel="noopener noreferrer"
+            [attr.aria-label]="('REF.GITHUB' | translate) + ' ' + (item.name | translate)">
+            <img class="icon" src="/assets/icons/pages/GitHub.png" alt="">
+            <img class="icon-hover" src="/assets/icons/pages/GitHub Hover.png" alt="">
+          </a>
+          }
         </div>
       </article>
       }
